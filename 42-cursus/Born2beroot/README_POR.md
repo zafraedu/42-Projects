@@ -42,7 +42,7 @@
 	
 ## 1- Descarregar imagem da máquina virtual 💿
 
-[Clique aqui](https://www.debian.org/distrib/index.es.html) para o redireccionar para o URL onde pode descarregar a ISO em segurança.
+[Clique aqui](https://www.debian.org/distrib/index.es.html) para redireccionar para a URL onde pode baixar a ISO em segurança.
 
 ## 2- Instalação da máquina 🛠
 
