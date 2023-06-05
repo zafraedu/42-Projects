@@ -1625,3 +1625,5 @@ Si queremos que vuelva a ejecutarse:
 ```sudo /etc/init.d/cron start```
 
 <img width="483" alt="Screen Shot 2022-11-24 at 3 27 38 PM" src="https://user-images.githubusercontent.com/66915274/203807970-8fc69a39-6d10-4e64-9be1-eb49c4bf95f8.png">
+
+>Este tutorial es mérito de [gemartin99](https://github.com/gemartin99/Born2beroot-Tutorial)
