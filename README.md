@@ -6,9 +6,9 @@ centrada en “aprender a aprender” y espacios donde se fomenta la creatividad
 ### Common Circle
 | Circle | Project | Status |
 |:------:|:-------:|:------:|
-| 0 | [**libft**](./libft) | ![ezafra-r's 42 Libft Score](https://badge42.vercel.app/api/v2/clidn7qo5004508mork2r975c/project/3082823) |
+| 0 | [**libft**](./42-cursus/libft) | ![ezafra-r's 42 Libft Score](https://badge42.vercel.app/api/v2/clidn7qo5004508mork2r975c/project/3082823) |
 |||
-| 1 | [**ft_printf**](./ft_printf) | - |
-| 1 | []() | - |
-| 1 | []() | - |
+| 1 | [**ft_printf**](./42-cursus/ft_printf) | - |
+| 1 | [**get_next_line**](./42-cursus/get_next_line) | - |
+| 1 | [**Born2beroot**](./42-cursus/Born2beroot) | - |
 |||
