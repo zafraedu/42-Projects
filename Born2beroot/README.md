@@ -4,11 +4,11 @@ This guide has versions in different languages. Choose the one you prefer.
 
 ### English version 🇬🇧
 
-![CLICK HERE](https://github.com/gemartin99/Born2beroot-Tutorial/blob/main/README_EN.md)
+[CLICK HERE](https://github.com/zafraedu/42/blob/master/Born2beroot/README_EN.md)
 
 ### Versão portuguesa 🇵🇹
 
-![CLIQUE AQUI](https://github.com/gemartin99/Born2beroot-Tutorial/blob/main/README_POR.md)
+[CLIQUE AQUI](https://github.com/zafraedu/42/blob/master/Born2beroot/README_POR.md)
 
 # Índice
 
@@ -1633,20 +1633,3 @@ Comprueba que no te hayas dejado nada! Tester propio para checkear que la instal
 [AQUÍ](https://github.com/gemartin99/Born2beroot-Tester)
 
 <img width="440" alt="Screen Shot 2023-03-09 at 3 40 54 AM" src="https://user-images.githubusercontent.com/66915274/223902066-f2f6a059-9df8-4e32-a92a-14c43ff8fb0f.png">
-
-# Contacto 📥
-
-### Contacta conmigo si crees que puedo mejorar el tutorial! Puede ayudar a futuros estudiantes! 😁
-
-◦ Email: gemartin@student.42barcelona.com
-
-◦ Linkedin: https://www.linkedin.com/in/gemartin99/
-
-# Quizás pueda interesarte!
-
-### - Para ver mi progresion en el common core 42 ↙️
-
-[AQUÍ](https://github.com/gemartin99/42cursus)
-
-### - Mi perfil en la intranet de 42 ↙️
-[AQUÍ](https://profile.intra.42.fr/users/gemartin)
