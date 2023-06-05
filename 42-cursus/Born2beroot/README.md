@@ -4,11 +4,11 @@ This guide has versions in different languages. Choose the one you prefer.
 
 ### English version 🇬🇧
 
-[CLICK HERE](https://github.com/zafraedu/42/blob/master/Born2beroot/README_EN.md)
+[CLICK HERE](https://github.com/zafraedu/42/blob/master/42-cursus/Born2beroot/README_EN.md)
 
 ### Versão portuguesa 🇵🇹
 
-[CLIQUE AQUI](https://github.com/zafraedu/42/blob/master/Born2beroot/README_POR.md)
+[CLIQUE AQUI](https://github.com/zafraedu/42/blob/master/42-cursus/Born2beroot/README_POR.md)
 
 # Índice
 
