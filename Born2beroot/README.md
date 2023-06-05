@@ -48,8 +48,8 @@ This guide has versions in different languages. Choose the one you prefer.
 	9.1 [Respuestas de la evaluación 💯](#9-1-respuestas-de-la-evaluación-)
 	
 	9.2 [Comandos de la evaluación ⌨️](#9-2-comandos-de-la-evaluación-%EF%B8%8F)
-10. [Tester 🆗](#10--tester-)
-	
+
+
 ## 1- _Descargar imagen de la maquina virtual_ 💿
 
 [Click aqui](https://www.debian.org/distrib/index.es.html) para redireccionarte a la URL donde puedes descargar la ISO de manera segura.
@@ -1625,11 +1625,3 @@ Si queremos que vuelva a ejecutarse:
 ```sudo /etc/init.d/cron start```
 
 <img width="483" alt="Screen Shot 2022-11-24 at 3 27 38 PM" src="https://user-images.githubusercontent.com/66915274/203807970-8fc69a39-6d10-4e64-9be1-eb49c4bf95f8.png">
-
-## 10- Tester 🆗
-
-Comprueba que no te hayas dejado nada! Tester propio para checkear que la instalación y configuración se ha realizado exitosamente.
-
-[AQUÍ](https://github.com/gemartin99/Born2beroot-Tester)
-
-<img width="440" alt="Screen Shot 2023-03-09 at 3 40 54 AM" src="https://user-images.githubusercontent.com/66915274/223902066-f2f6a059-9df8-4e32-a92a-14c43ff8fb0f.png">
