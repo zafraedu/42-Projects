@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/13 15:42:53 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/13 18:57:20 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
@@ -24,9 +12,10 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 /*
-#include <string.h>
 #include <stdio.h>
-int	main(){
+#include <string.h>
+
+int	main(void){
 	char dest[7] = "abcdef";
 	char src[7] = "Origen";
 	printf("%s\n", ft_strcpy(dest, src));

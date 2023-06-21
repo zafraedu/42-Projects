@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/13 20:04:50 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/16 16:11:21 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 char	is_uppercase(char c)
 {
 	return (c >= 'A' && c <= 'Z');
@@ -36,8 +24,9 @@ int	ft_str_is_alpha(char *str)
 }
 /*
 #include <stdio.h>
-int	main(){
-	printf("%d\n", ft_str_is_alpha("")); 
+
+int	main(void){
+	printf("%d\n", ft_str_is_alpha(""));
 	printf("%d\n", ft_str_is_alpha("abcdefgh"));
 	printf("%d\n", ft_str_is_alpha("ABCDEFGH"));
 	printf("%d\n", ft_str_is_alpha("aBcDeFgG"));

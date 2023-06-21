@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 15:30:21 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/14 15:39:39 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 int	ft_str_is_uppercase(char *str)
 {
 	int	i;
@@ -26,7 +14,8 @@ int	ft_str_is_uppercase(char *str)
 }
 /*
 #include <stdio.h>
-int	main(){
+
+int	main(void){
 	printf("%d\n", ft_str_is_uppercase(""));
 	printf("%d\n", ft_str_is_uppercase("ABCD"));
 	printf("%d\n", ft_str_is_uppercase("AbCD"));

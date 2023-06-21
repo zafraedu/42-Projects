@@ -1,16 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/08 16:05:25 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/05/08 16:08:12 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-/* concatena la cadena "src" en la cadena "dest" hasta que ESTE llegue
-a su maximo(size) terminando en nulo */
 #include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)

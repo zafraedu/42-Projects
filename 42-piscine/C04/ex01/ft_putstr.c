@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/18 07:14:33 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/18 07:24:44 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <unistd.h>
 
 void	ft_putstr(char *str)
@@ -24,8 +12,8 @@ void	ft_putstr(char *str)
 	}
 }
 /*
-int	main(){
+int	main(void){
 	ft_putstr("Hello World");
-	return 0;
+	return (0);
 }
 */

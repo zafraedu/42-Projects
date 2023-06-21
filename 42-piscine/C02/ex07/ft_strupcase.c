@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 16:50:39 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/14 17:55:27 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 char	*ft_strupcase(char *str)
 {
 	int	i;
@@ -25,7 +13,8 @@ char	*ft_strupcase(char *str)
 }
 /*
 #include <stdio.h>
-int	main(){
+
+int	main(void){
 	char str[] = "pru4Aba";
 	printf("%s", ft_strupcase(str));
 }

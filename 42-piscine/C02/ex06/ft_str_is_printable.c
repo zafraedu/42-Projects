@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 16:21:45 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/14 16:48:21 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 int	ft_str_is_printable(char *str)
 {
 	int	i;
@@ -26,7 +14,8 @@ int	ft_str_is_printable(char *str)
 }
 /*
 #include <stdio.h>
-int	main(){
+
+int	main(void){
 	printf("%d\n", ft_str_is_printable(""));
 	printf("%d\n", ft_str_is_printable("1b*A"));
 	printf("%d\n", ft_str_is_printable("caña"));

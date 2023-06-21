@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/20 16:11:25 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/21 20:48:43 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;
@@ -33,7 +21,8 @@ char	*ft_strstr(char *str, char *to_find)
 /*
 #include <stdio.h>
 #include <string.h>
-int	main(){
+
+int	main(void){
 	char str[] = "Prueba del ejercicio 4 del C03 y me cago en la molinette";
 	char find[] = "me";
 	printf("%s\n", ft_strstr(str, find));

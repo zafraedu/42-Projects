@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/08 17:45:59 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/05/08 17:46:02 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 /* buscar la primera aparicion de la subcadena(needle) en la cadena "haystack"
 hasta los primeros (size) de valores */
 #include "libft.h"

@@ -1,18 +1,7 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printf_checker.c                                :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/29 15:45:34 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/05/31 17:37:00 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "../inc/ft_printf.h"
 
-static void	flag_len(const char *str, t_block *b)
+static void
+flag_len(const char *str, t_block *b)
 {
 	if (str[b->i] == 'h' && str[b->i + 1] != 'h')
 		b->flags.len_h = 1;

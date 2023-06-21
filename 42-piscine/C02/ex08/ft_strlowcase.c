@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 18:07:17 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/14 18:17:31 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 char	*ft_strlowcase(char *str)
 {
 	int	i;
@@ -25,7 +13,8 @@ char	*ft_strlowcase(char *str)
 }
 /*
 #include <stdio.h>
-int	main(){
+
+int	main(void){
 	char str[] = "PRUEB4";
 	printf("%s", ft_strlowcase(str));
 }

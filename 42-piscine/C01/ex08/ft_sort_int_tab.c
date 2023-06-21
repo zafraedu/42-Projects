@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/12 12:22:32 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/12 18:22:49 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 void	ft_sort_int_tab(int *tab, int size)
 {
 	int	i;
@@ -33,7 +21,8 @@ void	ft_sort_int_tab(int *tab, int size)
 }
 /*
 #include <stdio.h>
-int	main(){
+
+int	main(void){
 	int tab[6] = {4, 2, 7, 5, 3, 6};
 	int	size = 6;
 	ft_sort_int_tab(tab, size);

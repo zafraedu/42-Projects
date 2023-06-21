@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/12 10:59:08 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/12 18:43:09 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
@@ -26,7 +14,8 @@ void	ft_rev_int_tab(int *tab, int size)
 }
 /*
 #include <stdio.h>
-int	main(){
+
+int	main(void){
 	int tab[6] = {0,1,2,3,4,5};
 	int size = 6;
 	ft_rev_int_tab(tab, size);

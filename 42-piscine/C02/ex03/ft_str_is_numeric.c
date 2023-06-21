@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/14 14:09:06 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/14 14:57:22 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 int	ft_str_is_numeric(char *str)
 {
 	int	i;
@@ -26,7 +14,8 @@ int	ft_str_is_numeric(char *str)
 }
 /*
 #include <stdio.h>
-int	main(){
+
+int	main(void){
 	printf("%d\n", ft_str_is_numeric(""));
 	printf("%d\n", ft_str_is_numeric("1234"));
 	printf("%d\n", ft_str_is_numeric("12a3"));

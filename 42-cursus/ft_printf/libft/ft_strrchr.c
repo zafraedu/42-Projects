@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/08 16:10:54 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/05/15 12:11:48 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-/* busca la ultima aparicion del caracter "c" en la cadena "str" */
 #include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)

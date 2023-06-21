@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42malaga.com>   +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/20 11:44:51 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/02/21 20:12:12 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	i;
@@ -30,7 +18,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 /*
 #include <stdio.h>
 #include <string.h>
-int	main(){
+
+int	main(void){
 	char dest[20] = "hola ";
 	char src[] = "que talBanana";
 	//printf("%s\n", strncat(dest, src, 7));

@@ -1,16 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ezafra-r <ezafra-r@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/15 11:50:41 by ezafra-r          #+#    #+#             */
-/*   Updated: 2023/05/22 21:12:55 by ezafra-r         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-/* asigna memoria dinamica a un array de strings al separar la strng "s"
-en substrings con el caracter "c" como delimitador */
 #include "libft.h"
 
 static size_t	count_words(char const *s, char c)
