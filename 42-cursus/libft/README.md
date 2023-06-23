@@ -44,12 +44,20 @@ Este proyecto consiste en programar una [librería](./inc/libft.h) en C. Tu libr
 |[ft_putstr_fd](./src/ft_putstr_fd.c)   |imprime la string `s` al `fd`                                                                                   |
 |[ft_putendl_fd](./src/ft_putendl_fd.c) |imprime `s` al `fd` con un **salto de linea** al final                                                          |
 |[ft_putnbr_fd](./src/ft_putnbr_fd.c)   |imprime el numero `n` al `fd`                                                                                   |
-> MD = Memoria Dinamica
+> MD -> Memoria Dinamica
 > 
-> fd = file descriptor
-
+> fd -> file descriptor
 
 
 ## Parte bonus
 | Function | Description |
 | -------- | ----------- |
+|[ft_lstnew](./src/ft_lstnew_bonus.c)             |crea un nuevo **nodo** y establece su contenido `content` y puntero siguiente `next`                |
+|[ft_lstadd_front](./src/ft_lstadd_front_bonus.c) |añade el nodo `new` al **principio** de la lista `*lst`                                             |
+|[ft_lstsize](./src/ft_lstsize_bonus.c)           |cuenta el numero de nodos que hay en la lista `*lst`                                                |
+|[ft_lstlast](./src/ft_lstlast_bonus.c)           |va al **ultimo nodo** de la lista`*lst`                                                             |
+|[ft_lstadd_back](./src/ft_lstadd_back_bonus.c)    |añade el nodo `new` al **final** de la lista `**lst`                                                |
+|[ft_lstdelone](./src/ft_lstdelone_bonus.c)       |elimina el nodo de una lista y **libera** la memoria asociada a dicho nodo                          |
+|[ft_lstclear](./src/ft_lstclear_bonus.c)         |elimina **todos** los nodos de una lista y **libera** la memoria asociada a dichos nodos            |
+|[ft_lstiter](./src/ft_lstiter_bonus.c)           |aplica la función a cada elemento`content` de la lista enlazada`lst`                                |
+|[ft_lstmap](./src/ft_lstmap.c)                   |crea una **nueva lista** enlazada aplicando la funcion `f` a cada elemento de la **lista original** |
