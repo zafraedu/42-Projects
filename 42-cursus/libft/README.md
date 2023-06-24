@@ -1,4 +1,4 @@
-# Libft
+# libft
 Este proyecto consiste en programar una [librería](./inc/libft.h) en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
 
 ![badge](https://github.com/byaliego/42-project-badges/blob/main/badges/libftm.png)
