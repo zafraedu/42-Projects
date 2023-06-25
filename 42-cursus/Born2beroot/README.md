@@ -1107,7 +1107,7 @@ Descripción breve de todos los tipos de particiones:
 
 🧠 <b> Que es Lighttpd❓</b> Es un servidor web diseñado para ser rápido, seguro, flexible, y fiel a los estándares. Está optimizado para entornos donde la velocidad es muy importante. Esto se debe a que consume menos CPU y memoria RAM que otros servidores.
 
-1 ◦ Instalación de paquetes de lighttpd.
+1 ◦ Instalamos los paquetes de lighttpd con el comando `sudo apt install lighttpd`
 
 <img width="791" alt="Screen Shot 2022-10-27 at 4 09 24 AM" src="https://user-images.githubusercontent.com/66915274/198174389-428c30e0-c437-4bc1-b8df-40dd2fb0c0ce.png">
 
