@@ -1,5 +1,6 @@
 # libft
 Este proyecto consiste en programar una [librería](./inc/libft.h) en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
+> Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki)
 
 [![badge](https://github.com/byaliego/42-project-badges/blob/main/badges/libftm.png)](./src)
 
@@ -61,4 +62,3 @@ Este proyecto consiste en programar una [librería](./inc/libft.h) en C. Tu libr
 |[ft_lstclear](./src/ft_lstclear_bonus.c)         |elimina **todos** los nodos de una lista y **libera** la memoria asociada a dichos nodos            |
 |[ft_lstiter](./src/ft_lstiter_bonus.c)           |aplica la función a cada elemento`content` de la lista enlazada`lst`                                |
 |[ft_lstmap](./src/ft_lstmap_bonus.c)             |crea una **nueva lista** enlazada aplicando la funcion `f` a cada elemento de la **lista original** |
-> Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki)
