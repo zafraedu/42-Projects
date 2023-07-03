@@ -4,10 +4,10 @@
 
 ## Etapas
 <p float="left" align="center">
-  <a href="https://github.com/zafraedu/42-picine">
+  <a href="https://github.com/zafraedu/42/42-picine">
     <img src="https://github.com/zafraedu/42/blob/master/public/piscine.png" width="33%"/>
   </a>
-  <a href="https://github.com/zafraedu/42-cursus">
+  <a href="https://github.com/zafraedu/42/42-cursus">
     <img src="https://github.com/zafraedu/42/blob/master/public/common_core.png" width="33%"/>
   </a>
 <!--   <a href="https://github.com/zafraedu/42-discovery_web">
