@@ -1,6 +1,6 @@
 #include "../inc/pipex.h"
 
-get_src(t_data *d, char *argv)
+static void	get_src(t_data *d, char *argv)
 {
 	d->fd_src = open(argv, O_RDONLY);
 	if (d->fd_src < 0)
@@ -12,7 +12,7 @@ get_src(t_data *d, char *argv)
 		d->file_valid = 1;
 }
 
-get_dst(t_data *d, char *argv)
+static void	get_dst(t_data *d, char *argv)
 {
 	d->fd_dst = open(argv, O_CREAT | O_RDWR | O_TRUNC, 0000644);
 	if (d->fd_dst < 0)
@@ -44,7 +44,13 @@ int	main(int argc, char **argv, char **envp)
 	}
 	d.pid_last = fork();
 	if (d.pid_last == 0)
-		child_last(d, argv, envp);
+		child_last(d, argc, argv, envp);
 	close_pipe(&d);
+	if (d.file_valid)
+		waitpid(d.pid_first, &d.status, 0);
+	waitpid(d.pid_last, &d.status, 0);
+	free_parent(&d);
+	if (d.status >> 8 > 0)
+		exit(d.status >> 8);
 	return (0);
 }

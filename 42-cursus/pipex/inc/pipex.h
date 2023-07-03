@@ -11,7 +11,6 @@
 /*---------------------------   Errors  --------------------------------------*/
 # define ERR_ARGS "Invalid argument count"
 # define ERR_CMD ": command not found"
-# define ERR_EXEC ": no such file or directory"
 # define ERR_PIPE "Failed to open pipe"
 
 /*---------------------------  Estructuras  ----------------------------------*/
@@ -32,5 +31,16 @@ typedef struct s_data
 
 /*---------------------------  Funciones  ------------------------------------*/
 //pipex
+//error msg
+char		*find_path(char **envp);
+void		error_msg(char *err, int errnum);
+void		error_msg_child(char *err, char *argv);
+//frees
+void		free_parent(t_data *d);
+void		free_child(t_data *d);
+void		close_pipe(t_data *d);
+//childs
+void		child_first(t_data d, char **argv, char **envp);
+void		child_last(t_data d, int argc, char **argv, char **envp);
 
 #endif
