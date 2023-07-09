@@ -8,6 +8,6 @@
 | 1 | [**Born2beroot**](./Born2beroot) | ![ezafra-r's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/clidn7qo5004508mork2r975c/project/3130192) |
 |||
 | 2 | [**pipex**](./pipex) | - |
-| 2 | - | - |
-| 2 | - | - |
+| 2 | ? | - |
+| 2 | push_swap | - |
 | 2 | [**Exam Rank 02**](./exam_rank_02) | - |
