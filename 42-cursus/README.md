@@ -9,5 +9,5 @@
 |||
 | 2 | [**pipex**](./pipex) | - |
 | 2 | ? | - |
-| 2 | push_swap | - |
+| 2 | **push_swap** | - |
 | 2 | [**Exam Rank 02**](./exam_rank_02) | - |
