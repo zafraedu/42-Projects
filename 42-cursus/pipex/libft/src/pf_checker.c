@@ -1,7 +1,7 @@
 #include "../inc/libft.h"
 
 static void
-flag_len(const char *str, t_block *b)
+flag_len_pf(const char *str, t_block *b)
 {
 	if (str[b->i] == 'h' && str[b->i + 1] != 'h')
 		b->flags.len_h = 1;
@@ -19,17 +19,17 @@ flag_len(const char *str, t_block *b)
 	}
 }
 
-void	ft_check_flags(const char *str, t_block *b)
+void	checkflags_pf(const char *str, t_block *b)
 {
 	while (ft_strchr(PRINTF_FLAG, str[b->i]) && str[b->i] != '\0')
 	{
 		if (str[b->i] == 'l' || str[b->i] == 'h')
-			flag_len(str, b);
+			flag_len_pf(str, b);
 	}
 }
 
 // falta las funciones -----------------------------------------
-void	ft_check_types(const char *str, t_block *b)
+void	checktypes_pf(const char *str, t_block *b)
 {
 	if (str[b->i] == '%' || str[b->i] == 'c' || str[b->i] == 's')
 		ft_converter_cs(str[b->i], b);

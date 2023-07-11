@@ -1,6 +1,6 @@
 #include "../inc/libft.h"
 
-int	ft_strlen_g(char *s)
+int	ft_strlen_gnl(char *s)
 {
 	size_t	i;
 
@@ -12,7 +12,7 @@ int	ft_strlen_g(char *s)
 	return (i);
 }
 
-char	*ft_strchr_g(char *s, int c)
+char	*ft_strchr_gnl(char *s, int c)
 {
 	unsigned int	i;
 
@@ -30,7 +30,7 @@ char	*ft_strchr_g(char *s, int c)
 	return (NULL);
 }
 
-void	*ft_calloc_g(size_t count, size_t size)
+void	*ft_calloc_gnl(size_t count, size_t size)
 {
 	char	*mem;
 	size_t	i;
@@ -47,7 +47,7 @@ void	*ft_calloc_g(size_t count, size_t size)
 	return (mem);
 }
 
-char	*ft_strjoin_g(char *s1, char *s2)
+char	*ft_strjoin_gnl(char *s1, char *s2)
 {
 	char	*new;
 	size_t	i;
@@ -55,9 +55,9 @@ char	*ft_strjoin_g(char *s1, char *s2)
 	size_t	len_s1;
 	size_t	len_s2;
 
-	len_s1 = ft_strlen_g(s1);
-	len_s2 = ft_strlen_g(s2);
-	new = ft_calloc_g((len_s1 + len_s2 + 1), sizeof(char));
+	len_s1 = ft_strlen_gnl(s1);
+	len_s2 = ft_strlen_gnl(s2);
+	new = ft_calloc_gnl((len_s1 + len_s2 + 1), sizeof(char));
 	i = 0;
 	j = 0;
 	if (new == NULL)

@@ -14,7 +14,7 @@ static char	*ft_next_line(char *buffer)
 		free(buffer);
 		return (NULL);
 	}
-	leftover = ft_calloc(ft_strlen(buffer) - i + 1, sizeof(char));
+	leftover = ft_calloc_gnl(ft_strlen_gnl(buffer) - i + 1, sizeof(char));
 	i++;
 	j = 0;
 	while (buffer[i])
@@ -33,7 +33,7 @@ static char	*ft_line(char *buffer)
 		return (NULL);
 	while (buffer[i] && buffer[i] != '\n')
 		i++;
-	line = ft_calloc(i + 2, sizeof(char));
+	line = ft_calloc_gnl(i + 2, sizeof(char));
 	i = 0;
 	while (buffer[i] && buffer[i] != '\n')
 	{
@@ -50,9 +50,9 @@ static char	*ft_read_line(int fd, char *buffer)
 	char	*tmp;
 	ssize_t	read_bytes;
 
-	tmp = ft_calloc(BUFFER_SIZE + 1, sizeof(char));
+	tmp = ft_calloc_gnl(BUFFER_SIZE + 1, sizeof(char));
 	read_bytes = 1;
-	while (read_bytes != 0 && !ft_strchr(buffer, '\n'))
+	while (read_bytes != 0 && !ft_strchr_gnl(buffer, '\n'))
 	{
 		read_bytes = read(fd, tmp, BUFFER_SIZE);
 		if (read_bytes == -1)
@@ -62,7 +62,7 @@ static char	*ft_read_line(int fd, char *buffer)
 			return (NULL);
 		}
 		tmp[read_bytes] = '\0';
-		buffer = ft_strjoin(buffer, tmp);
+		buffer = ft_strjoin_gnl(buffer, tmp);
 	}
 	free(tmp);
 	return (buffer);

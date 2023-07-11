@@ -13,12 +13,12 @@ int	ft_printf(const char *str, ...)
 		else
 		{
 			(b.i)++;
-			reset_block(&b);
-			ft_check_flags(str, &b);
-			ft_check_types(str, &b);
+			reset_block_pf(&b);
+			checkflags_pf(str, &b);
+			checktypes_pf(str, &b);
 		}
 	}
 	va_end(b.ap);
-	reset_block(&b);
+	reset_block_pf(&b);
 	return (b.ret);
 }

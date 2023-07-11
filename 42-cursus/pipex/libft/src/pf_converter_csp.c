@@ -9,18 +9,18 @@ void	ft_converter_cs(char type, t_block *b)
 	if (b->type == 'c')
 	{
 		tempc = va_arg(b->ap, int);
-		print_char((char)tempc, b);
+		print_char_pf((char)tempc, b);
 	}
 	else if (b->type == 's')
 	{
 		temps = va_arg(b->ap, char *);
 		if (!temps)
-			return (print_null(b));
+			return (print_null_pf(b));
 		b->s = ft_strdup((char *)temps);
-		print_str(b);
+		print_str_pf(b);
 	}
 	else if (b->type == '%')
-		print_char('%', b);
+		print_char_pf('%', b);
 }
 
 void	ft_converter_p(t_block *b)
@@ -33,5 +33,5 @@ void	ft_converter_p(t_block *b)
 		b->s = ft_strdup("0");
 	else
 		b->s = ft_itoa_base(addr, 16);
-	print_dig(b);
+	print_dig_pf(b);
 }

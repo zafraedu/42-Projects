@@ -24,7 +24,7 @@ void	ft_converter_id(t_block *b)
 		else
 			b->s = ft_itoa((signed int)temp);
 	}
-	print_dig(b);
+	print_dig_pf(b);
 }
 
 void	ft_converter_u(t_block *b)
@@ -49,7 +49,7 @@ void	ft_converter_u(t_block *b)
 		else
 			b->s = ft_ultoa((unsigned int)temp);
 	}
-	print_dig(b);
+	print_dig_pf(b);
 }
 
 void	ft_converter_x(char type, t_block *b)
@@ -77,7 +77,7 @@ void	ft_converter_x(char type, t_block *b)
 			ul = (unsigned int)temp;
 	}
 	b->s = ft_itoa_base(ul, 16);
-	print_dig(b);
+	print_dig_pf(b);
 }
 
 void	ft_converter_o(t_block *b)
@@ -104,5 +104,5 @@ void	ft_converter_o(t_block *b)
 			ul = (unsigned int)temp;
 	}
 	b->s = ft_itoa_base(ul, 8);
-	print_dig(b);
+	print_dig_pf(b);
 }
