@@ -82,6 +82,7 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr_fd(char *s, int fd);
 char				**ft_split(char const *s, char c);
 char				*ft_strchr(const char *str, int c);
+int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strdup(const char *str);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 char				*ft_strjoin(char const *s1, char const *s2);

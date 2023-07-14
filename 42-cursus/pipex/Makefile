@@ -1,23 +1,22 @@
-NAME = pipex.a
-LIBFT = $(LIBFT_PATH)/libft.a
+NAME = pipex
+NAME_BONUS = pipex_bonus
 
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-AR = ar rcs
 RM = rm -rf
 
-SRCS = $(wildcard src/*.c)
+SRCS = $(wildcard $(SRC_PATH)/*.c)
 OBJS = $(patsubst $(SRC_PATH)/%.c, $(OBJ_PATH)/%.o, $(SRCS))
 
-SRCS_BONUS = $(wildcard bonus/*.c)
+SRCS_BONUS = $(wildcard $(BONUS_PATH)/*.c)
 OBJS_BONUS = $(patsubst $(BONUS_PATH)/%.c, $(OBJ_PATH)/%.o, $(SRCS_BONUS))
 
 
 #########################  directorios(rutas)  #################################
-LIBFT_PATH = ./libft
 OBJ_PATH = obj
 SRC_PATH = src
 INC_PATH = inc
+LIBFT_PATH = libft
 BONUS_PATH = bonus
 
 #########################  Colores  ############################################
@@ -27,12 +26,35 @@ C = \033[36;1m
 Y = \033[33;1m
 END = \033[0m
 
+#########################  ARGS  ###############################################
+all: libft $(NAME)
+
+bonus: libft $(NAME_BONUS)
+
+libft:
+	@make -C $(LIBFT_PATH)
+
+clean:
+	$(RM) $(OBJ_PATH)
+	make clean -C $(LIBFT_PATH)
+	@echo "\n$(Y)[Cleaned $(C) '$(NAME) objects' $(Y)successfully 🧹 ✅]\n$(END)"
+
+fclean: clean
+	make fclean -C $(LIBFT_PATH)
+	$(RM) pipex pipex_bonus
+	@echo "$(R)[Removed $(C)'$(NAME)' $(R)successfully 🔥 ✅]\n$(END)"
+
+re: fclean all
+
+rebonus: fclean bonus
+
 #########################  Normas  #############################################
 $(NAME): $(OBJS)
-	make -C $(LIBFT_PATH)
-	cp $(LIBFT) ./$@
-	$(AR) $@ $(OBJS)
-	$(CC) -o pipex src/main.c $(NAME)
+	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LIBFT_PATH)/$(OBJ_PATH)/*
+	@echo "\n$(G)[Compiled $(C) $@ $(G)successfully 🛠  ✅]\n$(END)"
+
+$(NAME_BONUS): $(OBJS_BONUS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS_BONUS) $(LIBFT_PATH)/$(OBJ_PATH)/*
 	@echo "\n$(G)[Compiled $(C) $@ $(G)successfully 🛠  ✅]\n$(END)"
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c $(INC_PATH)/pipex.h
@@ -43,26 +65,4 @@ $(OBJ_PATH)/%.o: $(BONUS_PATH)/%.c $(INC_PATH)/pipex_bonus.h
 	mkdir -p $(OBJ_PATH)
 	$(CC) $(CFLAGS) -I $(INC_PATH) -c $< -o $@
 
-#########################  ARGS  ###############################################
-all: $(NAME)
-
-bonus: $(NAME) $(OBJS_BONUS)
-	$(AR) $(NAME) $(OBJS_BONUS)
-	@echo "\n$(G)[Compiled $(C) $< with bonus $(G)successfully 🛠  ✅]\n$(END)"
-
-clean:
-	$(RM) $(OBJ_PATH)
-	make clean -C $(LIBFT_PATH)
-	@echo "\n$(Y)[Cleaned $(C) $(NAME) objects $(Y)successfully 🧹 ✅]\n$(END)"
-
-fclean: clean
-	$(RM) $(NAME)
-	make fclean -C $(LIBFT_PATH)
-	$(RM) pipex
-	@echo "$(R)[Removed $(C)'$(NAME)' $(R)successfully 🔥 ✅]\n$(END)"
-
-re: fclean all
-
-rebonus: fclean bonus
-
-.PHONY: all bonus clean fclean re rebonus
+.PHONY: all bonus libft clean fclean re rebonus

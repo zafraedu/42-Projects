@@ -35,7 +35,7 @@ int	main(int argc, char **argv, char **envp)
 		err_msg(ERR_FORK);
 	else if (d.pid == 0)
 		child(&d, argv, envp);
-	wait(0);
+	waitpid(d.pid, NULL, 0);
 	parent(&d, argc, argv, envp);
 	return (0);
 }
