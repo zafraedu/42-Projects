@@ -1,10 +1,10 @@
 # libft
 Este proyecto consiste en programar una [librería](./inc/libft.h) en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
-> Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki) de este rebositorio
+> Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki) de este repositorio
 
 [![badge](https://github.com/byaliego/42-project-badges/blob/main/badges/libftm.png)](./src)
 
-## Funciones de libc
+### Funciones de libc
 | Function | Description |
 | -------- | ----------- |
 |[ft_isalpha](./src/ft_isalpha.c) |verifica si el caracter `c` es **alfabetico**                                   |
@@ -32,7 +32,7 @@ Este proyecto consiste en programar una [librería](./inc/libft.h) en C. Tu libr
 |[ft_strdup](./src/ft_strdup.c)   |asigna **MD** a una string que contien `str`                                    | 
 
 
-## Funciones adicionales
+### Funciones adicionales
 | Function | Description |
 | -------- | ----------- |
 |[ft_substr](./src/ft_substr.c)         |asigna MD a una string creada a partir del **indice**`start` de `s` con la longitud`len`                        |
@@ -50,7 +50,7 @@ Este proyecto consiste en programar una [librería](./inc/libft.h) en C. Tu libr
 > fd -> file descriptor
 
 
-## Parte bonus
+### Parte bonus
 | Function | Description |
 | -------- | ----------- |
 |[ft_lstnew](./src/ft_lstnew_bonus.c)             |crea un nuevo **nodo** y establece su contenido `content` y puntero siguiente `next`                |
