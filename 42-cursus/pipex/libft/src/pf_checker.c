@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pf_checker.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ezafra-r <ezafra-r@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/15 18:23:06 by ezafra-r          #+#    #+#             */
+/*   Updated: 2023/07/15 18:23:07 by ezafra-r         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/libft.h"
 
-static void
-flag_len_pf(const char *str, t_block *b)
+static void	flag_len_pf(const char *str, t_block *b)
 {
 	if (str[b->i] == 'h' && str[b->i + 1] != 'h')
 		b->flags.len_h = 1;

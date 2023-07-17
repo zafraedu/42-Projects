@@ -24,7 +24,6 @@ typedef struct s_data
 	char	**cmd_args;
 	char	*cmd;
 	pid_t	pid;
-	pid_t	heredoc;
 	int		i;
 	char	*str;
 

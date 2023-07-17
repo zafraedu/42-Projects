@@ -2,7 +2,7 @@
 
 void	parent(t_data *d)
 {
-	waitpid(-1, NULL, 0);
+	waitpid(d->pid, NULL, 0);
 	close(d->pipe_fd[1]);
 	dup2(d->pipe_fd[0], STDIN_FILENO);
 }
@@ -30,10 +30,10 @@ void	here_doc(t_data *d, char *limiter, int argc)
 		err_msg(ERR_ARGC);
 	if (pipe(d->pipe_fd) < 0)
 		err_msg(ERR_PIPE);
-	d->heredoc = fork();
-	if (d->heredoc < 0)
+	d->pid = fork();
+	if (d->pid < 0)
 		err_msg(ERR_FORK);
-	else if (d->heredoc == 0)
+	else if (d->pid == 0)
 	{
 		close(d->pipe_fd[0]);
 		d->str = get_next_line(0);

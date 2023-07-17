@@ -1,5 +1,27 @@
 #include "../inc/pipex_bonus.h"
 
+void	err_msg(char *err_msg)
+{
+	perror(err_msg);
+	exit(EXIT_FAILURE);
+}
+
+int	open_fd(char *file, int n)
+{
+	int	fd;
+
+	fd = 0;
+	if (n == 1)
+		fd = open(file, O_RDONLY, 0644);
+	else if (n == 2)
+		fd = open(file, O_RDWR | O_CREAT | O_TRUNC, 0644);
+	else if (n == 3)
+		fd = open(file, O_RDWR | O_CREAT | O_APPEND, 0644);
+	if (fd < 0)
+		err_msg(file);
+	return (fd);
+}
+
 static char	*find_path(char **envp)
 {
 	while (ft_strncmp("PATH", *envp, 4))
@@ -36,26 +58,4 @@ void	exec(t_data *d, char *cmd, char **envp)
 	if (!d->cmd)
 		err_msg(ERR_CMD);
 	execve(d->cmd, d->cmd_args, envp);
-}
-
-int	open_fd(char *file, int n)
-{
-	int	fd;
-
-	fd = 0;
-	if (n == 1)
-		fd = open(file, O_RDONLY, 0644);
-	else if (n == 2)
-		fd = open(file, O_RDWR | O_CREAT | O_TRUNC, 0644);
-	else if (n == 3)
-		fd = open(file, O_RDWR | O_CREAT | O_APPEND, 0644);
-	if (fd < 0)
-		err_msg(file);
-	return (fd);
-}
-
-void	err_msg(char *err_msg)
-{
-	perror(err_msg);
-	exit(EXIT_FAILURE);
 }
