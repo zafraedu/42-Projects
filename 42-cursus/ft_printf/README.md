@@ -12,7 +12,7 @@
 
 <p align="center">
 	<a href="#about">About</a> •
-	<a href="#usage">How to use</a> •
+	<a href="#usage">Usage</a> •
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
 	<a href="#norme">Norminette</a> •
