@@ -1,3 +1,4 @@
+![header born2beroot](./public/header_bor2beroot.png)
 # Born2beroot-Tutorial 🖥
 
 # Índice
@@ -8,35 +9,35 @@
 4. [Configuración de la máquina virtual ⚙️](#4-configuración-de-la-máquina-virtual-%EF%B8%8F)
 
 	4.1 [Instalación de sudo y configuración de usuarios y grupos 👤](#41---instalación-de-sudo-y-configuración-de-usuarios-y-grupos-)
-	
+
 	4.2 [Instalación y configuración de SSH 📶](#42---instalación-y-configuración-ssh-)
-	
+
 	4.3 [Instalación y configuración de UFW 🔥🧱](#4-3-instalació-y-configuración-de-ufw-)
-	
+
 	4.4 [Configurar contraseña fuerte para sudo 🔒](#4-4-configurar-contraseña-fuerte-para-sudo-)
-	
+
 	4.5 [Configuración de política de contraseñas fuerte 🔑](#4-5-configuración-de-política-de-contraseñas-fuerte-)
-	
+
 	4.6 [Conectarse via SSH 🗣](#4-6-conectarse-via-ssh-)
-	
+
 5. [Script 🚨](#5--script-)
 
 	5.1 [Resultado total del script 🆗](#5-13-resultado-total-del-script)
-	
+
 6. [Crontab ⏰](#6--crontab-)
 7. [Signature.txt 📝](#7--signaturetxt-)
 8. [Bonus ⭐](#8--bonus-%EF%B8%8F)
 
 	8.1 [Particionado manual del disco 🛠](#81--particionado-manual-del-disco)
-	
+
 	8.2 [Wordpress y configuración de servicios 🌐](#82---wordpress-y-configuración-de-servicios-)
-	
+
 	8.3 [Servicio adicional ➕](#83---servicio-adicional-)
 
 9. [Hoja de corrección ✅](#9--hoja-de-corrección-)
 
 	9.1 [Respuestas de la evaluación 💯](#9-1-respuestas-de-la-evaluación-)
-	
+
 	9.2 [Comandos de la evaluación ⌨️](#9-2-comandos-de-la-evaluación-%EF%B8%8F)
 
 
@@ -52,12 +53,12 @@ Para realizar la instalación se requiere de un software de virtualización. En 
 
 <img width="836" alt="Captura de pantalla 2022-07-13 a las 18 02 05" src="https://user-images.githubusercontent.com/66915274/178779265-38eade6e-2789-4597-89e9-5beca2d3921a.png">
 
-2 ◦ Escogemos el nombre de nuestra máquina y la carpeta donde estará ubicada. Importante introducir la maquina dentro de la carpeta sgoinfre ya que si no la ubicamos ahí nos quedaremos sin espacio y fallará la instalación (dependiendo del campus la ruta de sgoinfre puede cambiar). 
+2 ◦ Escogemos el nombre de nuestra máquina y la carpeta donde estará ubicada. Importante introducir la maquina dentro de la carpeta sgoinfre ya que si no la ubicamos ahí nos quedaremos sin espacio y fallará la instalación (dependiendo del campus la ruta de sgoinfre puede cambiar).
 
 <img width="694" alt="Screen Shot 2022-11-18 at 2 30 18 PM" src="https://user-images.githubusercontent.com/66915274/202716278-394d5ce7-1f61-4146-a1b5-1e15ed005778.png">
 
 
-3 ◦ Seleccionamos la cantidad de memoria RAM que reservaremos para la máquina. 
+3 ◦ Seleccionamos la cantidad de memoria RAM que reservaremos para la máquina.
 
 <img width="685" alt="Captura de pantalla 2022-07-13 a las 13 06 05" src="https://user-images.githubusercontent.com/66915274/178781098-8aa07fbc-e1d2-4bee-8021-ddf052880364.png">
 
@@ -85,7 +86,7 @@ Para realizar la instalación se requiere de un software de virtualización. En 
 
 <img width="962" alt="Captura de pantalla 2022-07-13 a las 18 33 28" src="https://user-images.githubusercontent.com/66915274/178785148-2904cf4f-93c0-4866-a5d6-778390bddeb7.png">
 
-10 ◦ Seleccionaremos la ISO que acabamos de descargar y le damos a ```Abrir``` y después le daremos a ```Aceptar```. 
+10 ◦ Seleccionaremos la ISO que acabamos de descargar y le damos a ```Abrir``` y después le daremos a ```Aceptar```.
 
 <img width="790" alt="Captura de pantalla 2022-07-13 a las 18 38 39" src="https://user-images.githubusercontent.com/66915274/178786115-24f93fde-bc01-4e60-bf8d-20d7a5ae83be.png">
 
@@ -95,7 +96,7 @@ Para realizar la instalación se requiere de un software de virtualización. En 
 
 ## 3- Instalación Debian 🌀
 
-➤ Espera❗️ Tu vista es muy importante 👀❗️ Para poder hacer la ventana más grande debes hacer lo siguiente: 
+➤ Espera❗️ Tu vista es muy importante 👀❗️ Para poder hacer la ventana más grande debes hacer lo siguiente:
 
 <img width="666" alt="Captura de pantalla 2022-07-13 a las 18 51 41" src="https://user-images.githubusercontent.com/66915274/178788620-61064b58-0c0c-4f48-815e-60b4a8eaecae.png">
 
@@ -107,7 +108,7 @@ Utiliza la tecla ```command``` para que la captura del ratón pase de la maquina
 
 <img width="632" alt="Captura de pantalla 2022-07-13 a las 18 58 48" src="https://user-images.githubusercontent.com/66915274/178789643-e987c6d0-5b6f-4b98-ad4a-5c092a352183.png">
 
-2 ◦ Escogeremos el idioma que usaremos para la instalación y el predeterminado que se le quedará al sistema ```English```.  
+2 ◦ Escogeremos el idioma que usaremos para la instalación y el predeterminado que se le quedará al sistema ```English```.
 
 <img width="794" alt="Captura de pantalla 2022-07-13 a las 19 00 41" src="https://user-images.githubusercontent.com/66915274/178789949-4fe83ac8-23b8-4f82-a034-a6d5e81d4f17.png">
 
@@ -115,7 +116,7 @@ Utiliza la tecla ```command``` para que la captura del ratón pase de la maquina
 
 <img width="791" alt="Captura de pantalla 2022-07-13 a las 19 07 50" src="https://user-images.githubusercontent.com/66915274/178791067-44230a4c-e647-46cb-9d6f-bc441bf0227b.png">
 
-4 ◦ Como he seleccionado other debo indicar mi continente o region. En mi caso pongo ```Europe``` 🇪🇺. 
+4 ◦ Como he seleccionado other debo indicar mi continente o region. En mi caso pongo ```Europe``` 🇪🇺.
 
 <img width="797" alt="Captura de pantalla 2022-07-13 a las 19 09 58" src="https://user-images.githubusercontent.com/66915274/178791387-78171f90-2834-42ab-aedb-9cf900d0ecd5.png">
 
@@ -131,7 +132,7 @@ Utiliza la tecla ```command``` para que la captura del ratón pase de la maquina
 
 <img width="793" alt="Captura de pantalla 2022-07-13 a las 19 02 21" src="https://user-images.githubusercontent.com/66915274/178790230-d2571d4f-a546-4b43-bd44-c6a591d92d72.png">
 
-8 ◦ En este paso debemos elegir el ```Host Name``` de la máquina, el cual debe ser tu login seguido de 42. 
+8 ◦ En este paso debemos elegir el ```Host Name``` de la máquina, el cual debe ser tu login seguido de 42.
 
 <img width="792" alt="Captura de pantalla 2022-07-13 a las 19 17 23" src="https://user-images.githubusercontent.com/66915274/178792607-1cc585eb-ae32-4b2c-97fd-4fcf5bad4262.png">
 
@@ -169,7 +170,7 @@ Volvemos a poner el nombre de usuario.
 <img width="796" alt="Captura de pantalla 2022-07-13 a las 19 33 13" src="https://user-images.githubusercontent.com/66915274/178795367-b82018de-edc8-47d3-8cd6-b90c5e3be2fa.png">
 
 
-16 ◦ Seleccionamos el disco en el que queremos hacer el particionado (Solo debe haber un disco). 
+16 ◦ Seleccionamos el disco en el que queremos hacer el particionado (Solo debe haber un disco).
 
 <img width="789" alt="Captura de pantalla 2022-07-13 a las 19 40 03" src="https://user-images.githubusercontent.com/66915274/178796481-29ef7ebc-0518-40f0-9429-3f43316b35d3.png">
 
@@ -201,7 +202,7 @@ Volvemos a poner el nombre de usuario.
 
 <img width="770" alt="Screen Shot 2023-03-08 at 1 46 52 PM" src="https://user-images.githubusercontent.com/66915274/223716940-b2e29ee7-3c98-434e-bccd-ac21d72eda2d.png">
 
-24 ◦ Seleccionamos la opción ```No``` ya que no necesitamos paquetes adicionales. 
+24 ◦ Seleccionamos la opción ```No``` ya que no necesitamos paquetes adicionales.
 
 <img width="770" alt="Captura de pantalla 2022-07-13 a las 20 05 42" src="https://user-images.githubusercontent.com/66915274/178801099-2dda24f5-0d46-4184-8c44-a8fe0bf46527.png">
 
@@ -233,7 +234,7 @@ Volvemos a poner el nombre de usuario.
 
 <img width="792" alt="Captura de pantalla 2022-07-13 a las 20 35 46" src="https://user-images.githubusercontent.com/66915274/178806441-f1bf3159-4e09-4c9a-9102-b3261c9000d8.png">
 
-32 ◦ Le daremos a ```Continue``` para finalizar la instalación. 
+32 ◦ Le daremos a ```Continue``` para finalizar la instalación.
 
 <img width="794" alt="Captura de pantalla 2022-07-13 a las 20 39 30" src="https://user-images.githubusercontent.com/66915274/178807102-e2a9722e-791f-48a0-ae35-b05b36a37ed2.png">
 
@@ -257,7 +258,7 @@ Volvemos a poner el nombre de usuario.
 
 <img width="796" alt="Captura de pantalla 2022-07-14 a las 1 36 46" src="https://user-images.githubusercontent.com/66915274/178855273-fc76689c-224b-4368-b7b1-5d1954427aff.png">
 
-2 ◦ Debemos reiniciar la máquina para que se apliquen los cambios. Para ello haremos uso del comando ```sudo reboot``` y esperaremos a que se reinicie. 
+2 ◦ Debemos reiniciar la máquina para que se apliquen los cambios. Para ello haremos uso del comando ```sudo reboot``` y esperaremos a que se reinicie.
 
 <img width="514" alt="Captura de pantalla 2022-07-14 a las 2 02 24" src="https://user-images.githubusercontent.com/66915274/178857108-a51988e1-084c-498c-86c6-98ab5a3b1305.png">
 
@@ -269,7 +270,7 @@ Volvemos a poner el nombre de usuario.
 
 <img width="509" alt="Captura de pantalla 2022-07-14 a las 2 15 11" src="https://user-images.githubusercontent.com/66915274/178858240-95ce2a2b-004a-4bcb-981a-7990c1cc4fdd.png">
 
-5 ◦ Ahora deberemos crear un nuevo grupo llamado ```user42```. Para crearlo debemos hacer ```sudo addgroup user42```. 
+5 ◦ Ahora deberemos crear un nuevo grupo llamado ```user42```. Para crearlo debemos hacer ```sudo addgroup user42```.
 
 <img width="367" alt="Screen Shot 2022-10-26 at 6 30 52 PM" src="https://user-images.githubusercontent.com/66915274/198082677-d393243e-363a-4d1f-95d8-a6695336a47a.png">
 
@@ -329,7 +330,7 @@ Una vez hayamos modificado esas líneas debemos guardar los cambios realizados s
 
 <img width="501" alt="Captura de pantalla 2022-07-14 a las 3 48 56" src="https://user-images.githubusercontent.com/66915274/178872582-8277e687-8ab7-4087-bd17-a71e5e86d5e6.png">
 
-Editaremos la siguiente línea: 
+Editaremos la siguiente línea:
 
 ➤ #Port 22 -> Port 4242
 
@@ -402,7 +403,7 @@ Defaults  secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/
 
 <img width="493" alt="Captura de pantalla 2022-07-16 a las 2 54 06" src="https://user-images.githubusercontent.com/66915274/179327943-67432d4a-7042-44ea-96f4-5975556ce4dc.png">
 
-2 ◦ Una vez estemos editando el fichero modificaremos los siguientes parametros: 
+2 ◦ Una vez estemos editando el fichero modificaremos los siguientes parametros:
 
 ➤ PASS_MAX_DAYS 99999 -> PASS_MAX_DAYS 30
 
@@ -417,11 +418,11 @@ PASS_MIN_DAYS: El número mínimo de días permitido antes de modificar una cont
 
 PASS_WARN_AGE: El usuario recibira un mensaje de aviso indicando que faltan los dias especificados para que expire su contraseña.
 
-3 ◦ Para poder seguir con la configuración debemos instalar los siguientes paquetes con este comando ```sudo apt install libpam-pwquality``` , acto seguido pondremos ```Y``` para confirmar la instalación y esperaremos a que termine. 
+3 ◦ Para poder seguir con la configuración debemos instalar los siguientes paquetes con este comando ```sudo apt install libpam-pwquality``` , acto seguido pondremos ```Y``` para confirmar la instalación y esperaremos a que termine.
 
 <img width="770" alt="Captura de pantalla 2022-07-16 a las 3 13 52" src="https://user-images.githubusercontent.com/66915274/179328708-c5054703-bdb0-4cca-82a8-6ab25ce42b40.png">
 
-4 ◦ Lo siguiente que debemos hacer es volver a editar un fichero y modificar algunas líneas. Haremos ```nano /etc/pam.d/common-password```. 
+4 ◦ Lo siguiente que debemos hacer es volver a editar un fichero y modificar algunas líneas. Haremos ```nano /etc/pam.d/common-password```.
 
 <img width="500" alt="Captura de pantalla 2022-07-16 a las 3 27 02" src="https://user-images.githubusercontent.com/66915274/179329260-0e18bd27-a522-4c7c-86bf-21823eee0f8b.png">
 
@@ -459,7 +460,7 @@ maxrepeat=3 ➤ No puede tener más de 3 veces seguidas el mismo caracter.
 
 reject_username ➤ No puede contener el nombre del usuario.
 
-difok=7 ➤  Debe tener al menos 7 caracteres que no sean parte de la antigua contraseña. 
+difok=7 ➤  Debe tener al menos 7 caracteres que no sean parte de la antigua contraseña.
 
 enforce_for_root ➤ Implementaremos esta política para el usuario root.
 
@@ -493,9 +494,9 @@ Esta es una parte muy importante del proyecto. Debes prestar atención en todo, 
 
 🧠 <b>Que es un script❓</b> Es una secuencia de comandos guardada en un fichero que cuando se ejecuta hara la funcion de cada comando.
 
-### 5-1 Architecture 
+### 5-1 Architecture
 
-Para poder ver la arquitectura del SO y su versión de kernel utilizaremos el comando ```uname -a``` ( "-a" == "--all" ) que basicamente printara toda la información excepto si el tipo de procesador es desconocido o la plataforma de hardware. 
+Para poder ver la arquitectura del SO y su versión de kernel utilizaremos el comando ```uname -a``` ( "-a" == "--all" ) que basicamente printara toda la información excepto si el tipo de procesador es desconocido o la plataforma de hardware.
 
 <img width="715" alt="Screen Shot 2022-10-27 at 4 50 06 PM" src="https://user-images.githubusercontent.com/66915274/198322524-8c2d305f-bfe8-4e4a-bf31-6a883af71ad3.png">
 
@@ -549,7 +550,7 @@ Por último debemos mostrar un porcentaje de la memoria usada. Para ello , de nu
 
 ### 5-6 Porcentaje uso de CPU
 
-Para poder ver el porcentaje de uso de CPU haremos uso del comando ```vmstat``` este muestra estadísticas del sistema, permitiendo obtener un detalle general de los procesos, uso de memoria, actividad de CPU, estado del sistema, etc. Podriamos poner si ninguna opción pero en mi caso pondré un intervalo de segundos de 1 a 4. Tambien daremos uso del comando ```tail -1``` que este lo que nos va a permitir es que solo produzca el output la ultima linea, entonces de las 4 generadas solo se printara la ultima. Por ultimo solo printaremos la palabra 15 que es el uso de memoria disponible. El comando entero es el siguiente: ```vmstat 1 4 | tail -1 | awk '{print %15}'```. El resultado de este comando solo es una parte del resultado final ya que todavia hay que hacer alguna operación en el script para que quede bien. Lo que habria que hacer es a 100 restarle la cantidad que nos ha devuelto nuestro comando, el resultado de esa operación lo printaremos con un decimal y un % al final y ya estaría hecha la operación. 
+Para poder ver el porcentaje de uso de CPU haremos uso del comando ```vmstat``` este muestra estadísticas del sistema, permitiendo obtener un detalle general de los procesos, uso de memoria, actividad de CPU, estado del sistema, etc. Podriamos poner si ninguna opción pero en mi caso pondré un intervalo de segundos de 1 a 4. Tambien daremos uso del comando ```tail -1``` que este lo que nos va a permitir es que solo produzca el output la ultima linea, entonces de las 4 generadas solo se printara la ultima. Por ultimo solo printaremos la palabra 15 que es el uso de memoria disponible. El comando entero es el siguiente: ```vmstat 1 4 | tail -1 | awk '{print %15}'```. El resultado de este comando solo es una parte del resultado final ya que todavia hay que hacer alguna operación en el script para que quede bien. Lo que habria que hacer es a 100 restarle la cantidad que nos ha devuelto nuestro comando, el resultado de esa operación lo printaremos con un decimal y un % al final y ya estaría hecha la operación.
 
 <img width="580" alt="Captura de pantalla 2022-08-03 a las 0 33 39" src="https://user-images.githubusercontent.com/66915274/182484896-def71bf0-b7eb-49d8-b83b-a019d15f62f1.png">
 
@@ -567,7 +568,7 @@ Para checkear si LVM esta activo o no haremos uso del comando lsblk , este nos m
 
 ### 5-9 Conexiones TCP
 
-Para mirar el numero de conexiones TCP establecidas. Utilizaremos el comando ```ss``` sustituyendo al ya obsoleto netstat. Filtraremos con el flag ```-ta``` para que solo se muestren las conexiones TCP. Por último haremos un grep para ver las que estan establecidas ya que tambien hay solo de escucha y cerraremos con wc -l para que cuente el numero de lineas. El comando queda tal que asi: ```ss -ta | grep ESTAB | wc -l```. 
+Para mirar el numero de conexiones TCP establecidas. Utilizaremos el comando ```ss``` sustituyendo al ya obsoleto netstat. Filtraremos con el flag ```-ta``` para que solo se muestren las conexiones TCP. Por último haremos un grep para ver las que estan establecidas ya que tambien hay solo de escucha y cerraremos con wc -l para que cuente el numero de lineas. El comando queda tal que asi: ```ss -ta | grep ESTAB | wc -l```.
 
 <img width="479" alt="Captura de pantalla 2022-08-03 a las 0 53 36" src="https://user-images.githubusercontent.com/66915274/182487028-746244f8-2cda-4dc7-a14c-b2e5a7e0dc51.png">
 
@@ -666,13 +667,13 @@ Resultado tras la ejecución del script ↙️
 
 🧠 <b>Que es crontab? </b>Es un administrador de procesos en segundo plano. Los procesos indicados seran ejecutados en el momento que especifiques en el fichero crontab.
 
-Para tener correctamente crontab configurado debemos editar el fichero crontab con el siguiente comando ```sudo crontab -u root -e```. 
+Para tener correctamente crontab configurado debemos editar el fichero crontab con el siguiente comando ```sudo crontab -u root -e```.
 
-En el fichero debemos añadir el siguiente comando para que el script se ejecute cada 10 minutos ```*/10 * * * * sh /ruta del script```. 
+En el fichero debemos añadir el siguiente comando para que el script se ejecute cada 10 minutos ```*/10 * * * * sh /ruta del script```.
 
 <img width="798" alt="Captura de pantalla 2022-08-03 a las 4 40 18" src="https://user-images.githubusercontent.com/66915274/182512395-eaebabc2-5866-4ae3-966c-1a80818cde07.png">
 
-Funcionamiento de cada parametro de crontab: 
+Funcionamiento de cada parametro de crontab:
 
 m ➤ Corresponde al minuto en que se va a ejecutar el script, el valor va de 0 a 59.
 
@@ -691,7 +692,7 @@ Para obtener la firma lo primero que debemos hacer es apagar la máquina virtual
 
 <img width="834" alt="Captura de pantalla 2022-08-03 a las 4 47 32" src="https://user-images.githubusercontent.com/66915274/182513283-1cfc319f-982d-47cf-a596-8475d4c96616.png">
 
-El siguiente paso será ubicarnos en la ruta donde tengamos el .vdi de nuestra maquina virtual. 
+El siguiente paso será ubicarnos en la ruta donde tengamos el .vdi de nuestra maquina virtual.
 
 <img width="465" alt="Screen Shot 2022-08-03 at 4 57 37 AM" src="https://user-images.githubusercontent.com/66915274/182514499-f0ad5ba7-c0c2-493e-b0ae-9b79c970816e.png">
 
@@ -743,7 +744,7 @@ Descripción breve de todos los tipos de particiones:
 
 ◦ <b>Secundario/Extendida:</b>  Fue ideada para romper la limitación de 4 particiones primarias en un solo disco físico. Solo puede existir una partición de este tipo por disco, y solo sirve para contener particiones lógicas.
 
-◦ <b>Lógica:</b>  Ocupa una porción de la partición extendida/primaria o la totalidad de la misma, la cual se ha formateado con un tipo específico de sistema de archivos (en nuestro caso usaremos ext4) y se le ha asignado una unidad, así el sistema operativo reconoce las particiones lógicas o su sistema de archivos. Puede haber un máximo de 23 particiones lógicas en una partición extendida , sin embargo linux el SO con el que trabajamos actualmente lo reduce a 15, más que suficientes para realizar este proyecto. 
+◦ <b>Lógica:</b>  Ocupa una porción de la partición extendida/primaria o la totalidad de la misma, la cual se ha formateado con un tipo específico de sistema de archivos (en nuestro caso usaremos ext4) y se le ha asignado una unidad, así el sistema operativo reconoce las particiones lógicas o su sistema de archivos. Puede haber un máximo de 23 particiones lógicas en una partición extendida , sin embargo linux el SO con el que trabajamos actualmente lo reduce a 15, más que suficientes para realizar este proyecto.
 
 8 ◦ Seleccionaremos beginning ya que queremos que la nueva partición se cree al principio del espacio disponible.
 
@@ -831,7 +832,7 @@ Descripción breve de todos los tipos de particiones:
 
 <img width="722" alt="Screen Shot 2022-10-23 at 4 49 01 PM" src="https://user-images.githubusercontent.com/66915274/197398875-3fa85638-7105-42bf-bbc2-e189fbbc1918.png">
 
-29 ◦ Configuraremos el gestor de volumenes logicos. 
+29 ◦ Configuraremos el gestor de volumenes logicos.
 
 <img width="785" alt="Screen Shot 2022-10-23 at 4 50 17 PM" src="https://user-images.githubusercontent.com/66915274/197398933-85e0025e-0a4d-41f0-8fd0-5f0c8ee32e9b.png">
 
@@ -847,7 +848,7 @@ Descripción breve de todos los tipos de particiones:
 
 <img width="695" alt="Screen Shot 2022-10-23 at 4 52 58 PM" src="https://user-images.githubusercontent.com/66915274/197399065-1ac8d80d-9e18-4b4a-a60f-11496e7de26d.png">
 
-33 ◦ Seleccionaremos la partición donde queremos cear el grupo. 
+33 ◦ Seleccionaremos la partición donde queremos cear el grupo.
 
 <img width="590" alt="Screen Shot 2022-10-23 at 4 53 22 PM" src="https://user-images.githubusercontent.com/66915274/197399089-5ea5f48e-176c-4278-8b14-a13b7f5ee45c.png">
 
@@ -858,7 +859,7 @@ Descripción breve de todos los tipos de particiones:
 
 <img width="457" alt="Screen Shot 2022-10-23 at 4 53 50 PM" src="https://user-images.githubusercontent.com/66915274/197399108-fb566eb4-664f-4509-8948-ab4ed04407b5.png">
 
-35 ◦ Empezaremos escogiendo el grupo donde queremos que se creen. Seleccionamos el único disponible (el que acabamos de crear). 
+35 ◦ Empezaremos escogiendo el grupo donde queremos que se creen. Seleccionamos el único disponible (el que acabamos de crear).
 
 <img width="760" alt="Screen Shot 2022-10-23 at 4 54 02 PM" src="https://user-images.githubusercontent.com/66915274/197399115-e7d3b313-763c-421c-a71d-850d318432e7.png">
 
@@ -941,11 +942,11 @@ Descripción breve de todos los tipos de particiones:
 
 <img width="782" alt="Screen Shot 2022-10-23 at 5 10 55 PM" src="https://user-images.githubusercontent.com/66915274/197399976-9b871bda-9425-4dbe-b8c9-25c8c6d6c811.png">
 
-47 ◦ Escogemos el sistema de archivos Ext4, es el sistema de archivos más utilizado en distribuciones Linux.  
+47 ◦ Escogemos el sistema de archivos Ext4, es el sistema de archivos más utilizado en distribuciones Linux.
 
 <img width="412" alt="Screen Shot 2022-10-23 at 5 11 18 PM" src="https://user-images.githubusercontent.com/66915274/197400000-2e855fc9-10b1-4f3e-9c58-85b6ff02a4fb.png">
 
-48 ◦ Ahora debemos seleccionar el punto de montaje. 
+48 ◦ Ahora debemos seleccionar el punto de montaje.
 
 <img width="782" alt="Screen Shot 2022-10-23 at 5 11 44 PM" src="https://user-images.githubusercontent.com/66915274/197400023-387a70aa-b491-43c0-91d2-cb378da9fc75.png">
 
@@ -1051,7 +1052,7 @@ Descripción breve de todos los tipos de particiones:
 
 ![image](https://user-images.githubusercontent.com/66915274/197602944-13ca67b2-bcc5-476c-84dc-aadc5e1d3baf.png)
 
-61 ◦ Seleccionamos la opción ```No``` ya que no necesitamos paquetes adicionales. 
+61 ◦ Seleccionamos la opción ```No``` ya que no necesitamos paquetes adicionales.
 
 <img width="770" alt="Captura de pantalla 2022-07-13 a las 20 05 42" src="https://user-images.githubusercontent.com/66915274/178801099-2dda24f5-0d46-4184-8c44-a8fe0bf46527.png">
 
@@ -1083,7 +1084,7 @@ Descripción breve de todos los tipos de particiones:
 
 <img width="792" alt="Captura de pantalla 2022-07-13 a las 20 35 46" src="https://user-images.githubusercontent.com/66915274/178806441-f1bf3159-4e09-4c9a-9102-b3261c9000d8.png">
 
-69 ◦ Le daremos a ```Continue``` para finalizar la instalación. 
+69 ◦ Le daremos a ```Continue``` para finalizar la instalación.
 
 <img width="794" alt="Captura de pantalla 2022-07-13 a las 20 39 30" src="https://user-images.githubusercontent.com/66915274/178807102-e2a9722e-791f-48a0-ae35-b05b36a37ed2.png">
 
@@ -1093,7 +1094,7 @@ Descripción breve de todos los tipos de particiones:
 
 ### 8.2 - Wordpress y configuración de servicios 🌐
 
-### Lighttpd 
+### Lighttpd
 
 🧠 <b> Que es Lighttpd❓</b> Es un servidor web diseñado para ser rápido, seguro, flexible, y fiel a los estándares. Está optimizado para entornos donde la velocidad es muy importante. Esto se debe a que consume menos CPU y memoria RAM que otros servidores.
 
@@ -1113,7 +1114,7 @@ Descripción breve de todos los tipos de particiones:
 
 <img width="877" alt="Screen Shot 2022-11-18 at 2 49 56 PM" src="https://user-images.githubusercontent.com/66915274/202720044-d7a51add-c5ee-4da4-9057-258e47cfd036.png">
 
-### WordPress 
+### WordPress
 
 🧠 <b> Que es Wordpress❓</b> Es un sistema de gestión de contenidos enfocado a la creación de cualquier tipo de página web.
 
@@ -1151,7 +1152,7 @@ Descripción breve de todos los tipos de particiones:
 
 ### Mariadb
 
-🧠 <b> Que es MariaDB❓</b> Es una base de datos. Se utiliza para diversos fines, como el almacenamiento de datos, el comercio electrónico, funciones a nivel empresarial y las aplicaciones de registro. 
+🧠 <b> Que es MariaDB❓</b> Es una base de datos. Se utiliza para diversos fines, como el almacenamiento de datos, el comercio electrónico, funciones a nivel empresarial y las aplicaciones de registro.
 
 1 ◦ Instalaremos los paquetes con el comando ```sudo apt install mariadb-server```
 
@@ -1178,7 +1179,7 @@ Switch to unix_socket autentication? Escogemos ```N``` porque no deseamos que ca
 
 Change the root password? Escogemos ```N```. No deseamos cambiar la contraseña del usuario root. Por defecto no tenemos contraseña pero en mariadb realmente no es root ya que debemos darle permisos de administrador.
 
-Remove anonymous users? Escogemos ```Y```. Por defecto cuando instalas mariadb tiene un usuario anonimo, lo que permite que cualquier persona inicie sesión en mariadb sin tener que crear una cuenta de usuario propia. Esto esta diseñado para realizar pruebas y que la instalación sea más fluida. Cuando dejemos el entorno de desarrollo y queramos pasar a un entorno de producción debemos eliminar los usuarios anonimos. 
+Remove anonymous users? Escogemos ```Y```. Por defecto cuando instalas mariadb tiene un usuario anonimo, lo que permite que cualquier persona inicie sesión en mariadb sin tener que crear una cuenta de usuario propia. Esto esta diseñado para realizar pruebas y que la instalación sea más fluida. Cuando dejemos el entorno de desarrollo y queramos pasar a un entorno de producción debemos eliminar los usuarios anonimos.
 
 Disallow root login remotely? Escogemos ```Y```. Al deshabilitar el inicio de sesion en root de forma remota evitaremos que alguien pueda adivinar la contraseña root. Solo podremos conectarnos al root desde localhost.
 
@@ -1276,7 +1277,7 @@ Hay que remplazarlos por los valores que hemos puesto anteriormente cuando creá
 
 <img width="359" alt="Screen Shot 2023-04-01 at 9 06 44 PM" src="https://user-images.githubusercontent.com/66915274/229309653-02e398e9-0c28-470e-825d-1431f7ca2bc2.png">
 
-12 ◦ Una vez accedamos ya podemos modificar lo que queramos a gusto propio. Personalizar la página es algo opcional, como no está especificado en el subject en esta guia no se tratará nada al respecto. 
+12 ◦ Una vez accedamos ya podemos modificar lo que queramos a gusto propio. Personalizar la página es algo opcional, como no está especificado en el subject en esta guia no se tratará nada al respecto.
 
 <img width="1100" alt="Screen Shot 2023-04-01 at 9 07 38 PM" src="https://user-images.githubusercontent.com/66915274/229309676-b670be09-47dd-445f-969a-bb41131aa3f9.png">
 
@@ -1373,7 +1374,7 @@ Reglas en el reenvio de puertos.
 
 ### ▪️ Que es una maquina virtual❓
 
-Es un software que simula un sistema de computación y puede ejecutar programas como si fuese una computadora real. Permite crear múltiples entornos simulados o recursos dedicados desde un solo sistema de hardware físico. 
+Es un software que simula un sistema de computación y puede ejecutar programas como si fuese una computadora real. Permite crear múltiples entornos simulados o recursos dedicados desde un solo sistema de hardware físico.
 
 ### ▪️ Porque has escogido Debian❓
 
@@ -1389,7 +1390,7 @@ Su objetivo es el de proporcionar un entorno de ejecución independiente de la p
 
 ### ▪️ Diferencias entre apt y aptitude ↙️
 
-Aptitude es una version mejorada de apt. APT es un administrador de paquetes de nivel inferior y aptitude es un administrador de paquetes de alto nivel. Otra gran diferencia es la funcionalidad que ofrecen ambas herramientas. Aptitude ofrece una mejor funcionalidad en comparación con apt-get. Ambos son capaces de de proporcionar los medios necesarios para realizar la gestión de paquetes. Sin embargo, si se busca un enfoque con mas caracteristicas, debería ser, Aptitude. 
+Aptitude es una version mejorada de apt. APT es un administrador de paquetes de nivel inferior y aptitude es un administrador de paquetes de alto nivel. Otra gran diferencia es la funcionalidad que ofrecen ambas herramientas. Aptitude ofrece una mejor funcionalidad en comparación con apt-get. Ambos son capaces de de proporcionar los medios necesarios para realizar la gestión de paquetes. Sin embargo, si se busca un enfoque con mas caracteristicas, debería ser, Aptitude.
 
 ### ▪️ Que es APPArmor❓
 
@@ -1443,7 +1444,7 @@ Utilizaremos el comando ```ls /usr/bin/*session``` y nos debe aparecer el mismo 
 
 <img width="465" alt="Screen Shot 2022-11-24 at 3 29 45 AM" src="https://user-images.githubusercontent.com/66915274/203680847-b4555fd4-f847-4bce-b944-edf3e7720c99.png">
 
-7 ◦ Creamos un nuevo grupo llamado "evaluating". 
+7 ◦ Creamos un nuevo grupo llamado "evaluating".
 
 ```sudo addgroup evaluating```
 

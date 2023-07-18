@@ -1,4 +1,5 @@
-# libft
+![header libft](./public/header_libft.png)
+
 El primer proyecto en 42, libft, consiste en aprender cómo funcionan las funciones estándar de la programación C escribiéndolas desde cero y creando una biblioteca personal. Este proyecto es vital ya que la biblioteca se utilizará en asignaciones futuras en 42.
 Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
 
@@ -32,7 +33,7 @@ Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá
 |[ft_strnstr](./src/ft_strnstr.c) |busca la primera aparición de la **subcadena** `needle` en la cadena `haystack` |
 |[ft_atoi](./src/ft_atoi.c)       |convierte `str` en un `int`                                                     |
 |[ft_calloc](./src/ft_calloc.c)   |asigna **Mermoria Dinamica** a una string empezada por datos **nulos**          |
-|[ft_strdup](./src/ft_strdup.c)   |asigna **MD** a una string que contien `str`                                    | 
+|[ft_strdup](./src/ft_strdup.c)   |asigna **MD** a una string que contien `str`                                    |
 
 
 ### Funciones adicionales
@@ -49,7 +50,7 @@ Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá
 |[ft_putendl_fd](./src/ft_putendl_fd.c) |imprime `s` al `fd` con un **salto de linea** al final                                                          |
 |[ft_putnbr_fd](./src/ft_putnbr_fd.c)   |imprime el numero `n` al `fd`                                                                                   |
 > MD -> Memoria Dinamica
-> 
+>
 > fd -> file descriptor
 
 
