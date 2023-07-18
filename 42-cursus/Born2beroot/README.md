@@ -1,7 +1,7 @@
 ![header born2beroot](./public/header_bor2beroot.png)
 # Born2beroot-Tutorial 🖥
 
->[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+>[Click aquí](./public/en_subject.pdf) para ver el `PDF` del proyecto.
 
 # Índice
 
