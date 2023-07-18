@@ -51,14 +51,14 @@ make
 
 Para usar en tu código, incluye el encabezado
 ```c
-#include "ruta/libftprintf.h"
+#include "ruta/ft_printf.h"
 ```
 
 ### Ejemplo de uso
 Para el ejemplo creamos un archivo `main.c`.
 ```c
 // Include the header
-#include "ft_printf.h"
+#include "./inc/ft_printf.h"
 
 int main(void)
 {
