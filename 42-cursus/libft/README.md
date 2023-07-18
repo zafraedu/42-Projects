@@ -6,7 +6,6 @@ Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá
 [Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto
 > Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki) de este repositorio
 
-[![badge](https://github.com/byaliego/42-project-badges/blob/main/badges/libftm.png)](./src)
 
 ### Funciones de libc
 | Function | Description |
