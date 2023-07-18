@@ -17,7 +17,7 @@
 	<a href="#bonus">Bonus</a> •
 	<a href="#norme">Norminette</a> •
 	<a href="#license">License</a> •
-	<a href="https://github.com/zafraedu/42/wiki">Wiki</a>
+	<a href="https://github.com/zafraedu/42/wiki/libft">Wiki</a>
 </p>
 
 ## ABOUT
@@ -50,7 +50,7 @@ make
 - `make` - Compila los archivos ***mandatory*** de libft y genera *libft.a*;
 - `make bonus` - Compila los archivos ***bonus*** y los agrega al *libft.a*;
 - `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
-- `make fclean` - Elimina todos los objetos más el libft.añ
+- `make fclean` - Elimina todos los objetos más el *libft.a*;
 - `make re` - usa `make fclean` + `make`;
 
 ## MANDATORY
