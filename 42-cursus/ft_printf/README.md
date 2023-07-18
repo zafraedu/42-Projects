@@ -28,7 +28,7 @@ También brinda una valiosad oportunidad de aprendizaje en estructuras y argumen
 particularmente si tenemos la intención de incorporar banderas adicionales en nuestra implementación de printf (parte bonus).
 Una vez que valides el proyecto, podrás utilizar esta función en tus futuros proyectos.
 
-[Haga clic](./public/es_subject.pdf) aquí para ver el tema de este proyecto.
+[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
 
 > **Warning**  
 > Este proyecto ha sido implementado directamente sobre el proyecto Libft (submódulo).  
