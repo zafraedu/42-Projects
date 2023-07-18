@@ -1,13 +1,62 @@
 ![header libft](./public/header_libft.png)
 
+<div align="center">
+    <img src='https://img.shields.io/badge/Málaga-00599C?style=flat&logo=42&logoColor=white'/>
+    <img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
+    <img src="https://img.shields.io/badge/score-125%20%2F%20100-success?color=%2300599C&style=flat" />
+    <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
+</div>
+
+---
+
+<p align="center">
+	<a href="#about">About</a> •
+	<a href="#how-to-use">How to use</a> •
+	<a href="#mandatory">Mandatory</a> •
+	<a href="#bonus">Bonus</a> •
+	<a href="#norme">Norminette</a> •
+	<a href="#license">License</a>
+</p>
+
+## ABOUT
 El primer proyecto en 42, libft, consiste en aprender cómo funcionan las funciones estándar de la programación C escribiéndolas desde cero y creando una biblioteca personal. Este proyecto es vital ya que la biblioteca se utilizará en asignaciones futuras en 42.
 Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
 
 [Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto
 > Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki) de este repositorio
 
+## HOW TO USE
+### Compilation
+#### Clonar el repositorio
+```bash
+git clone git@github.com:zafraedu/42.git
+```
+> Este no es el repositorio de libft y si de todos los proyectos de 42
 
-### Funciones de libc
+#### Entrar en el repositorio del proyecto y ejecurar `make`
+```bash
+cd 42/42-cursus/libft
+make
+```
+
+#### Para usar en tu código, incluye el encabezado
+```c
+#include "ruta/libft.h"
+```
+
+### Makefile Rules
+- `make` - Compila los archivos ***mandatory*** de libft y genera *libft.a*;
+- `make bonus` - Compila los archivos ***bonus*** y los agrega al *libft.a*;
+- `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
+- `make fclean` - Elimina todos los objetos más el libft.añ
+- `make re` - usa `make fclean` + `make`;
+
+## MANDATORY
+### Funciones libc
+Deberás rehacer algunas funciones de la *libc*. Tus funciones tendrán los mismos prototipos e implementarán los mismos comportamientos que las funciones originales.
+
+Deberán ser tal y como las describe el `man`, la única diferencia será la nomenclatura: empezarán con el prefijo `ft_`.
+
 | Function | Description |
 | -------- | ----------- |
 |[ft_isalpha](./src/ft_isalpha.c) |verifica si el caracter `c` es **alfabetico**                                   |
@@ -31,11 +80,16 @@ Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá
 |[ft_memcmp](./src/ft_memcmp.c)   |compara los primeros `size` de **datos** de `s1` y `s2`                         |
 |[ft_strnstr](./src/ft_strnstr.c) |busca la primera aparición de la **subcadena** `needle` en la cadena `haystack` |
 |[ft_atoi](./src/ft_atoi.c)       |convierte `str` en un `int`                                                     |
+|||
 |[ft_calloc](./src/ft_calloc.c)   |asigna **Mermoria Dinamica** a una string empezada por datos **nulos**          |
 |[ft_strdup](./src/ft_strdup.c)   |asigna **MD** a una string que contien `str`                                    |
 
 
 ### Funciones adicionales
+Deberás desarrollar un conjunto de funciones que, o no son de la librería *libc, o lo son pero de una forma distinta.
+
+Implementarás las siguientes funciones:
+
 | Function | Description |
 | -------- | ----------- |
 |[ft_substr](./src/ft_substr.c)         |asigna MD a una string creada a partir del **indice**`start` de `s` con la longitud`len`                        |
@@ -53,7 +107,26 @@ Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá
 > fd -> file descriptor
 
 
-### Parte bonus
+## BONUS
+Las funciones para manipular memoria y strings son muy útiles... Pero pronto descubrirás que la manipulación de listas lo es incluso más.
+
+Deberás utilizar la siguiente estructura para representar un nodo de tu lista.
+
+### Estructura
+Añade la declaración a tu archivo `libft.h`:
+```c
+typedef struct s_list
+{
+    void            *content;
+    struct s_list   *next;
+} t_list;
+```
+- `content`: la información contenida por el nodo, que permite guardar cualquier tipo de información.
+- `next`: la dirección del siguiente nodo, o `NULL` si nodo es el último.
+
+### Funciones bonus
+Implementa las siguientes funciones para manipular listas:
+
 | Function | Description |
 | -------- | ----------- |
 |[ft_lstnew](./src/ft_lstnew_bonus.c)             |crea un nuevo **nodo** y establece su contenido `content` y puntero siguiente `next`                |
@@ -65,3 +138,19 @@ Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá
 |[ft_lstclear](./src/ft_lstclear_bonus.c)         |elimina **todos** los nodos de una lista y **libera** la memoria asociada a dichos nodos            |
 |[ft_lstiter](./src/ft_lstiter_bonus.c)           |aplica la función a cada elemento`content` de la lista enlazada`lst`                                |
 |[ft_lstmap](./src/ft_lstmap_bonus.c)             |crea una **nueva lista** enlazada aplicando la funcion `f` a cada elemento de la **lista original** |
+
+## NORME
+En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
+```
+- No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
+- Each function must be a maximum of 25 lines, not counting the function's curly brackets
+- Each line must be at most 80 columns wide, comments included
+- A function can take 4 named parameters maximum
+- No assigns and declarations in the same line (unless static)
+- You can't declare more than 5 variables per function
+- ...
+```
+[42 NORMA]() información sobre las normas de código de 42. `PDF`
+
+## LICENSE
+Este trabajo se publica bajo los términos de [42 Unlicense]().
