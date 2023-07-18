@@ -1,6 +1,15 @@
 ![header born2beroot](./public/header_bor2beroot.png)
-# Born2beroot-Tutorial 🖥
 
+<div align="center">
+	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/evaluated-26%20%2F%2006%20%2F%202023-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
+	<img src='https://img.shields.io/badge/Málaga-00599C?style=flat&logo=42&logoColor=white'/>
+</div>
+
+
+# Born2beroot-Tutorial 🖥
 >[Click aquí](./public/en_subject.pdf) para ver el `PDF` del proyecto.
 
 # Índice
