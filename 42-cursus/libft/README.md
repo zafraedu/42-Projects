@@ -25,7 +25,7 @@ El primer proyecto en 42, libft, consiste en aprender cómo funcionan las funcio
 Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
 
 [Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto
-> Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki) de este repositorio
+> Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki/libft) de este repositorio
 
 ## HOW TO USE
 ### Compilation
