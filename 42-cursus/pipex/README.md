@@ -165,7 +165,7 @@ $> ./pipex_bonus here_doc LIMITADOR comando1 comando2 comando3 ... archivo2
 - `here_doc` -> Es el argumento que pasamos para cambiar la entrada por defecto (infile) por valores introducidos por nosotros;
 - `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del *here_doc*;
 
-## NORME
+## Norme
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
@@ -179,7 +179,7 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 [42 NORMA](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf) información sobre las normas de código de 42. `PDF`
 
 
-## LICENSE
+## License
 Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/public/LICENSE).
 
 
