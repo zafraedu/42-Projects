@@ -12,9 +12,9 @@
 
 <p align="center">
 	<a href="#about">About</a> •
-	<a href="#usage">Usage</a> •
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
+	<a href="#usage">Usage</a> •
 	<a href="#norme">Norminette</a> •
 	<a href="#license">License</a> •
 	<a href="https://github.com/zafraedu/42/wiki/pipex">Wiki</a>
@@ -27,6 +27,72 @@ incluida la gestión de canalización de señales y la redirección de E/S.
 Además, presenta el concepto de here_doc y cómo leer la entrada de STDIN *(bonus part)*.
 
 [Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+
+
+## Mandatory
+
+<table>
+  <tr>
+    <th>Nombre del programa</th>
+    <td><i>pipex</i></td>
+  </tr>
+  <tr>
+    <th>Archivos a entregar</th>
+    <td>Makefile, <code>*.h</code>, <code>*.c</code></td>
+  </tr>
+  <tr>
+    <td>Makefile</td>
+    <td>NAME, all, clean, fclean, re</td>
+  </tr>
+  <tr>
+    <th>Funciones autorizadas</th>
+    <td>
+      <ul>
+        <li>
+          <code>open</code>, <code>close</code>, <code>read</code>, <code>write</code>, <code>malloc</code>, 
+          <code>free</code>, <code>perror</code>, <code>strerror</code>, <code>access</code>, <code>dup</code>, 
+          <code>dup2</code>, <code>execve</code>, <code>exit</code>, <code>fork</code>, <code>pipe</code>, 
+          <code>unlink</code>, <code>wait</code>, <code>waitpid</code>
+        </li>
+        <li><code>ft_printf</code> and any equivalent YOU coded</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>¿Libft permitido?</th>
+    <td>Sí</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Este proyecto va sobre el manejo de pipes</td>
+  </tr>
+</table>
+
+>Para saber lo que hace cada una de las nuevas funciones puedes entrar a la [Wiki](https://github.com/zafraedu/42/wiki/pipex) del repositorio.
+
+### Estructura del comando
+```bash
+$> ./pipex archivo1 comando1 comando2 archivo2
+```
+- `./pipex` -> El ejecutable (numbre del programa);
+- `archivo1` -> Es el archivo de entrada (donde buscará el contenido);
+- `comando1` -> Es el primer comando que pasara al segundo;
+- `comando2` -> Es el conjunto del primer comando con este (para ejecutar la junción de ambos);
+- `archivo2` -> Es donde se va a guardar el resultado del la junción de los comandos 1 y 2;
+
+
+## Bonus
+
+- Gestionar múltiples pipes:
+```bash
+$> ./pipex_bonus archivo1 comando1 comando2 comando3 ... archivo2
+```
+- Aceptar `<<` y `>>` cuando el primer parámetro es **here_doc**:
+```bash
+$> ./pipex_bonus here_doc LIMITADOR comando1 comando2 comando3 ... archivo2
+```
+- `here_doc` -> Es el argumento que pasamos para cambiar la entrada por defecto (infile) por valores introducidos por nosotros;
+- `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del *here_doc*;
 
 
 ## Usage
@@ -99,71 +165,6 @@ $> cat outfile
 ```
 > Nos saldrá 2 porque imprime la cantidad de lineas que encontro la letra "*a*".
 
-
-## Mandatory
-
-<table>
-  <tr>
-    <th>Nombre del programa</th>
-    <td><i>pipex</i></td>
-  </tr>
-  <tr>
-    <th>Archivos a entregar</th>
-    <td>Makefile, <code>*.h</code>, <code>*.c</code></td>
-  </tr>
-  <tr>
-    <td>Makefile</td>
-    <td>NAME, all, clean, fclean, re</td>
-  </tr>
-  <tr>
-    <th>Funciones autorizadas</th>
-    <td>
-      <ul>
-        <li>
-          <code>open</code>, <code>close</code>, <code>read</code>, <code>write</code>, <code>malloc</code>, 
-          <code>free</code>, <code>perror</code>, <code>strerror</code>, <code>access</code>, <code>dup</code>, 
-          <code>dup2</code>, <code>execve</code>, <code>exit</code>, <code>fork</code>, <code>pipe</code>, 
-          <code>unlink</code>, <code>wait</code>, <code>waitpid</code>
-        </li>
-        <li><code>ft_printf</code> and any equivalent YOU coded</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>¿Libft permitido?</th>
-    <td>Sí</td>
-  </tr>
-  <tr>
-    <th>Descripción</th>
-    <td>Este proyecto va sobre el manejo de pipes</td>
-  </tr>
-</table>
-
->Para saber lo que hace cada una de las nuevas funciones puedes entrar a la [Wiki](https://github.com/zafraedu/42/wiki/pipex) del repositorio.
-
-### Estructura del comando
-```bash
-$> ./pipex archivo1 comando1 comando2 archivo2
-```
-- `./pipex` -> El ejecutable (numbre del programa);
-- `archivo1` -> Es el archivo de entrada (donde buscará el contenido);
-- `comando1` -> Es el primer comando que pasara al segundo;
-- `comando2` -> Es el conjunto del primer comando con este (para ejecutar la junción de ambos);
-- `archivo2` -> Es donde se va a guardar el resultado del la junción de los comandos 1 y 2;
-
-
-## Bonus
-
-- Gestionar múltiples pipes:
-```bash
-$> ./pipex_bonus archivo1 comando1 comando2 comando3 ... archivo2
-```
-- Aceptar `<<` y `>>` cuando el primer parámetro es **here_doc**:
-```bash
-$> ./pipex_bonus here_doc LIMITADOR comando1 comando2 comando3 ... archivo2
-```
-- `here_doc` -> Es el argumento que pasamos para cambiar la entrada por defecto (infile) por valores introducidos por nosotros;
-- `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del *here_doc*;
 
 ## Norme
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
