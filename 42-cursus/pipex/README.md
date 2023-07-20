@@ -91,8 +91,9 @@ $> ./pipex_bonus archivo1 comando1 comando2 comando3 ... archivo2
 ```bash
 $> ./pipex_bonus here_doc LIMITADOR comando1 comando2 comando3 ... archivo2
 ```
-- `here_doc` -> Es el argumento que pasamos para cambiar la entrada por defecto (infile) por valores introducidos por nosotros;
-- `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del *here_doc*;
+> `here_doc` -> Es el argumento que pasamos para cambiar la entrada por defecto (infile) por valores introducidos por nosotros;
+> 
+> `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del *here_doc*;
 
 
 ## Usage
