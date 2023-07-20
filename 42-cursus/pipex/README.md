@@ -56,7 +56,7 @@ make
 El programa se ejecuta de manera muy similar a la implementación de shell, sin embargo, no usa la misma sintaxis.
 Pipex se puede ejecutar con la siguiente sintaxis (el comando y los argumentos deben estar entre comillas), así se vería ejecutando desde la terminal:
 
-#### Mandatory:
+#### Pipex sin bonus:
 ```c
 // Shell
 $> < infile grep a | wc -l > outfile
