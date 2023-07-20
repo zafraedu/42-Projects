@@ -68,7 +68,7 @@ $> ./pipex infile "grep a" "wc -l" outfile
 > Con este comando nos debería de imprimir en *outfile* la cantidad de lineas (*wc -l*)
 > que coincide con *"a"* (grep a) contenidas dentro del archivo *infile*,
 
-#### Bonus:
+#### Pipex con Bonus:
 ```c
 // Shell
 $> << STOP cat | grep a | wc -l >> outfile
