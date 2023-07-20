@@ -45,7 +45,7 @@ git clone git@github.com:zafraedu/42.git
 
 Entrar en el repositorio del proyecto y ejecurar `make`
 ```bash
-cd 42/42-cursus/libft
+cd 42/42-cursus/ft_printf
 make
 ```
 
