@@ -42,4 +42,8 @@ void	exec(t_data *d, char *cmd, char **envp)
 	if (!d->cmd)
 		err_msg(ERR_CMD);
 	execve(d->cmd, d->cmd_args, envp);
+	ft_memfree_all(d->paths);
+	ft_memfree_all(d->cmd_args);
+	ft_memfree(cmd);
+	ft_memfree(d);
 }

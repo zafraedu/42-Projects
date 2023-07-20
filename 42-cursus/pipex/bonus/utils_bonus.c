@@ -12,7 +12,7 @@ int	open_fd(char *file, int n)
 
 	fd = 0;
 	if (n == 1)
-		fd = open(file, O_RDONLY, 0644);
+		fd = open(file, O_RDONLY);
 	else if (n == 2)
 		fd = open(file, O_RDWR | O_CREAT | O_TRUNC, 0644);
 	else if (n == 3)
@@ -58,4 +58,8 @@ void	exec(t_data *d, char *cmd, char **envp)
 	if (!d->cmd)
 		err_msg(ERR_CMD);
 	execve(d->cmd, d->cmd_args, envp);
+	ft_memfree_all(d->paths);
+	ft_memfree_all(d->cmd_args);
+	ft_memfree(cmd);
+	ft_memfree(d);
 }

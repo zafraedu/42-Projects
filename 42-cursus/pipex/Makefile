@@ -50,11 +50,11 @@ rebonus: fclean bonus
 
 #########################  Normas  #############################################
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) -g -o $@ $(OBJS) $(LIBFT_PATH)/$(OBJ_PATH)/*
+	$(CC) $(CFLAGS) -o $@ $(OBJS) $(LIBFT_PATH)/$(OBJ_PATH)/*
 	@echo "\n$(G)[Compiled $(C) $@ $(G)successfully 🛠  ✅]\n$(END)"
 
 $(NAME_BONUS): $(OBJS_BONUS)
-	$(CC) $(CFLAGS) -g -o $@ $(OBJS_BONUS) $(LIBFT_PATH)/$(OBJ_PATH)/*
+	$(CC) $(CFLAGS) -o $@ $(OBJS_BONUS) $(LIBFT_PATH)/$(OBJ_PATH)/*
 	@echo "\n$(G)[Compiled $(C) $@ $(G)successfully 🛠  ✅]\n$(END)"
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c $(INC_PATH)/pipex.h

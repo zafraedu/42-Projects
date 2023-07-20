@@ -36,9 +36,11 @@ void	here_doc(t_data *d, char *limiter, int argc)
 	else if (d->pid == 0)
 	{
 		close(d->pipe_fd[0]);
+		ft_putstr_fd("heredoc> ", 1);
 		d->str = get_next_line(0);
-		while (ft_strncmp(d->str, limiter, ft_strlen(limiter)) != 0)
+		while (ft_strncmp(d->str, limiter, ft_strlen(d->str)) != '\n')
 		{
+			ft_putstr_fd("heredoc> ", 1);
 			ft_putstr_fd(d->str, d->pipe_fd[1]);
 			d->str = get_next_line(0);
 		}
@@ -53,7 +55,7 @@ int	main(int argc, char **argv, char **envp)
 
 	if (argc < 5)
 		err_msg(ERR_ARGC);
-	if (strncmp(argv[1], "here_doc", 8) == 0)
+	if (ft_strncmp(argv[1], "here_doc", 8) == 0)
 	{
 		d.i = 2;
 		d.dst_fd = open_fd(argv[argc - 1], 3);
