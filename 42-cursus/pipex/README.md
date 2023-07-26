@@ -1,9 +1,9 @@
 ![header pipex](./public/header_pipex.png)
 
 <div align="center">
-	<img src="https://img.shields.io/badge/status-in process-success?color=%2300599C&style=flat" />
-	<img src="https://img.shields.io/badge/score-...%20%2F%20100-success?color=%2300599C&style=flat" />
-	<img src="https://img.shields.io/badge/evaluated-DD%20%2F%20MM%20%2F%20AAAA-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/evaluated-25%20%2F%2007%20%2F%202023-success?color=%2300599C&style=flat" />
 	<img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
 	<img src='https://img.shields.io/badge/Málaga-00599C?style=flat&logo=42&logoColor=white'/>
 </div>
