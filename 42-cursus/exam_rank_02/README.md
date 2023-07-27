@@ -1,11 +1,11 @@
 ![exam_rank_02](./public/exam_rank_02_header.png)
 
 <div align="center">
-	<img src="https://img.shields.io/badge/status-in process-success?color=%2300599C&style=flat" />
-	<img src="https://img.shields.io/badge/score-000%20%2F%20100-success?color=%2300599C&style=flat" />
-	<img src="https://img.shields.io/badge/evaluated-DD%20%2F%20MM%20%2F%20AAAA-success?color=%2300599C&style=flat" />
-	<img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
-	<img src='https://img.shields.io/badge/Málaga-00599C?style=flat&logo=42&logoColor=white'/>
+	<img src="https://img.shields.io/badge/status-in process-success?color=%23A63F19&style=flat" />
+	<img src="https://img.shields.io/badge/score-000%20%2F%20100-success?color=%23A63F19&style=flat" />
+	<img src="https://img.shields.io/badge/evaluated-DD%20%2F%20MM%20%2F%20AAAA-success?color=%23A63F19&style=flat" />
+	<img src="https://img.shields.io/badge/C-A63F19?style=flat&logo=c&logoColor=white" />
+	<img src='https://img.shields.io/badge/Málaga-A63F19?style=flat&logo=42&logoColor=white'/>
 </div>
 
 ---
@@ -27,3 +27,4 @@
 - Hay 56 ejercicios en total, puedes ver el codigo de cada ejercicio en (nombre del ejercicio).c
 
 ## Questions
+### Level 0
