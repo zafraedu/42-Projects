@@ -1,4 +1,5 @@
-ssignment name  : do_op
+```
+Assignment name  : do_op
 Expected files   : *.c, *.h
 Allowed functions: atoi, printf, write
 --------------------------------------------------------------------------------
@@ -26,3 +27,4 @@ $> ./do_op "1" "+" "-43" | cat -e
 -42$
 $> ./do_op | cat -e
 $
+```

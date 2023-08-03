@@ -1,3 +1,4 @@
+```
 Assignment name  : ft_strrev
 Expected files   : ft_strrev.c
 Allowed functions:
@@ -10,3 +11,4 @@ It must return its parameter.
 Your function must be declared as follows:
 
 char    *ft_strrev(char *str);
+```
