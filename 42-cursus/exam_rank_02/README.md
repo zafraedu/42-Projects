@@ -30,4 +30,4 @@ bash -c "$(curl https://grademe.fr)"
 ```
 Seleccionamos `42_EXAM simulator` pulsando la tecla `3` en el teclado.
 
-[![img](public/grademe_01.png)](https://grademe.fr/)
+[![img grademe 1](public/grademe_01.png)](https://grademe.fr/)
