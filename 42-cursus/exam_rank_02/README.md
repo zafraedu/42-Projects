@@ -28,6 +28,6 @@ Copia el siguiente código y pégalo en tu terminal.
 ```
 bash -c "$(curl https://grademe.fr)"
 ```
-Seleccionamos `42_EXAM simulator` pulsando la tecla `3` en el teclado
+Seleccionamos `42_EXAM simulator` pulsando la tecla `3` en el teclado.
 
-[![img]()](https://grademe.fr/)
+[![img](public/grademe_01.png)](https://grademe.fr/)
