@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : tab_mult
 Expected files   : tab_mult.c

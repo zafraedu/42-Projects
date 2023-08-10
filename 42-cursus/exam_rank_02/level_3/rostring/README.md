@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : rostring
 Expected files   : rostring.c

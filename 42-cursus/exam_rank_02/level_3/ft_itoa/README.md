@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : ft_itoa
 Expected files   : ft_itoa.c

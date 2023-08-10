@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : ft_list_foreach
 Expected files   : ft_list_foreach.c, ft_list.h

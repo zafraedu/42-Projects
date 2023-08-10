@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : print_hex
 Expected files   : print_hex.c

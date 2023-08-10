@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : rev_wstr
 Expected files   : rev_wstr.c

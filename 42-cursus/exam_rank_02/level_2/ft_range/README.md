@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : ft_range
 Expected files   : ft_range.c

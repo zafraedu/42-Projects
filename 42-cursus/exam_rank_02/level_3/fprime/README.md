@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : fprime
 Expected files   : fprime.c

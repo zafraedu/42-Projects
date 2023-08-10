@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : ft_list_remove_if
 Expected files   : ft_list_remove_if.c

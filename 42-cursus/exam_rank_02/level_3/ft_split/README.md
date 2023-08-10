@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : ft_split
 Expected files   : ft_split.c

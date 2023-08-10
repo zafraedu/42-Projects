@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : pgcd
 Expected files   : pgcd.c

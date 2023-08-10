@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : rstr_capitalizer
 Expected files   : rstr_capitalizer.c

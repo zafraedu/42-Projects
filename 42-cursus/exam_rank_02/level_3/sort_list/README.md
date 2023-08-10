@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : sort_list
 Expected files   : sort_list.c

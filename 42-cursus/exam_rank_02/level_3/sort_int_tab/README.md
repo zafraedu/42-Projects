@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : sort_int_tab
 Expected files   : sort_int_tab.c

@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : expand_str
 Expected files   : expand_str.c

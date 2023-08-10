@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : lcm
 Expected files   : lcm.c

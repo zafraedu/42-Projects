@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : str_capitalizer
 Expected files   : str_capitalizer.c

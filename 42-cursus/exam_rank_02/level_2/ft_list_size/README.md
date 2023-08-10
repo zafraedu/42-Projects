@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : ft_list_size
 Expected files   : ft_list_size.c, ft_list.h

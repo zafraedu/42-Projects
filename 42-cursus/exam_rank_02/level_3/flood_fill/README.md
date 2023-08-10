@@ -1,5 +1,3 @@
-## Subject
-
 ```
 Assignment name  : flood_fill
 Expected files   : *.c, *.h
