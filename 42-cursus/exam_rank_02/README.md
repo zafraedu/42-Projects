@@ -35,8 +35,3 @@ bash -c "$(curl https://grademe.fr)"
 Seleccionamos `42_EXAM simulator` pulsando la tecla `3` en el teclado.
 
 [![img grademe 1](public/grademe_01.png)](https://grademe.fr/)
-
-Seleccionamos `Student PART` y luego `EXAM RANK 02` (tecla `2`).
-
-<img align="left" src="public/grademe_02.png">
-<img align="left" src="public/grademe_03.png">
