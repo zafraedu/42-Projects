@@ -8,6 +8,6 @@
 | 1 | [**Born2beroot**](./Born2beroot) | **125/100** |
 |||
 | 2 | [**pipex**](./pipex) | **125/100** |
-| 2 | [**fract-ol**](./fract-ol) | - |
+| 2 | [**fract-ol**](./fract_ol) | - |
 | 2 | **push_swap** | - |
 | 2 | [**Exam Rank 02**](./exam_rank_02) | **100/100** |
