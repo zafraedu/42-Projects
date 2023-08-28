@@ -31,7 +31,10 @@ Copia y pega este codigo para descargar y copilar el proyecto.
 ```bash
 git clone git@github.com:zafraedu/42.git && cd 42/42-cursus/fract-ol && make
 ```
-### Makefile Rules
+> **Warning**  
+> Solo disponible para **MacOs** y **Linux**.
+> Si lo vas a ejecutar en un ***Mac*** propio, habrá que modificar una línea del Makefile.
+> Para más información consulte la documentación de ***MLX42***
 
 - `make` - Compila los archivos ***src*** y genera el ejecutable **fractol**;
 - `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
