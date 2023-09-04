@@ -46,7 +46,7 @@ void	ft_print_help(t_fractal *f)
 	mlx_put_string(f->mlx, " Commands ", WIDTH + 130, 20);
 	mlx_put_string(f->mlx, "Fractal:", WIDTH + 20, 60);
 	mlx_put_string(f->mlx, "[ 1 | 2 | 3 | 4 ]", WIDTH + 40, 90);
-	mlx_put_string(f->mlx, "(also RESEATS the fractal)", WIDTH + 40, 120);
+	mlx_put_string(f->mlx, "(also RESETS the fractal)", WIDTH + 40, 120);
 	mlx_put_string(f->mlx, "Move:", WIDTH + 20, 180);
 	mlx_put_string(f->mlx, "[ W | A | S | D ]", WIDTH + 40, 210);
 	mlx_put_string(f->mlx, "Zomm:", WIDTH + 20, 260);
