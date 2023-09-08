@@ -1,9 +1,9 @@
 ![header fractol](./public/header_fractol.png)
 
 <div align="center">
-	<img src="https://img.shields.io/badge/status-****-success?color=%2300599C&style=flat" />
-	<img src="https://img.shields.io/badge/score-***%20%2F%20100-success?color=%2300599C&style=flat" />
-	<img src="https://img.shields.io/badge/evaluated-**%20%2F%20**%20%2F%202023-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success?color=%2300599C&style=flat" />
+	<img src="https://img.shields.io/badge/evaluated-04%20%2F%2009%20%2F%202023-success?color=%2300599C&style=flat" />
 	<img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
 	<img src='https://img.shields.io/badge/Málaga-00599C?style=flat&logo=42&logoColor=white'/>
 </div>
