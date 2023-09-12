@@ -1,4 +1,4 @@
-![header ft_printf](./public/header_ft_printf.png)
+![header push_swap](public/header_push_swap.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
