@@ -12,12 +12,12 @@
 
 <p align="center">
 	<a href="#about">About</a> •
-	<a href="#usage">Usage</a> •
+	<a href="#how-to-use">Usage</a> •
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
 	<a href="#norme">Norminette</a> •
 	<a href="#license">License</a> •
-	<a href="https://github.com/zafraedu/42/wiki/ft_printf">Wiki</a>
+	<a href="https://github.com/zafraedu/42/wiki/push_swap">Wiki</a>
 </p>
 
 ## About
@@ -37,7 +37,42 @@ el conjunto de enteros recibido como argumento.
 
 ¿A que es fácil? Bueno, eso ya lo veremos...
 
-## Usage
+[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+
+## HOW TO USE
+
+### Compile
+Copia y pega este codigo para descargar y copilar el proyecto.
+```bash
+git clone git@github.com:zafraedu/42.git && cd 42/42-cursus/push_swap && make
+```
+### Makefile rules
+- `make` - Compila los archivos ***src/push_swap*** y genera el ejecutable **push_swap**;
+- `make bonus` - Compila los archivos ***src/checker*** y genera el ejecutable **checker**;
+- `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
+- `make fclean` - Elimina todos los objetos más el ejecutable;
+- `make re` - usa `make fclean` + `make`;
+
+### Usage
+Al ejecutar el programa ponemos varios numeros aleatorios como parametros, por ejemplo:
+```c
+./push_swap 8 6 4 7 1
+```
+
+También podemos ejecutarlo con varios numeros entre *comillas/dobles* como segundo parametro
+```c
+./push_swap "8 6 4 7 1"
+```
+#### Bonus Usage
+Para el bonus primero tenemos que copilar el ejecutable con make en la raiz del proyecto checker:
+```bash
+make bonus
+```
+Ahora guardamos los numeros aleatorios en un variable y ejecutamos el push_swap con el checker:
+```bash
+ARG="0 34 43 89  3124 -543 -3"; ./push_swap $ARG | ./checker $ARG
+```
+si todo sale bien, nos debería de ejecutar `push_swap` y salir `OK` por la terminal si se ordena correctamente el programa o `KO` si no es así.
 
 ## Mandatory
 <table>
