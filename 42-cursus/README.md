@@ -9,5 +9,5 @@
 |||
 | 2 | [**pipex**](./pipex) | **125/100** |
 | 2 | [**fract-ol**](./fract-ol) | **125/100** |
-| 2 | **push_swap** | - |
+| 2 | [**push_swap**](./push_swap) | **125/100** |
 | 2 | [**Exam Rank 02**](./exam_rank_02) | **100/100** |
