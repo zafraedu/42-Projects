@@ -20,8 +20,8 @@ int	main(int argc, char **argv)
 	t_stack	*stack_a;
 	t_stack	*stack_b;
 
-	stack_a = ft_check_args(argc, argv);
 	stack_b = NULL;
+	stack_a = ft_check_args(argc, argv);
 	if (!stack_a || ft_check_arg_dup(stack_a))
 		ft_error("Error: duplicate arguments", &stack_a, NULL);
 	get_index(stack_a);
