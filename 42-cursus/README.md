@@ -3,7 +3,7 @@
 |:------:|:-------:|:------:|
 | 0 | [**libft**](./libft) | **125/100** |
 |||
-| 1 | [**ft_printf**](./ft_printf) | **100/100**  |
+| 1 | [**ft_printf**](./ft_printf) | **125/100**  |
 | 1 | [**get_next_line**](./get_next_line) | **125/100**|
 | 1 | [**born2beroot**](./Born2beroot) | **125/100** |
 |||
