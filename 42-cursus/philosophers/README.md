@@ -17,7 +17,7 @@
 	<a href="#bonus">Bonus</a> •
 	<a href="#norme">Norminette</a> •
 	<a href="#license">License</a> •
-	<a href="https://github.com/zafraedu/42/wiki/push_swap">Wiki</a>
+	<a href="https://github.com/zafraedu/42/wiki/philosophers">Wiki</a>
 </p>
 
 ## About
