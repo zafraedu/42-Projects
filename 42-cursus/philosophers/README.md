@@ -60,15 +60,15 @@ Ejemplo:
 <table>
   <tr>
     <th>Nombre del programa</th>
-    <td><i>push_swap</i></td>
+    <td><i>philo</i></td>
   </tr>
   <tr>
     <th>Archivos a entregar</th>
-    <td>Makefile, <code>*.h</code>, <code>*.c</code></td>
+    <td>Makefile, <code>*.h</code>, <code>*.c</code> en el directorio <b>philo/</b></td>
   </tr>
   <tr>
     <th>Makefile</th>
-    <td><i>NAME</i>, <i>all</i>, <i>clean</i>, <i>fclean</i>, <i>re</i>, <i>bonus</i></td>
+    <td><i>NAME</i>, <i>all</i>, <i>clean</i>, <i>fclean</i>, <i>re</i></td>
   </tr>
   <tr>
     <th>Elementos autorizados</th>
@@ -76,78 +76,30 @@ Ejemplo:
   </tr>
   <tr>
     <th>¿Libft permitido?</th>
-    <td>Sí</td>
+    <td>No</td>
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>ordenar los números del stack a en orden ascendente.</td>
+    <td>Philosophers con hilos y mutex</td>
   </tr>
 </table>
 
-### Operations
-para ordenar los numeros solo podremos usar las siguientes operaciones:
-<table>
-	<tr>
-		<th>sa</th>
-		<td>intercambia los dos primeros elementos encima del stack a. No hace nada si hay uno o menos elementos.</td>
-	</tr>
-	<tr>
-		<th>sb</th>
-		<td>intercambia los dos primeros elementos encima del stack b. No hace nada si hay uno o menos elementos.</td>
-	</tr>
-	<tr>
-		<th>ss</th>
-		<td><code>sa</code> y <code>sb</code> a la vez.</td>
-	</tr>
-	<tr>
-		<th>pa</th>
-		<td>toma el primer elemento del stack b y lo pone encima del stack a. No hace nada si b está vacío.</td>
-	</tr>
-	<tr>
-		<th>pb</th>
-		<td> push b - toma el primer elemento del stack a y lo pone encima del stack b. No hace nada si a está vacío.</td>
-	</tr>
-	<tr>
-		<th>ra</th>
-		<td> desplaza hacia arriba todos los elementos del stack a una posición, de forma que el primer elemento se convierte en el último.</td>
-	</tr>
-	<tr>
-		<th>rb</th>
-		<td> desplaza hacia arriba todos los elementos del stack b una posición, de forma que el primer elemento se convierte en el último.</td>
-	</tr>
-	<tr>
-		<th>rr</th>
-		<td><code>ra</code> y <code>rb</code> a la vez.</td>
-	</tr>
-	<tr>
-		<th>rra</th>
-		<td>desplaza hacia abajo todos los elementos del stack a una posición, de forma que el último elemento se convierte en el primero.</td>
-	</tr>
-	<tr>
-		<th>rrb</th>
-		<td> desplaza hacia abajo todos los elementos del stack b una posición, de forma que el último elemento se convierte en el primero.</td>
-	</tr>
-	<tr>
-		<th>rrr</th>
-		<td><code>rra</code> y <code>rrb</code> a la vez.</td>
-	</tr>
-</table>
-
 ### Rules
-- Debes escribir un programa llamado push_swap que recibirá como argumento el stack a con el formato de una lista de enteros. El primer argumento debe ser el que esté encima del stack (cuidado con el orden).
-- El programa debe mostrar la lista de instrucciones (más corta posible) para ordenar el stack a, de menor a mayor donde el menor se sitúe en la cima del stack.
-- Las instrucciones deben separarse utilizando un “\n” y nada más.
-- El objetivo es ordenar el stack con el mínimo número de operaciones posible. Durante la evaluación compararemos el número de instrucciones obtenido por tu programa con un rango de instrucciones máximo.
-- Tu programa no recibirá puntos tanto si tu programa muestra una lista demasiado larga como si el resultado no es correcto.
-- Si no se especifican parámetros, el programa no deberá mostrar nada y deberá devolver el control al usuario.
-- En caso de error, deberás mostrar Error seguido de un “\n” en la salida de errores estándar. Algunos de los posibles errores son: argumentos que no son enteros,argumentos superiores a un int, y/o encontrar números duplicados.
+- Cada filósofo debe ser un hilo.
+- Hay un tenedor entre cada filósofo. por lo tanto, si hay varios filósofos, cada filósofo
+debe tener un tenedor a su izquierda y otro a su derecha. si solo hay un filósofo,
+solo habrá un tenedor en la mesa.
+- Para prevenir que los filósofos dupliquen los tenedores, deberás proteger los estados
+de los tenedores con un mutex por cada uno de ellos.
+
+> **Warning**  
+> Tu programa no debe tener ningún data races.
 
 ## Bonus
 Tus bonus serán evaluados exclusivamente si la parte obligatoria es EXCELENTE.
 Esto quiere decir, evidentemente, que debes completar la parte obligatoria, de principio
 a fin, y que tu gestión de errores debe ser impecable aunque el programa se utilice
 incorrectamente. De no ser así, esta parte será IGNORADA.
-¿Te animas a hacerte tu propio checker? ¡Suena interesante!
 
 ### Rules
 - Escribe un programa llamado checker, que tomará como argumento el stack a formateado como una lista de enteros. El primer argumento debe estar encima del stack (cuidado con el orden). Si no se da argumento, checker termina y no muestra nada.
