@@ -60,6 +60,11 @@ $(NAME): $(OBJS_PHILO)
 
 .PHONY: all bonus show clean fclean re
 
+# flags para comprobar DATA RACE #
 # -fsanitize=thread -g3
+
+# comprobar DATA RACE con valgrind
 # valgrind --tool=helgrind  ./philo
+
+# comprobar memory leaks con valgrind
 # valgrind --leak-check=full ./philo

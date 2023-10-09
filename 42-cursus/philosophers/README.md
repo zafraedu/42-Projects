@@ -109,6 +109,8 @@ de los tenedores con un mutex por cada uno de ellos.
 
 > **Warning**
 > Tu programa no debe tener ningún data races.
+> mira el final del archivo *philo/Makefile* para ver como comprobar los
+> memory leaks y los data races.
 
 ## Bonus
 Tus bonus serán evaluados exclusivamente si la parte obligatoria es EXCELENTE.
