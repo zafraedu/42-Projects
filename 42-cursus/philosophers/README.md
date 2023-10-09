@@ -70,7 +70,7 @@ Ejemplo:
   </tr>
   <tr>
 	<th>Argumentos</th>
-	<td><code>number_of_philosophers</code>, <code>time_to_die</code>, <code>time_to_eat</code>, 		<code>time_to_sleep</code>, <code>[number_of_times_each_philosopher_must_eat]</code></td>
+	<td><code>number_of_philosophers</code>, <code>time_to_die</code>, <code>time_to_eat</code>, <code>time_to_sleep</code>, <code>[number_of_times_each_philosopher_must_eat]</code></td>
   </tr>
   <tr>
     <th>Makefile</th>
@@ -89,6 +89,15 @@ Ejemplo:
     <td>Philosophers con hilos y mutex</td>
   </tr>
 </table>
+
+Los programas emiten un mensaje cada vez que un filósofo realiza una acción, que tiene el siguiente formato:
+```js
+[timestamp_in_ms] [X] has taken a fork
+[timestamp_in_ms] [X] is eating
+[timestamp_in_ms] [X] is sleeping
+[timestamp_in_ms] [X] is thinking
+[timestamp_in_ms] [X] died
+```
 
 ### Rules
 - Cada filósofo debe ser un hilo.
