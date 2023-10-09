@@ -55,6 +55,8 @@ Ejemplo:
 
 ./philo 4 450 130 100 2
 ```
+![ejemplo1](./public/img1.png)
+![ejemplo2](./public/img2.png)
 
 ## Mandatory
 <table>
@@ -96,7 +98,7 @@ solo habrá un tenedor en la mesa.
 - Para prevenir que los filósofos dupliquen los tenedores, deberás proteger los estados
 de los tenedores con un mutex por cada uno de ellos.
 
-> **Warning**  
+> **Warning**
 > Tu programa no debe tener ningún data races.
 
 ## Bonus
