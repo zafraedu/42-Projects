@@ -67,12 +67,16 @@ Ejemplo:
     <td>Makefile, <code>*.h</code>, <code>*.c</code> en el directorio <b>philo/</b></td>
   </tr>
   <tr>
+	<th>Argumentos</th>
+	<td><code>number_of_philosophers</code>, <code>time_to_die</code>, <code>time_to_eat</code>, 		<code>time_to_sleep</code>, <code>[number_of_times_each_philosopher_must_eat]</code></td>
+  </tr>
+  <tr>
     <th>Makefile</th>
     <td><i>NAME</i>, <i>all</i>, <i>clean</i>, <i>fclean</i>, <i>re</i></td>
   </tr>
   <tr>
     <th>Elementos autorizados</th>
-    <td><code>write()</code>, <code>read()</code>, <code>malloc()</code>, <code>free()</code>, <code>exit()</code></td>
+    <td><code>write()</code>, <code>memset()</code>, <code>malloc()</code>, <code>free()</code>, <code>printf()</code>, <code>usleep()</code>, <code>gettimeofday()</code>, <code>pthread_create()</code>, <code>pthread_detach()</code>, <code>pthread_join()</code>, <code>pthread_mutex_init()</code>, <code>pthread_mutex_destroy()</code>, <code>pthread_mutex_lock()</code>, <code>pthread_mutex_lock()</code></td>
   </tr>
   <tr>
     <th>¿Libft permitido?</th>
@@ -101,15 +105,41 @@ Esto quiere decir, evidentemente, que debes completar la parte obligatoria, de p
 a fin, y que tu gestión de errores debe ser impecable aunque el programa se utilice
 incorrectamente. De no ser así, esta parte será IGNORADA.
 
+<table>
+  <tr>
+    <th>Nombre del programa</th>
+    <td><i>philo_bonus</i></td>
+  </tr>
+  <tr>
+    <th>Archivos a entregar</th>
+    <td>Makefile, <code>*.h</code>, <code>*.c</code> en el directorio <b>philo_bonus/</b></td>
+  </tr>
+  <tr>
+	<th>Argumentos</th>
+	<td><code>number_of_philosophers</code>, <code>time_to_die</code>, <code>time_to_eat</code>, 		<code>time_to_sleep</code>, <code>[number_of_times_each_philosopher_must_eat]</code></td>
+  </tr>
+  <tr>
+    <th>Makefile</th>
+    <td><i>NAME</i>, <i>all</i>, <i>clean</i>, <i>fclean</i>, <i>re</i></td>
+  </tr>
+  <tr>
+    <th>Elementos autorizados</th>
+    <td><code>write()</code>, <code>memset()</code>, <code>malloc()</code>, <code>free()</code>, <code>printf()</code>, <code>usleep()</code>, <code>gettimeofday()</code>, <code>pthread_create()</code>, <code>pthread_detach()</code>, <code>pthread_join()</code>, <code>fork()</code>, <code>kill()</code>, <code>exit()</code>, <code>waitpid()</code>, <code>sem_open()</code>, <code>sem_close()</code>, <code>sem_post()</code>, <code>sem_wait()</code>, <code>sem_unlink()</code></td>
+  </tr>
+  <tr>
+    <th>¿Libft permitido?</th>
+    <td>No</td>
+  </tr>
+  <tr>
+    <th>Descripción</th>
+    <td>Philosophers con hilos y mutex</td>
+  </tr>
+</table>
+
 ### Rules
-- Escribe un programa llamado checker, que tomará como argumento el stack a formateado como una lista de enteros. El primer argumento debe estar encima del stack (cuidado con el orden). Si no se da argumento, checker termina y no muestra nada.
-- Durante la ejecución de checker se esperará y leerá una lista de instrucciones, separadas utilizando ’\n’. Cuando todas las instrucciones se hayan leído, checker las ejecutará utilizando el stack recibido como argumento.
-- Tras ejecutar todas las instrucciones, el stack a deberá estar ordenado y el stack b deberá estar vacío. Si es así, checker imprimirá “OK” seguido de un ’\n’ en el stdout. De no ser así, mostrará “KO” seguido de un ’\n’ en el stdout.
-- En caso de error, deberás mostrar Error seguido de un ’\n’ en la stderr. Los errores son:
-  - Algunos o todos los argumentos no son enteros.
-  - Algunos o todos los argumentos son más grandes que un int.
-  - Hay uno o varios números duplicados.
-  - Una instrucción no existe y/o no está bien formateada.
+- Los tenedores están en el centro de la mesa.
+- Los tenedores no tienen estados de memoria, pero el numero de disponibilidades está representados por un semaforo.
+- Cada filósofo debe ser un proceso, y el proceso principal no debe ser un filósofo.
 
 ## NORME
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
