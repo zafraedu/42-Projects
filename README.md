@@ -14,3 +14,8 @@
     <img src="https://github.com/zafraedu/42/blob/master/public/discover_web.png" width="33%"/>
   </a> -->
 </p>
+<p align="center">
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/zafraedu/42?color=lightblue" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/zafraedu/42?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/zafraedu/42?color=green" />
+</p>
