@@ -21,21 +21,11 @@
 </p>
 
 ## About
-Este proyecto te hará ordenar datos en un *stack*, con un conjunto limitado de
-*instrucciones*, y utilizando el menor número de instrucciones. Para tener éxito, deberás
-trastear con algunos de los diversos algoritmos y elegir, entre todos, el más apropiado
-para un ordenamiento óptimo.
-
-Push_swap es un proyecto de algoritmia simple y muy efectivo: tienes que ordenar
-datos. Tienes a tu disposición un conjunto de valores int, dos stacks y un conjunto de
-instrucciones para manipular ambos.
-
-¿Que cuál es el objetivo? Simple: escribirás un programa en C al que llamarás push_swap.
-El programa calculará y mostrará en la salida estándar una lista de instrucciones escritas
-en lenguaje push_swap. Deberás buscar el número mínimo de instrucciones para ordenar
-el conjunto de enteros recibido como argumento.
-
-¿A que es fácil? Bueno, eso ya lo veremos...
+En informática, el problema de los filósofos gastronómicos es un problema de ejemplo que se utiliza a menudo
+en el diseño de algoritmos concurrentes para ilustrar problemas de sincronización y técnicas para resolverlos.
+Fue formulado originalmente en 1965 por Edsger Dijkstra como un ejercicio de examen para estudiantes, presentado
+en términos de computadoras que compiten por el acceso a los periféricos de las unidades de cinta...
+[más información](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
 
 [Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
 
@@ -44,35 +34,27 @@ el conjunto de enteros recibido como argumento.
 ### Compile
 Copia y pega este codigo para descargar y copilar el proyecto.
 ```bash
-git clone git@github.com:zafraedu/42.git && cd 42/42-cursus/push_swap && make
+git clone git@github.com:zafraedu/42.git && cd 42/42-cursus/philosophers/philo && make
 ```
 ### Makefile rules
 - `make` - Compila los archivos ***src/push_swap*** y genera el ejecutable **push_swap**;
-- `make bonus` - Compila los archivos ***src/checker*** y genera el ejecutable **checker**;
 - `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
 - `make fclean` - Elimina todos los objetos más el ejecutable;
 - `make re` - usa `make fclean` + `make`;
 
 ### Usage
-Al ejecutar el programa ponemos varios numeros aleatorios como parametros, por ejemplo:
-```c
-./push_swap 8 6 4 7 1
+Al ejecutarlo, especificamos como parámetros la ***cantidad de filósofos***, el ***tiempo de muerte***,
+el ***tiempo de comida***, el ***tiempo de sueño***, y como parámetro opcional, especificamos la
+***cantidad máxima de comida que debe comer*** cada filósofo.:
+```bash
+./philo <number_philosopher> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_time_each_philosophers_must_eat]
 ```
+Ejemplo:
+```java
+./philo 2 400 250 250
 
-También podemos ejecutarlo con varios numeros entre *comillas/dobles* como segundo parametro
-```c
-./push_swap "8 6 4 7 1"
+./philo 4 450 130 100 2
 ```
-#### Bonus Usage
-Para el bonus primero tenemos que copilar el ejecutable con make en la raiz del proyecto checker:
-```bash
-make bonus
-```
-Ahora guardamos los numeros aleatorios en un variable y ejecutamos el push_swap con el checker:
-```bash
-ARG="0 34 43 89  3124 -543 -3"; ./push_swap $ARG | ./checker $ARG
-```
-si todo sale bien, nos debería de ejecutar `push_swap` y salir `OK` por la terminal si se ordena correctamente el programa o `KO` si no es así.
 
 ## Mandatory
 <table>
