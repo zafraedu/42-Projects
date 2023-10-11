@@ -15,5 +15,5 @@
   </a> -->
 </p>
 <p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/zafraedu/42?color=blue" />
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/zafraedu/42?color=blue&cacheSeconds=https%3A%2F%2Fgithub.com%2Fzafraedu%2F42%2Farchive%2Frefs%2Fheads%2Fmaster.zip">
 </p>
