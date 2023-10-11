@@ -12,6 +12,6 @@
 | 2 | [**push_swap**](./push_swap) | **125/100** |
 | 2 | [**Exam Rank 02**](./exam_rank_02) | **100/100** |
 |||
-| 3 | **philosophers**| - |
+| 3 | [**philosophers**](./philosophers) | - |
 | 3 | **minishell** | - |
 | 3 | **Exam Rank 03** | - |
