@@ -10,9 +10,9 @@
   <a href="https://github.com/zafraedu/42/tree/master/42-cursus">
     <img src="https://github.com/zafraedu/42/blob/master/public/common_core.png" width="33%"/>
   </a>
-<!--   <a href="">
-    <img src="https://github.com/zafraedu/42/blob/master/public/discover_web.png" width="33%"/>
-  </a> -->
+  <a href="">
+    <img src="https://github.com/zafraedu/42/blob/master/public/42-discovery_web.png" width="33%"/>
+  </a>
 </p>
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/zafraedu/42?color=blue&cacheSeconds=https%3A%2F%2Fgithub.com%2Fzafraedu%2F42%2Farchive%2Frefs%2Fheads%2Fmaster.zip">
