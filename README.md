@@ -11,7 +11,7 @@
     <img src="https://github.com/zafraedu/42/blob/master/public/common_core.png" width="33%"/>
   </a>
   <a href="">
-    <img src="https://github.com/zafraedu/42/blob/master/public/42-discovery_web.png" width="33%"/>
+    <img src="https://github.com/zafraedu/42/blob/master/public/discovery_web.png" width="33%"/>
   </a>
 </p>
 <p align="center">
