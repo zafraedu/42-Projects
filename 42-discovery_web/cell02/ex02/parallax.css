@@ -1,48 +1,43 @@
-@import "compass/css3";
-
-*{
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body{
-  background-color: #FEDCC8;
-}
-
-.parallax {
-  perspective: 100px;
+main {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 0;
-  bottom: 0;
-  margin-left: -1500px;
 }
 
-.parallax__layer{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  img{
-    display: block;
-    position: absolute;
-    bottom: 0;
-  }
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
 }
 
-.parallax__cover{
-  background: #2D112B;
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  height: 2000px;
-  z-index: 2;
+section h1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.parallax:first-child {
+  background-image: url(https://wallpapercave.com/wp/wp4397412.jpg);
+}
+.parallax:last-child {
+  background-image: url(https://3.bp.blogspot.com/-qTxxbduYR_A/WOOT9NJIFPI/AAAAAAAABhk/r22ny6b0y48dE-MHaZFwWUk4BTwXJ3tjgCLcB/s1600/amazing-sunset-with-zebras.jpg);
+}
+
+.parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /*esto es el parallax*/
 }
