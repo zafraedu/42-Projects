@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: all 300ms ease-in-out;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main input {
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-size: large;
+  font-weight: 600;
+}

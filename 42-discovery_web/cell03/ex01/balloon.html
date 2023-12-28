@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>42 | cell03 | ex01</title>
+    <style>
+      body {
+		margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #circulo {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s, width 0.3s, height 0.3s;
+      }
+    </style>
+    <script>
+      let estado = 0; // 0: rojo, 1: verde, 2: azul
+      let diametro = 200;
+
+      function changeColor() {
+        if (estado === 0) {
+          circulo.style.backgroundColor = "#00ff00";
+          estado = 1;
+        } else if (estado === 1) {
+          circulo.style.backgroundColor = "#0000ff";
+          estado = 2;
+        } else {
+          circulo.style.backgroundColor = "#ff0000";
+          estado = 0;
+        }
+      }
+
+      function handleClick(circle) {
+        changeColor();
+        diametro += 10;
+        if (diametro > 420) diametro = 200;
+        circle.style.width = `${diametro}px`;
+        circle.style.height = `${diametro}px`;
+      }
+      function hadleMouseLeave(circle) {
+        changeColor();
+        if (diametro === 200) return;
+        else diametro -= 5;
+        circle.style.width = `${diametro}px`;
+        circle.style.height = `${diametro}px`;
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      id="circulo"
+      onclick="handleClick(this)"
+      onmouseleave="hadleMouseLeave(this)"
+    ></div>
+  </body>
+</html>

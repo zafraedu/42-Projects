@@ -1,0 +1,77 @@
+<!-- Hay que darle estilos CSS  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>42 | cell03 | ex03</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      main {
+        height: 100vh;
+        background-color: #777;
+      }
+      .inputText {
+        width: 200px;
+      }
+    </style>
+    <script>
+      function calcMath() {
+        let select = document.getElementById("operators").value;
+        let x = parseInt(document.getElementById("firstNum").value);
+        let y = parseInt(document.getElementById("secondNum").value);
+        let result;
+        if (isNaN(x) || isNaN(y) || x == undefined || y == undefined)
+          result = "not a number";
+        else if (x < 0 || y < 0) result = "Error :(";
+        else {
+          switch (select) {
+            case "plus":
+              result = x + y;
+              break;
+            case "less":
+              result = x - y;
+              break;
+            case "multi":
+              result = x * y;
+              break;
+            case "divi":
+              result = x / y;
+              if (x == 0 || y == 0) result = "It's over 9000!";
+              break;
+            case "modul":
+              result = x % y;
+              if (x == 0 || y == 0) result = "It's over 9000!";
+              break;
+            default:
+              result = "Select a operator";
+          }
+        }
+        console.log(result);
+        alert(result);
+      }
+      //   setInterval(() => {alert("Please, use me");}, 30000);
+    </script>
+  </head>
+  <body>
+    <main>
+      <section class="inputs">
+        <input class="inputText" id="firstNum" type="text" />
+        <select name="operators" id="operators">
+          <option>Choose</option>
+          <option value="plus" id="plus">+</option>
+          <option value="less" id="less">-</option>
+          <option value="multi" id="multi">*</option>
+          <option value="divi" id="divi">/</option>
+          <option value="modul" id="modul">%</option>
+        </select>
+        <input class="inputText" id="secondNum" type="text" />
+        <input type="submit" value="Try Me!" onclick="calcMath()" />
+      </section>
+    </main>
+  </body>
+</html>
