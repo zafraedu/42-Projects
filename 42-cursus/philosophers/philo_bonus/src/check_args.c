@@ -1,4 +1,16 @@
-#include "../include/philo_bonus.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check_args.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zafraedu <zafraedu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/01 14:53:32 by ezafra-r          #+#    #+#             */
+/*   Updated: 2023/12/04 16:58:47 by zafraedu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "philo_bonus.h"
 
 static int	print_usage(void);
 static int	ft_isdigit(char *str);
@@ -41,7 +53,7 @@ static int	print_usage(void)
 	printf(" ╔═══════════════╣    Usage     ╠═══════════════╗\n");
 	printf(" ║               ╚══════════════╝               ║\n");
 	printf(" ║ example:\t\t\t\t\t║\n");
-	printf(" ║\t./philo \033[36m2\033[0m \033[31m400\033[0m \033[32m200\033[0m");
+	printf(" ║ ./philo \033[36m2\033[0m \033[31m400\033[0m \033[32m200\033[0m");
 	printf(" \033[35m200\033[0m \033[33m3\033[0m\t\t\t║\n");
 	printf(" ║\t\t\t\t\t\t║\n");
 	printf(" ║ explain:\t\t\t\t\t║\n");

@@ -4,9 +4,12 @@ CFLAGS = -Wall -Werror -Wextra
 INC = -I $(INC_DIR)
 RM = rm -rf
 SRCS_MAIN = \
-	$(SRC_DIR)/main_bonus.c\
-	$(SRC_DIR)/check_args_bonus.c\
-	$(SRC_DIR)/utils_bonus.c\
+	$(SRC_DIR)/main.c\
+	$(SRC_DIR)/check_args.c\
+	$(SRC_DIR)/utils.c\
+	$(SRC_DIR)/init.c\
+	$(SRC_DIR)/routine_utils.c\
+	$(SRC_DIR)/routine.c\
 
 OBJS_PHILO = $(SRCS_MAIN:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
 
@@ -51,7 +54,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INC_DIR)/philo_bonus.h
 	@$(CC) $(CFLAGS) -c $< -o $@ $(INC)
 
 $(NAME): $(OBJS_PHILO)
-	@$(CC) -fsanitize=thread -g3 $(OBJS_PHILO) $(CFLAGS) $(INC) -o $@
+	@$(CC) -g $(OBJS_PHILO) $(CFLAGS) $(INC) -o $@
 	@echo "\n$(GREEN)[Compiled $(CIAN) $@ $(GREEN)successfully]\n$(END)"
 
 .PHONY: all bonus show clean fclean re

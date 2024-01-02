@@ -1,8 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zafraedu <zafraedu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/10 15:48:26 by ezafra-r          #+#    #+#             */
+/*   Updated: 2024/01/02 23:53:46 by zafraedu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/philo.h"
 
 static void	mem_free(t_philo *philo, t_simu *simu);
 static void	start_mural(void);
 static void	end_mural(t_simu *simu);
+
+// static void	start_mural(void);
+// static void	end_mural(t_simu *simu);
+
+// void	leaks(void)
+// {
+// 	system("leaks -q philo");
+// }
+// 	atexit(leaks);
 
 int	main(int ac, char **av)
 {

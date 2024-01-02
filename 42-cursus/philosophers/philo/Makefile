@@ -55,16 +55,11 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(INC_DIR)/philo.h
 	@$(CC) $(CFLAGS) -c $< -o $@ $(INC)
 
 $(NAME): $(OBJS_PHILO)
-	@$(CC) -fsanitize=thread -g3 $(OBJS_PHILO) $(CFLAGS) $(INC) -o $@
+	@$(CC) -g $(OBJS_PHILO) $(CFLAGS) $(INC) -o $@
 	@echo "\n$(GREEN)[Compiled $(CIAN) $@ $(GREEN)successfully]\n$(END)"
 
 .PHONY: all bonus show clean fclean re
 
-# flags para comprobar DATA RACE #
 # -fsanitize=thread -g3
-
-# comprobar DATA RACE con valgrind
 # valgrind --tool=helgrind  ./philo
-
-# comprobar memory leaks con valgrind
 # valgrind --leak-check=full ./philo
