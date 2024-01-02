@@ -16,8 +16,7 @@
 	<a href="#bonus">Bonus</a> •
 	<a href="#usage">Usage</a> •
 	<a href="#norme">Norminette</a> •
-	<a href="#license">License</a> •
-	<a href="https://github.com/zafraedu/42/wiki/pipex">Wiki</a>
+	<a href="#license">License</a>
 </p>
 
 ## About
@@ -182,7 +181,7 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 
 
 ## License
-Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/public/LICENSE).
+Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).
 
 
 
