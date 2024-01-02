@@ -16,8 +16,7 @@
 	<a href="#mandatory">Mandatory</a> •
 	<a href="#bonus">Bonus</a> •
 	<a href="#norme">Norminette</a> •
-	<a href="#license">License</a> •
-	<a href="https://github.com/zafraedu/42/wiki/libft">Wiki</a>
+	<a href="#license">License</a>
 </p>
 
 ## ABOUT
@@ -155,4 +154,4 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 [42 NORMA](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf) información sobre las normas de código de 42. `PDF`
 
 ## LICENSE
-Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/public/LICENSE).
+Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).
