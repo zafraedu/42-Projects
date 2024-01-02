@@ -145,7 +145,7 @@ incorrectamente. De no ser así, esta parte será IGNORADA.
   </tr>
   <tr>
     <th>Descripción</th>
-    <td>Philosophers con hilos y mutex</td>
+    <td>Philosophers con semaforos</td>
   </tr>
 </table>
 
