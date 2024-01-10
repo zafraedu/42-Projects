@@ -15,6 +15,8 @@ My 42 school curriculum projects.
 |||
 | 3 | [**philosophers**](./philosophers) | **125%** |
 | 3 | [**minishell**](https://github.com/zafraedu/minishell) | **100%** |
-| 3 | **Exam Rank 03** | - |
+| 3 | [**Exam Rank 03**](./exam_rank_03) | **100%** |
+|||
+
 ---
 Profile intra: [ezafra-r](https://profile.intra.42.fr/users/ezafra-r)
