@@ -5,23 +5,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>42 | cell03 | ex03</title>
+    <title>42 | cell03 | ex02</title>
     <style>
-      body {
-        padding: 0;
-        margin: 0;
-      }
-      main {
-        height: 100vh;
-        background-color: #777;
-      }
-      .inputText {
-        width: 200px;
-      }
+        * {
+          margin: 0;
+          box-sizing: border-box;
+        }
+        body {
+          background-color: #1a102a;
+          display: flex;
+          justify-content: center;
+        }
+        main {
+          width: 60%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 2em;
+          align-items: center;
+        }
+
+        .wrapper {
+          position: relative;
+        }
+
+        input[type="text"] {
+          max-width: 400px;
+          background: rgba(0, 0, 0, 0.3);
+          border: 1.5px solid #fff;
+          border-radius: 2em;
+          padding: 1rem 2rem;
+          color: #fff;
+          font-size: 1.5rem;
+        }
+
+        .wrapper #select {
+          background: #fff;
+          border-radius: 50%;
+          border: none;
+          height: 80%;
+          position: absolute;
+          right: 5px;
+          top: 10%;
+          font-size: 24px;
+          padding: 0.7rem;
+        }
+
+        input[type="submit"] {
+          font-size: 1.5em;
+          padding: 1rem 2rem;
+          border: none;
+          border-radius: 1em;
+          cursor: pointer;
+        }
     </style>
     <script>
       function calcMath() {
-        let select = document.getElementById("operators").value;
+        let select = document.getElementById("select").value;
         let x = parseInt(document.getElementById("firstNum").value);
         let y = parseInt(document.getElementById("secondNum").value);
         let result;
@@ -54,24 +95,29 @@
         console.log(result);
         alert(result);
       }
-      //   setInterval(() => {alert("Please, use me");}, 30000);
+        setInterval(() => {alert("Please, use me");}, 30000);
     </script>
   </head>
   <body>
     <main>
-      <section class="inputs">
+      <div class="wrapper">
         <input class="inputText" id="firstNum" type="text" />
-        <select name="operators" id="operators">
-          <option>Choose</option>
+        <select class="button btn1" name="operators" id="select">
+          <option></option>
           <option value="plus" id="plus">+</option>
           <option value="less" id="less">-</option>
           <option value="multi" id="multi">*</option>
           <option value="divi" id="divi">/</option>
           <option value="modul" id="modul">%</option>
         </select>
-        <input class="inputText" id="secondNum" type="text" />
-        <input type="submit" value="Try Me!" onclick="calcMath()" />
-      </section>
+      </div>
+      <input class="inputText" id="secondNum" type="text" />
+      <input
+        class="button btn2"
+        type="submit"
+        value="Try Me!"
+        onclick="calcMath()"
+      />
     </main>
   </body>
 </html>
