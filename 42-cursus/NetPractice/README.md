@@ -1,4 +1,4 @@
-![header born2beroot](./assets/netpractice_header.png)
+![header born2beroot](./assets/header_netpractice.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />

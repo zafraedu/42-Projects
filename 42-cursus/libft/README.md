@@ -1,4 +1,4 @@
-![header libft](./public/header_libft.png)
+![header libft](./assets/header_libft.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
@@ -23,8 +23,7 @@
 El primer proyecto en 42, libft, consiste en aprender cómo funcionan las funciones estándar de la programación C escribiéndolas desde cero y creando una biblioteca personal. Este proyecto es vital ya que la biblioteca se utilizará en asignaciones futuras en 42.
 Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá un montón de funciones de propósito general en las que se apoyarán tus programas.
 
-[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto
-> Para una información más detallada de las funciones entrar a la [Wiki](https://github.com/zafraedu/42/wiki/libft) de este repositorio
+[Click aquí](./assets/es.subject.pdf) para ver el `PDF` del proyecto
 
 ## HOW TO USE
 ### Compilation

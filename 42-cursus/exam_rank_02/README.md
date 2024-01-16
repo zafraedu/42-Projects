@@ -43,7 +43,7 @@ Cuando esté listo para enviar su función/programa, vaya a `rendu` y haga `push
 5. Después de git push, escriba `grademe` en el ***ExamShell*** para que se evalúe su proyecto.
 
 ### Exam IDE
-Debería poder usar tanto VSCode como Vim en el examen.
+Debería poder usar tanto nano como vim en el examen.
 <p>
 	<img src="https://skillicons.dev/icons?i=vim" />
 </p>
@@ -60,7 +60,7 @@ bash -c "$(curl https://grademe.fr)"
 ```
 Seleccionamos `42_EXAM simulator` pulsando la tecla `3` en el teclado.
 
-[![img grademe 1](public/grademe_01.png)](https://grademe.fr/)
+[![img grademe 1](./assets/grademe_01.png)](https://grademe.fr/)
 
 Abrimos una nueva terminal y accedemos al directorio `42_EXAM`, dentro habrá muchas carpetas pero solo nos iremos a fijar en dos,
 - `subject` donde nos mostrará el enunciado y la información del ejercicio que tengamos que hacer.

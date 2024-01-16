@@ -59,7 +59,7 @@ Para ejecutar el programa con el fractal de ***Mandelbrot*** por ejemplo:
 ```c
 ./fractol 1
 ```
-![fractal previw](./public/fractal_preview.png)
+![fractal previw](./assets/fractal_preview.png)
 
 Para ej fractal de ***Julia*** podemos ejecutar dos parámetros más que serían la posición inicial del fractal:
 ```c

@@ -1,4 +1,4 @@
-![header push_swap](public/header_push_swap.png)
+![header push_swap](./assets/header_push_swap.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
@@ -36,7 +36,7 @@ el conjunto de enteros recibido como argumento.
 
 ¿A que es fácil? Bueno, eso ya lo veremos...
 
-[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+[Click aquí](./assets/es.subject.pdf) para ver el `PDF` del proyecto.
 
 ## HOW TO USE
 

@@ -1,4 +1,4 @@
-![header pipex](./public/header_pipex.png)
+![header pipex](./assets/header_pipex.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
@@ -25,7 +25,7 @@ Implica recrear la mayor parte de la funcionalidad de la canalización del opera
 incluida la gestión de canalización de señales y la redirección de E/S.
 Además, presenta el concepto de here_doc y cómo leer la entrada de STDIN *(bonus part)*.
 
-[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+[Click aquí](./assets/es.subject.pdf) para ver el `PDF` del proyecto.
 
 
 ## Mandatory
@@ -48,9 +48,9 @@ Además, presenta el concepto de here_doc y cómo leer la entrada de STDIN *(bon
     <td>
       <ul>
         <li>
-          <code>open</code>, <code>close</code>, <code>read</code>, <code>write</code>, <code>malloc</code>, 
-          <code>free</code>, <code>perror</code>, <code>strerror</code>, <code>access</code>, <code>dup</code>, 
-          <code>dup2</code>, <code>execve</code>, <code>exit</code>, <code>fork</code>, <code>pipe</code>, 
+          <code>open</code>, <code>close</code>, <code>read</code>, <code>write</code>, <code>malloc</code>,
+          <code>free</code>, <code>perror</code>, <code>strerror</code>, <code>access</code>, <code>dup</code>,
+          <code>dup2</code>, <code>execve</code>, <code>exit</code>, <code>fork</code>, <code>pipe</code>,
           <code>unlink</code>, <code>wait</code>, <code>waitpid</code>
         </li>
         <li><code>ft_printf</code> and any equivalent YOU coded</li>
@@ -67,7 +67,6 @@ Además, presenta el concepto de here_doc y cómo leer la entrada de STDIN *(bon
   </tr>
 </table>
 
->Para saber lo que hace cada una de las nuevas funciones puedes entrar a la [Wiki](https://github.com/zafraedu/42/wiki/pipex) del repositorio.
 
 ### Estructura del comando
 ```bash
@@ -91,7 +90,7 @@ $> ./pipex_bonus archivo1 comando1 comando2 comando3 ... archivo2
 $> ./pipex_bonus here_doc LIMITADOR comando1 comando2 comando3 ... archivo2
 ```
 > `here_doc` -> Es el argumento que pasamos para cambiar la entrada por defecto (infile) por valores introducidos por nosotros;
-> 
+>
 > `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del *here_doc*;
 
 
@@ -182,6 +181,3 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 
 ## License
 Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).
-
-
-

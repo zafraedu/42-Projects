@@ -1,4 +1,4 @@
-![header push_swap](public/header_philo.png)
+![header push_swap](./assets/header_philo.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
@@ -24,9 +24,8 @@ En informática, el problema de los filósofos gastronómicos es un problema de 
 en el diseño de algoritmos concurrentes para ilustrar problemas de sincronización y técnicas para resolverlos.
 Fue formulado originalmente en 1965 por Edsger Dijkstra como un ejercicio de examen para estudiantes, presentado
 en términos de computadoras que compiten por el acceso a los periféricos de las unidades de cinta...
-[más información](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
 
-[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+[Click aquí](./assets/es.subject.pdf) para ver el `PDF` del proyecto.
 
 ## HOW TO USE
 
@@ -54,8 +53,8 @@ Ejemplo:
 
 ./philo 4 450 130 100 2
 ```
-![ejemplo1](./public/img1.png)
-![ejemplo2](./public/img2.png)
+![ejemplo1](./assets/img1.png)
+![ejemplo2](./assets/img2.png)
 
 ## Mandatory
 <table>
