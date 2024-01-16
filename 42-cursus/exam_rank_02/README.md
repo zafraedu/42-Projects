@@ -45,13 +45,13 @@ Cuando esté listo para enviar su función/programa, vaya a `rendu` y haga `push
 ### Exam IDE
 Debería poder usar tanto VSCode como Vim en el examen.
 <p>
-	<img src="https://skillicons.dev/icons?i=vscode,vim" />
+	<img src="https://skillicons.dev/icons?i=nano,vim" />
 </p>
 
 ## Simulator
 #### Como instalar el examen
 
-> **Note**  
+> **Note**
 > Este simulador es un trabajo hecho por [jcluzet](https://github.com/JCluzet/).
 
 Copia el siguiente código y pégalo en tu terminal.

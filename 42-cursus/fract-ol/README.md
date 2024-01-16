@@ -24,13 +24,15 @@ Este es un proyecto básico de gráficos por ordenador, en el proyecto utilizare
 
 Este nuevo proyecto será una oportunidad para familiarizarse  con la **MLX42**, para descubrir o utilizar la noción matemática de **números complejos** y echar un vistazo al concepto de **optimización** en CGI y practicar el manejo de acontecimientos.
 
+[Click aquí](./assets/es.subject.pdf) para ver el PDF del proyecto.
+
 ## HOW TO USE
 ### Compile
 Copia y pega este codigo para descargar y copilar el proyecto.
 ```bash
 git clone git@github.com:zafraedu/42.git && cd 42/42-cursus/fract-ol && make
 ```
-> **Warning**  
+> **Warning**
 > Solo disponible para **MacOs** y **Linux**.
 > Si lo vas a ejecutar en un ***Mac*** propio, habrá que modificar una línea del Makefile.
 > Para más información consulte la documentación de ***MLX42***
@@ -86,9 +88,8 @@ Para ej fractal de ***Julia*** podemos ejecutar dos parámetros más que serían
 |  m  | aumenta la posición inicial del fractal Julia   |
 | Esc | terminar el programa                            |
 > Puedes hacer zoom in/out con el SCROLL del mouse también.
-> 
+>
 ## Mandatory
-> Para saber más sobre los fractals entra a la [Wiki](https://github.com/zafraedu/42/wiki/fract-ol) de este proyecto
 <table>
   <tr>
     <th>Nombre del programa</th>
@@ -107,7 +108,7 @@ Para ej fractal de ***Julia*** podemos ejecutar dos parámetros más que serían
     <td>
       <ul>
         <li>
-          <code>open</code>, <code>close</code>, <code>read</code>, <code>write</code>, <code>malloc</code>, 
+          <code>open</code>, <code>close</code>, <code>read</code>, <code>write</code>, <code>malloc</code>,
           <code>free</code>, <code>perror</code>, <code>strerror</code>,<code>exit</code>
         </li>
 	<li>Todas las funciones de la librería de matemáticas (-lm man man 3 math)</li>

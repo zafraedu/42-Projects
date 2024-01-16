@@ -27,10 +27,10 @@ También brinda una valiosad oportunidad de aprendizaje en estructuras y argumen
 particularmente si tenemos la intención de incorporar banderas adicionales en nuestra implementación de printf (parte bonus).
 Una vez que valides el proyecto, podrás utilizar esta función en tus futuros proyectos.
 
-[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+[Click aquí](./public/es.subject.pdf) para ver el `PDF` del proyecto.
 
-> **Warning**  
-> Este proyecto ha sido implementado directamente sobre el proyecto Libft (submódulo).  
+> **Warning**
+> Este proyecto ha sido implementado directamente sobre el proyecto Libft (submódulo).
 > Aquí, se está usando directamente la librería `libft.a` para compilar el proyecto.
 
 
@@ -114,7 +114,7 @@ Testing ft_printf!
   </tr>
 </table>
 
-### Prototipo 
+### Prototipo
 
 El prototipo de `ft_printf()` es:
 
@@ -182,8 +182,8 @@ No es necesario hacer todos los bonus.
 - Gestiona cualquier combinación de los siguientes flags: `-`, `0` y `.` y el ancho mínimo (*field minimum width*) bajo todas las conversiones posibles.
 - Gestiona todos los siguientes flags: `#`, ` `(space) y ` +`.
 
-> **Note**  
-> Piensa en la implementación de las características extras desde el principio.  
+> **Note**
+> Piensa en la implementación de las características extras desde el principio.
 > De esta forma, evitarás los peligros de un enfoque ingenuo.
 
 

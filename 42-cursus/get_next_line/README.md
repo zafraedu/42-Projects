@@ -25,7 +25,7 @@ Esta función recupera una sola línea de un descriptor de archivo especificado.
 "get_next_line" devuelve todo el contenido del archivo, una línea a la vez hasta que se alcanza el final del archivo.
 Además, esta función se puede compilar con cualquier tamaño de búfer especificado.
 
-[Click aquí](./public/es_subject.pdf) para ver el `PDF` del proyecto.
+[Click aquí](./public/es.subject.pdf) para ver el `PDF` del proyecto.
 
 
 ## Usage

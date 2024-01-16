@@ -10,7 +10,7 @@
 
 
 # Born2beroot-Tutorial 🖥
->[Click aquí](./public/en_subject.pdf) para ver el `PDF` del proyecto.
+>[Click aquí](./public/en.subject.pdf) para ver el `PDF` del proyecto.
 
 # Índice
 
