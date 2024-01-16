@@ -1,4 +1,4 @@
-![header born2beroot](./public/header_bor2beroot.png)
+![header born2beroot](./assets/header_bor2beroot.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
@@ -10,7 +10,7 @@
 
 
 # Born2beroot-Tutorial 🖥
->[Click aquí](./public/en.subject.pdf) para ver el `PDF` del proyecto.
+>[Click aquí](./assets/en.subject.pdf) para ver el `PDF` del proyecto.
 
 # Índice
 

@@ -1,4 +1,4 @@
-![header born2beroot](./public/netpractice_header.png)
+![header born2beroot](./assets/netpractice_header.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
@@ -10,4 +10,4 @@
 
 
 # NetPractice-Tutorial 🖥
->[Click aquí](./public/en_subject.pdf) para ver el `PDF` del proyecto.
+>[Click aquí](./assets/en_subject.pdf) para ver el `PDF` del proyecto.

@@ -1,4 +1,4 @@
-![exam_rank_02](./public/exam_rank_02_header.png)
+![exam_rank_02](./assets/exam_rank_02_header.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%23A63F19&style=flat" />
@@ -45,7 +45,7 @@ Cuando esté listo para enviar su función/programa, vaya a `rendu` y haga `push
 ### Exam IDE
 Debería poder usar tanto VSCode como Vim en el examen.
 <p>
-	<img src="https://skillicons.dev/icons?i=nano,vim" />
+	<img src="https://skillicons.dev/icons?i=vim" />
 </p>
 
 ## Simulator

@@ -1,4 +1,4 @@
-![header fractol](./public/header_fractol.png)
+![header fractol](./assets/header_fractol.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />

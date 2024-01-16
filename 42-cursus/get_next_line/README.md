@@ -1,4 +1,4 @@
-![header get_next_line](./public/header_get_next_line.png)
+![header get_next_line](./assets/header_get_next_line.png)
 
 <div align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2300599C&style=flat" />
@@ -25,7 +25,7 @@ Esta función recupera una sola línea de un descriptor de archivo especificado.
 "get_next_line" devuelve todo el contenido del archivo, una línea a la vez hasta que se alcanza el final del archivo.
 Además, esta función se puede compilar con cualquier tamaño de búfer especificado.
 
-[Click aquí](./public/es.subject.pdf) para ver el `PDF` del proyecto.
+[Click aquí](./assets/es.subject.pdf) para ver el `PDF` del proyecto.
 
 
 ## Usage
