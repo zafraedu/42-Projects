@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+  }
+
+  body {
+	background-color: #1a102a;
+	display: flex;
+	justify-content: center;
+  }
+
+  main {
+	width: 60%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2em;
+	align-items: center;
+  }
+
+  .wrapper {
+	position: relative;
+  }
+
+  input[type="text"] {
+	max-width: 400px;
+	background: rgba(0, 0, 0, 0.3);
+	border: 1.5px solid #fff;
+	border-radius: 2em;
+	padding: 1rem 2rem;
+	color: #fff;
+	font-size: 1.5rem;
+  }
+
+  .wrapper #select {
+	background: #fff;
+	border-radius: 50%;
+	border: none;
+	height: 80%;
+	position: absolute;
+	right: 5px;
+	top: 10%;
+	font-size: 24px;
+	padding: 0.7rem;
+  }
+
+  input[type="submit"] {
+	font-size: 1.5em;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 1em;
+	cursor: pointer;
+  }

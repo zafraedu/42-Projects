@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>42 | cell03 | ex02</title>
+  <link rel="stylesheet" href="./calc.css">
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <input class="inputText" id="firstNum" type="text" />
+      <select class="button btn1" name="operators" id="select">
+        <option></option>
+        <option value="plus" id="plus">+</option>
+        <option value="less" id="less">-</option>
+        <option value="multi" id="multi">*</option>
+        <option value="divi" id="divi">/</option>
+        <option value="modul" id="modul">%</option>
+      </select>
+    </div>
+    <input class="inputText" id="secondNum" type="text" />
+    <input class="button" type="submit" value="Try Me!" id="calculateBtn" />
+  </main>
+  <script src="./jQuery.js"></script>
+  <script src="./calc.js"></script>
+</body>
+
+</html>
