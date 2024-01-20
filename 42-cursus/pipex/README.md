@@ -98,7 +98,7 @@ $> ./pipex_bonus here_doc LIMITADOR comando1 comando2 comando3 ... archivo2
 ### Compilation
 Clonar el repositorio:
 ```bash
-git clone git@github.com:zafraedu/42.git
+git clone https://github.com/zafraedu/42.git
 ```
 > Este no es el repositorio de pipex y sí de todos los proyectos de 42
 

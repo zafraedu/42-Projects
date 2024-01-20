@@ -29,7 +29,7 @@ Tendrás que programar una [librería](./inc/libft.h) en C. Tu librería tendrá
 ### Compilation
 #### Clonar el repositorio
 ```bash
-git clone git@github.com:zafraedu/42.git
+git clone https://github.com/zafraedu/42.git
 ```
 > Este no es el repositorio de libft y si de todos los proyectos de 42
 

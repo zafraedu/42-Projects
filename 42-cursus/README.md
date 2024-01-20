@@ -17,8 +17,8 @@ My 42 school curriculum projects.
 | 3 | [**minishell**](https://github.com/zafraedu/minishell) | **100%** |
 | 3 | [**Exam Rank 03**](./exam_rank_03) | **100%** |
 |||
-| 4 | [**NetPractice**](./NetPractice) | **...** |
-| 4 | [**cub3d**](./cub3d) | **...** |
+| 4 | [**NetPractice**](./NetPractice) | **100%** |
+| 4 | [**cub3d**](https://github.com/zafraedu/cub3d) | **...** |
 
 ---
 Profile intra: [ezafra-r](https://profile.intra.42.fr/users/ezafra-r)

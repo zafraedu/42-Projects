@@ -38,7 +38,7 @@ Una vez que valides el proyecto, podrás utilizar esta función en tus futuros p
 ### Compilation
 Clonar el repositorio
 ```bash
-git clone git@github.com:zafraedu/42.git
+git clone https://github.com/zafraedu/42.git
 ```
 > Este no es el repositorio de ft_printf y sí de todos los proyectos de 42
 

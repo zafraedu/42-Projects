@@ -30,7 +30,7 @@ Este nuevo proyecto será una oportunidad para familiarizarse  con la **MLX42**,
 ### Compile
 Copia y pega este codigo para descargar y copilar el proyecto.
 ```bash
-git clone git@github.com:zafraedu/42.git && cd 42/42-cursus/fract-ol && make
+git clone https://github.com/zafraedu/42.git && cd 42/42-cursus/fract-ol && make
 ```
 > **Warning**
 > Solo disponible para **MacOs** y **Linux**.
