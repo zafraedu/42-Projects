@@ -7,8 +7,6 @@
 	<img src='https://img.shields.io/badge/Málaga-FFDE59?style=flat&logo=42&logoColor=black'/>
 </div>
 
----
-
 # Guia para NetPractice
 
 >[Click aquí](./assets/en.subject.pdf) para ver el `PDF` del proyecto.
