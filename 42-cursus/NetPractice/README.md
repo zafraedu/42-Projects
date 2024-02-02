@@ -240,7 +240,7 @@ Una tabla de enrutamiento es una tabla de datos almacenada en un router o host d
 <details>
   <summary>Nivel 1</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level1_paint.png?raw=true" alt="level1">
+  <img src="assets/level1_paint.png?raw=true" alt="level1">
   <br>
   <br>
 
@@ -274,7 +274,7 @@ La solución será cualquier valor en el rango **211.191.0.0 - 211.191.255.255**
 <details>
   <summary>Nivel 2</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level2_paint.png?raw=true" alt="level2">
+  <img src="assets/level2_paint.png?raw=true" alt="level2">
   <br>
   <br>
 
@@ -343,7 +343,7 @@ Las respuestas pueden ser entonces cualquier dirección, siempre que cumplan las
 <details>
   <summary>Nivel 3</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level3_paint.png?raw=true" alt="level3">
+  <img src="assets/level3_paint.png?raw=true" alt="level3">
   <br>
   <br>
 
@@ -377,7 +377,7 @@ La dirección IP de _Interfaz B1_ y _Interfaz C1_ debe estar en el mismo rango d
 <details>
   <summary>Nivel 4</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level4_paint.png?raw=true" alt="level4">
+  <img src="assets/level4_paint.png?raw=true" alt="level4">
   <br>
   <br>
 
@@ -415,7 +415,7 @@ Tenga en cuenta que no interactuamos con el router _Interface R2_ y _Interface R
 <details>
   <summary>Nivel 5</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level5_paint.png?raw=true" alt="level5">
+  <img src="assets/level5_paint.png?raw=true" alt="level5">
   <br>
   <br>
 
@@ -446,7 +446,7 @@ La dirección del siguiente salto debe ser la dirección IP de la interfaz del s
 <details>
   <summary>Nivel 6</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level6_paint.png?raw=true" alt="level6">
+  <img src="assets/level6_paint.png?raw=true" alt="level6">
   <br>
   <br>
 
@@ -508,7 +508,7 @@ Un destino de _40.178.145.227/25_ es equivalente a la dirección de destino _40.
 <details>
   <summary>Nivel 7</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level7_paint.png?raw=true" alt="level7">
+  <img src="assets/level7_paint.png?raw=true" alt="level7">
   <br>
   <br>
 
@@ -535,9 +535,8 @@ Como necesitamos direcciones para 3 redes separadas, es conveniente dividir los 
 93.198.14.241 - 93.198.14.254 (Router R2 al Client C)
 ```
 
-Para calcular los posibles rangos de una máscara:
+Para calcular los posibles rangos de una máscara: [ip subnet calculator](https://www.calculator.net/ip-subnet-calculator.html?cclass=any&csubnet=28&cip=93.198.14.2&ctype=ipv4&printit=0&x=97&y=13)
 <br>
-https://www.calculator.net/ip-subnet-calculator.html?cclass=any&csubnet=28&cip=93.198.14.2&ctype=ipv4&printit=0&x=97&y=13
 
   <div align="right">
   <b><a href="#top">↥ volver arriba</a></b>
@@ -551,7 +550,7 @@ https://www.calculator.net/ip-subnet-calculator.html?cclass=any&csubnet=28&cip=9
 <details>
   <summary>Nivel 8</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level8_paint.png?raw=true" alt="level8">
+  <img src="assets/level8_paint.png?raw=true" alt="level8">
   <br>
   <br>
 
@@ -596,7 +595,7 @@ Tenga en cuenta que la dirección de red (primera) y la dirección de transmisi�
 <details>
   <summary>Nivel 9</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level9_paint.png?raw=true" alt="level9">
+  <img src="assets/level9_paint.png?raw=true" alt="level9">
   <br>
   <br>
 
@@ -627,7 +626,7 @@ Es normal tener un campo vacío para el tercer destino de _internet_, y en el de
 <details>
   <summary>Nivel 10</summary>
   <br>
-  <img src="https://github.com/LPaube/42_NetPractice/blob/main/assets/level10_paint.png?raw=true" alt="level10">
+  <img src="assets/level10_paint.png?raw=true" alt="level10">
   <br>
   <br>
 
