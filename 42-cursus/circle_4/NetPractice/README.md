@@ -11,7 +11,7 @@
 
 # Guia para NetPractice
 
->[Click aquí](./assets/en.subject.pdf?raw=true) para ver el `PDF` del proyecto.
+>[Click aquí](./assets/en.subject.pdf) para ver el `PDF` del proyecto.
 
 <div id="top"></div>
 
