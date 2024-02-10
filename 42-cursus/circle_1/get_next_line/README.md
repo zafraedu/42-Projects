@@ -20,6 +20,7 @@
 </p>
 
 ## About
+
 El proyecto "get_next_line" en 42 nos enseña cómo leer desde un descriptor de archivo y usar variables estáticas.
 Esta función recupera una sola línea de un descriptor de archivo especificado. Cuando se llama en un bucle,
 "get_next_line" devuelve todo el contenido del archivo, una línea a la vez hasta que se alcanza el final del archivo.
@@ -27,16 +28,18 @@ Además, esta función se puede compilar con cualquier tamaño de búfer especif
 
 [Click aquí](./assets/es.subject.pdf) para ver el `PDF` del proyecto.
 
-
 ## Usage
->Esta función no es un programa independiente, sus archivos deben incluirse y compilarse dentro de otro proyecto.
+
+> Esta función no es un programa independiente, sus archivos deben incluirse y compilarse dentro de otro proyecto.
 
 Para usar en tu código, incluye el encabezado:
+
 ```c
 #include "ruta/get_next_line.h"
 ```
 
 Para el ejemplo creamos un archivo `main.c`.
+
 ```c
 #include <stdio.h>
 #include <fcntl.h>
@@ -60,21 +63,25 @@ int	main(int argc, char **argv)
 	return (0);
 }
 ```
+
 Compilamos el codigo con sus respectivas flags
+
 ```bash
 gcc -Werror -Wextra -Wall -D BUFFER_SIZE=42 main.c src/*.c
 ```
+
 > `-Werror` `-Wextra` `-Wall` son flags de gestión de errores que solicita la [norma](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf).
 >
 > `BUFFER_SIZE` se puede especificar en la compilación para anular el `BUFFER_SIZE` predeterminado (es opcional en la compilacíon)
 
-Ejecutamos el programa con un *archivo* como parametro
+Ejecutamos el programa con un _archivo_ como parametro
+
 ```bash
 ./a.out [file]
 ```
+
 En la salida del programa deberia imprimir por la terminal todas las lineas
 del archivo especificado como parametro (`[file]`).
-
 
 ## Mandatory
 
@@ -102,32 +109,36 @@ del archivo especificado como parametro (`[file]`).
 </table>
 
 ### Prototipo
+
 El prototipo de la función `get_next_line` es:
 
-``` c++
+```c++
 char *get_next_line(int fd)
 ```
+
 > fd: descriptor de archivo del que leer.
 
 ### Requisitos
+
 - Llamar a tu función `get_next_line()` de manera repetida (por ejemplo, usando un bucle) te
-permitirá leer el contenido del archivo hacia el que apunta el descriptor de archivo, línea a línea, hasta el final.
+  permitirá leer el contenido del archivo hacia el que apunta el descriptor de archivo, línea a línea, hasta el final.
 - Tu función deberá devolver la línea que se acaba de leer; si no hay nada más que leer o si ha ocurrido un error, deberá devolver `NULL`.
 - Asegúrate de que tu función se comporta adecuadamente cuando lea de un archivo y cuando lea de `stdin`.
 - Ten en cuenta que la línea devuelta debe terminar con el caracter `n`, excepto si se ha llegado al final del archivo y esté no termina con un caracter `n`.
 - `get_next_line.h` deberá tener como mínimo el prototipo de la función `get_next_line()`.
 - Añade todas las funciones de ayuda que necesites en el archivo `get_next_line_utils.c`.
 
-
 ## Bonus
+
 - Desarrolla `get_next_line()` con una sola variable estática.
 - Tu `get_next_line()` tiene que ser capaz de gestionar múltiples fd a la vez. Es decir,
-si tienes tres fd disponibles para lectura (por ejemplo: 3, 4 y 5), debes poder utilizar `get_next_line()`
-una vez sobre el fd 3, otra vez sobre el fd 4, y otra vez sobre el fd 5 de forma alterna. Y sí, no debe perder el hilo de lectura de cada uno de los fd.
-
+  si tienes tres fd disponibles para lectura (por ejemplo: 3, 4 y 5), debes poder utilizar `get_next_line()`
+  una vez sobre el fd 3, otra vez sobre el fd 4, y otra vez sobre el fd 5 de forma alterna. Y sí, no debe perder el hilo de lectura de cada uno de los fd.
 
 ## NORME
+
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
+
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
 - Each function must be a maximum of 25 lines, not counting the function's curly brackets
@@ -137,8 +148,9 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 - You can't declare more than 5 variables per function
 - ...
 ```
+
 [42 NORMA](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf) información sobre las normas de código de 42. `PDF`
 
-
 ## LICENSE
+
 Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).

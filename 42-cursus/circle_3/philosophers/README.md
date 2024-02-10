@@ -20,6 +20,7 @@
 </p>
 
 ## About
+
 En informática, el problema de los filósofos gastronómicos es un problema de ejemplo que se utiliza a menudo
 en el diseño de algoritmos concurrentes para ilustrar problemas de sincronización y técnicas para resolverlos.
 Fue formulado originalmente en 1965 por Edsger Dijkstra como un ejercicio de examen para estudiantes, presentado
@@ -30,33 +31,43 @@ en términos de computadoras que compiten por el acceso a los periféricos de la
 ## HOW TO USE
 
 ### Compile
+
 Copia y pega este codigo para descargar y copilar el proyecto.
+
 ```bash
-git clone https://github.com/zafraedu/42.git && cd 42/42-cursus/philosophers/philo && make
+git clone https://github.com/zafraedu/42.git && cd 42/42-cursus/circle_3/philosophers && make
 ```
+
 ### Makefile rules
-- `make` - Compila los archivos ***src/push_swap*** y genera el ejecutable **push_swap**;
-- `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
+
+- `make` - Compila los archivos **_src/philo_** y genera el ejecutable **philo**;
+- `make clean` - Eliminas todos los objetos (\*.o) generados al compilar;
 - `make fclean` - Elimina todos los objetos más el ejecutable;
 - `make re` - usa `make fclean` + `make`;
 
 ### Usage
-Al ejecutarlo, especificamos como parámetros la ***cantidad de filósofos***, el ***tiempo de muerte***,
-el ***tiempo de comida***, el ***tiempo de sueño***, y como parámetro opcional, especificamos la
-***cantidad máxima de comida que debe comer*** cada filósofo.:
+
+Al ejecutarlo, especificamos como parámetros la **_cantidad de filósofos_**, el **_tiempo de muerte_**,
+el **_tiempo de comida_**, el **_tiempo de sueño_**, y como parámetro opcional, especificamos la
+**_cantidad máxima de comida que debe comer_** cada filósofo.:
+
 ```bash
 ./philo <number_philosopher> <time_to_die> <time_to_eat> <time_to_sleep> [number_of_time_each_philosophers_must_eat]
 ```
+
 Ejemplo:
+
 ```java
 ./philo 2 400 250 250
 
 ./philo 4 450 130 100 2
 ```
+
 ![ejemplo1](./assets/img1.png)
 ![ejemplo2](./assets/img2.png)
 
 ## Mandatory
+
 <table>
   <tr>
     <th>Nombre del programa</th>
@@ -89,6 +100,7 @@ Ejemplo:
 </table>
 
 Los programas emiten un mensaje cada vez que un filósofo realiza una acción, que tiene el siguiente formato:
+
 ```js
 [timestamp_in_ms] [X] has taken a fork
 [timestamp_in_ms] [X] is eating
@@ -98,19 +110,21 @@ Los programas emiten un mensaje cada vez que un filósofo realiza una acción, q
 ```
 
 ### Rules
+
 - Cada filósofo debe ser un hilo.
 - Hay un tenedor entre cada filósofo. por lo tanto, si hay varios filósofos, cada filósofo
-debe tener un tenedor a su izquierda y otro a su derecha. si solo hay un filósofo,
-solo habrá un tenedor en la mesa.
+  debe tener un tenedor a su izquierda y otro a su derecha. si solo hay un filósofo,
+  solo habrá un tenedor en la mesa.
 - Para prevenir que los filósofos dupliquen los tenedores, deberás proteger los estados
-de los tenedores con un mutex por cada uno de ellos.
+  de los tenedores con un mutex por cada uno de ellos.
 
 > **Warning**
 > Tu programa no debe tener ningún data races.
-> mira el final del archivo *philo/Makefile* para ver como comprobar los
+> mira el final del archivo _philo/Makefile_ para ver como comprobar los
 > memory leaks y los data races.
 
 ## Bonus
+
 Tus bonus serán evaluados exclusivamente si la parte obligatoria es EXCELENTE.
 Esto quiere decir, evidentemente, que debes completar la parte obligatoria, de principio
 a fin, y que tu gestión de errores debe ser impecable aunque el programa se utilice
@@ -148,12 +162,15 @@ incorrectamente. De no ser así, esta parte será IGNORADA.
 </table>
 
 ### Rules
+
 - Los tenedores están en el centro de la mesa.
 - Los tenedores no tienen estados de memoria, pero el numero de disponibilidades está representados por un semaforo.
 - Cada filósofo debe ser un proceso, y el proceso principal no debe ser un filósofo.
 
 ## NORME
+
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
+
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
 - Each function must be a maximum of 25 lines, not counting the function's curly brackets
@@ -163,8 +180,9 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 - You can't declare more than 5 variables per function
 - ...
 ```
+
 [42 NORMA](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf) información sobre las normas de código de 42. `PDF`
 
-
 ## LICENSE
+
 Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).

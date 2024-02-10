@@ -20,13 +20,13 @@
 </p>
 
 ## About
+
 Pipex es un proyecto individual de 42 diseñado para introducir los conceptos de procesos paralelos, incluido el uso de `fork()`, `pipe()` y `execve()`.
 Implica recrear la mayor parte de la funcionalidad de la canalización del operador de shell `|` (pipe),
 incluida la gestión de canalización de señales y la redirección de E/S.
-Además, presenta el concepto de here_doc y cómo leer la entrada de STDIN *(bonus part)*.
+Además, presenta el concepto de here_doc y cómo leer la entrada de STDIN _(bonus part)_.
 
 [Click aquí](./assets/es.subject.pdf) para ver el `PDF` del proyecto.
-
 
 ## Mandatory
 
@@ -67,61 +67,71 @@ Además, presenta el concepto de here_doc y cómo leer la entrada de STDIN *(bon
   </tr>
 </table>
 
-
 ### Estructura del comando
+
 ```bash
 $> ./pipex archivo1 comando1 comando2 archivo2
 ```
+
 - `./pipex` -> El ejecutable (numbre del programa);
 - `archivo1` -> Es el archivo de entrada (donde buscará el contenido);
 - `comando1` -> Es el primer comando que pasara al segundo;
 - `comando2` -> Es el conjunto del primer comando con este (para ejecutar la junción de ambos);
 - `archivo2` -> Es donde se va a guardar el resultado del la junción de los comandos 1 y 2;
 
-
 ## Bonus
 
 - Gestionar múltiples pipes:
+
 ```bash
 $> ./pipex_bonus archivo1 comando1 comando2 comando3 ... archivo2
 ```
+
 - Aceptar `<<` y `>>` cuando el primer parámetro es **here_doc**:
+
 ```bash
 $> ./pipex_bonus here_doc LIMITADOR comando1 comando2 comando3 ... archivo2
 ```
+
 > `here_doc` -> Es el argumento que pasamos para cambiar la entrada por defecto (infile) por valores introducidos por nosotros;
 >
-> `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del *here_doc*;
-
+> `LIMITADOR` -> Es una string que introducimos para parar la ejecución de escritura del _here_doc_;
 
 ## Usage
+
 ### Compilation
+
 Clonar el repositorio:
+
 ```bash
 git clone https://github.com/zafraedu/42.git
 ```
+
 > Este no es el repositorio de pipex y sí de todos los proyectos de 42
 
 Entrar en el repositorio del proyecto y ejecurar `make`:
+
 ```bash
-cd 42/42-cursus/pipex
+cd 42/42-cursus/circle_2/pipex
 make
 ```
 
 ### Makefile Rules
 
-- `make` - Compila los archivos ***src*** y genera el ejecutable **pipex**;
-- `make bonus` - Compila los archivos ***bonus*** y genera el ejecutable **pipex_bonus**
-- `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
-- `make fclean` - Elimina todos los objetos más el *libftprintf.a*;
+- `make` - Compila los archivos **_src_** y genera el ejecutable **pipex**;
+- `make bonus` - Compila los archivos **_bonus_** y genera el ejecutable **pipex_bonus**
+- `make clean` - Eliminas todos los objetos (\*.o) generados al compilar;
+- `make fclean` - Elimina todos los objetos más el _libftprintf.a_;
 - `make re` - usa `make fclean` + `make`;
 - `make rebonus` - usa `make fclean` + `make bonus`;
 
 ### Ejemplo de uso
+
 El programa se ejecuta de manera muy similar a la implementación de shell, sin embargo, no usa la misma sintaxis.
 Pipex se puede ejecutar con la siguiente sintaxis (el comando y los argumentos deben estar entre comillas), así se vería ejecutando desde la terminal:
 
 #### Pipex sin bonus:
+
 ```c
 // Shell
 $> < infile grep a | wc -l > outfile
@@ -130,10 +140,11 @@ $> < infile grep a | wc -l > outfile
 $> ./pipex infile "grep a" "wc -l" outfile
 ```
 
-> Con este comando nos debería de imprimir en *outfile* la cantidad de lineas (*wc -l*)
-> que coincide con *"a"* (grep a) contenidas dentro del archivo *infile*,
+> Con este comando nos debería de imprimir en _outfile_ la cantidad de lineas (_wc -l_)
+> que coincide con _"a"_ (grep a) contenidas dentro del archivo _infile_,
 
 #### Pipex con Bonus:
+
 ```c
 // Shell
 $> << STOP cat | grep a | wc -l >> outfile
@@ -141,11 +152,13 @@ $> << STOP cat | grep a | wc -l >> outfile
 // Nuestro programa pipex_bonus
 $> ./pipex_bonus here_doc STOP "cat" "grep a" "wc -l" outfile
 ```
->-  Ahora podemos introducir mas de dos comandos
->-  `here_doc` nos permitirá introducir caracteres
->- `STOP` es el limitador (podemos introducir lo que queramos)
+
+> - Ahora podemos introducir mas de dos comandos
+> - `here_doc` nos permitirá introducir caracteres
+> - `STOP` es el limitador (podemos introducir lo que queramos)
 
 Tendremos que introducir datos que leerá el programa:
+
 ```c
 > este es
 > un archivo
@@ -153,20 +166,23 @@ Tendremos que introducir datos que leerá el programa:
 > STOP
 $>
 ```
+
 > Escribimos lo que queramos, y paramos la ejecución con solo introducir
 > el limitador que especificamos en el comando (en mi caso `STOP`);
 
-
 Vemos el contenido de outfile con `cat`:
+
 ```bash
 $> cat outfile
 2
 ```
-> Nos saldrá 2 porque imprime la cantidad de lineas que encontro la letra "*a*".
 
+> Nos saldrá 2 porque imprime la cantidad de lineas que encontro la letra "_a_".
 
 ## Norme
+
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
+
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
 - Each function must be a maximum of 25 lines, not counting the function's curly brackets
@@ -176,8 +192,9 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 - You can't declare more than 5 variables per function
 - ...
 ```
+
 [42 NORMA](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf) información sobre las normas de código de 42. `PDF`
 
-
 ## License
+
 Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).

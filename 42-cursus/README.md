@@ -1,4 +1,5 @@
 # 42 Common Core
+
 My 42 school curriculum projects.
 | Circle | Project | Status |
 |:------:|:-------:|:------:|
@@ -6,7 +7,7 @@ My 42 school curriculum projects.
 |||
 | 1 | [**ft_printf**](./circle_1/ft_printf) | **125%** |
 | 1 | [**get_next_line**](./circle_1/get_next_line) | **125%** |
-| 1 | [**born2beroot**](./circle_1/Born2beroot) | **125%**  |
+| 1 | [**born2beroot**](./circle_1/Born2beroot) | **125%** |
 |||
 | 2 | [**pipex**](./circle_2/pipex) | **125%** |
 | 2 | [**fract-ol**](./circle_2/fract-ol) | **125%** |
@@ -22,4 +23,5 @@ My 42 school curriculum projects.
 | 4 | [**Exam Rank 04**](./circle_4/exam_rank_04) | **100%** |
 
 ---
+
 Profile intra: [ezafra-r](https://profile.intra.42.fr/users/ezafra-r)

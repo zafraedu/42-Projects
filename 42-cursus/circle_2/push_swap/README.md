@@ -43,7 +43,7 @@ el conjunto de enteros recibido como argumento.
 ### Compile
 Copia y pega este codigo para descargar y copilar el proyecto.
 ```bash
-git clone https://github.com/zafraedu/42.git && cd 42/42-cursus/push_swap && make
+git clone https://github.com/zafraedu/42.git && cd 42/42-cursus/circle_2/push_swap && make
 ```
 ### Makefile rules
 - `make` - Compila los archivos ***src/push_swap*** y genera el ejecutable **push_swap**;

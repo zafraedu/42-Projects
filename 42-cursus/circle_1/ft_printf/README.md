@@ -20,6 +20,7 @@
 </p>
 
 ## About
+
 Como parte del plan de estudios de 42, debemos completar el proyecto ft_printf,
 que consiste en recrear la conocida función de biblioteca de C, `printf()`.
 En este proyecto aprenderemos a cómo implementar funciones variadicas,
@@ -33,28 +34,35 @@ Una vez que valides el proyecto, podrás utilizar esta función en tus futuros p
 > Este proyecto ha sido implementado directamente sobre el proyecto Libft (submódulo).
 > Aquí, se está usando directamente la librería `libft.a` para compilar el proyecto.
 
-
 ## Usage
+
 ### Compilation
+
 Clonar el repositorio
+
 ```bash
 git clone https://github.com/zafraedu/42.git
 ```
+
 > Este no es el repositorio de ft_printf y sí de todos los proyectos de 42
 
 Entrar en el repositorio del proyecto y ejecurar `make`
+
 ```bash
-cd 42/42-cursus/ft_printf
+cd 42/42-cursus/circle_1/ft_printf
 make
 ```
 
 Para usar en tu código, incluye el encabezado
+
 ```c
 #include "ruta/ft_printf.h"
 ```
 
 ### Ejemplo de uso
+
 Para el ejemplo creamos un archivo `main.c`.
+
 ```c
 // Include the header
 #include "./inc/ft_printf.h"
@@ -68,22 +76,23 @@ int main(void)
 ```
 
 Compilamos `main.c` con la libreria generado con make anteriormente y ejecutamos el programa generado:
+
 ```bash
 gcc main.c libftprintf.a && ./a.out
 ```
 
 En la salida del programa debería mostrarse algo asíÑ
+
 ```
 Testing ft_printf!
 ```
 
 ### Makefile Rules
 
-- `make` - Compila los archivos ***mandatory*** de libft y ft_printf y genera *libftprintf.a*;
-- `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
-- `make fclean` - Elimina todos los objetos más el *libftprintf.a*;
+- `make` - Compila los archivos **_mandatory_** de libft y ft_printf y genera _libftprintf.a_;
+- `make clean` - Eliminas todos los objetos (\*.o) generados al compilar;
+- `make fclean` - Elimina todos los objetos más el _libftprintf.a_;
 - `make re` - usa `make fclean` + `make`;
-
 
 ## Mandatory
 
@@ -121,6 +130,7 @@ El prototipo de `ft_printf()` es:
 ```c
 int ft_printf(char const *, ...);
 ```
+
 ### Requisitos
 
 - No implementes la gestión del buffer del `printf()` original.
@@ -174,21 +184,21 @@ Tienes que implementar las siguientes conversiones:
   </tr>
 </table>
 
-
 ## Bonus
 
 No es necesario hacer todos los bonus.
 
-- Gestiona cualquier combinación de los siguientes flags: `-`, `0` y `.` y el ancho mínimo (*field minimum width*) bajo todas las conversiones posibles.
+- Gestiona cualquier combinación de los siguientes flags: `-`, `0` y `.` y el ancho mínimo (_field minimum width_) bajo todas las conversiones posibles.
 - Gestiona todos los siguientes flags: `#`, ` `(space) y ` +`.
 
 > **Note**
 > Piensa en la implementación de las características extras desde el principio.
 > De esta forma, evitarás los peligros de un enfoque ingenuo.
 
-
 ## NORME
+
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
+
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
 - Each function must be a maximum of 25 lines, not counting the function's curly brackets
@@ -198,8 +208,9 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 - You can't declare more than 5 variables per function
 - ...
 ```
+
 [42 NORMA](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf) información sobre las normas de código de 42. `PDF`
 
-
 ## LICENSE
+
 Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).

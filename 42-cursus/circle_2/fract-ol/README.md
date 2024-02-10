@@ -20,76 +20,91 @@
 </p>
 
 ## ABOUT
+
 Este es un proyecto básico de gráficos por ordenador, en el proyecto utilizaremos la librería gráfica del campus: [MLX42](./libs/libmlx), esta librería ha sido creada de manera interna e incluye herramientas básicas necesarias para abrir una ventana, crear imágenes y hacer frente a los eventos del teclado y del ratón.
 
-Este nuevo proyecto será una oportunidad para familiarizarse  con la **MLX42**, para descubrir o utilizar la noción matemática de **números complejos** y echar un vistazo al concepto de **optimización** en CGI y practicar el manejo de acontecimientos.
+Este nuevo proyecto será una oportunidad para familiarizarse con la **MLX42**, para descubrir o utilizar la noción matemática de **números complejos** y echar un vistazo al concepto de **optimización** en CGI y practicar el manejo de acontecimientos.
 
 [Click aquí](./assets/es.subject.pdf) para ver el PDF del proyecto.
 
 ## HOW TO USE
+
 ### Compile
+
 Copia y pega este codigo para descargar y copilar el proyecto.
+
 ```bash
-git clone https://github.com/zafraedu/42.git && cd 42/42-cursus/fract-ol && make
+git clone https://github.com/zafraedu/42.git && cd 42/42-cursus/circle_2/fract-ol && make
 ```
+
 > **Warning**
 > Solo disponible para **MacOs** y **Linux**.
-> Si lo vas a ejecutar en un ***Mac*** propio, habrá que modificar una línea del Makefile.
-> Para más información consulte la documentación de ***MLX42***
+> Si lo vas a ejecutar en un **_Mac_** propio, habrá que modificar una línea del Makefile.
+> Para más información consulte la documentación de **_MLX42_**
 
-- `make` - Compila los archivos ***src*** y genera el ejecutable **fractol**;
-- `make clean` - Eliminas todos los objetos (*.o) generados al compilar;
+- `make` - Compila los archivos **_src_** y genera el ejecutable **fractol**;
+- `make clean` - Eliminas todos los objetos (\*.o) generados al compilar;
 - `make fclean` - Elimina todos los objetos más el ejecutable;
 - `make re` - usa `make fclean` + `make`;
 
 ### Usage
-Para abrir el programa solo tienes que ejecutarlo con un ***index*** del fractal que querámos como parámetro.
+
+Para abrir el programa solo tienes que ejecutarlo con un **_index_** del fractal que querámos como parámetro.
+
 ```c
 ./fractol <INDEX>
 ```
-| Fractal | INDEX |
-| ------- | ----- |
-| Mandelbrot   | 1 |
-| Julia        | 2 |
-| Burning Ship | 3 |
-| Tricorn      | 4 |
+
+| Fractal      | INDEX |
+| ------------ | ----- |
+| Mandelbrot   | 1     |
+| Julia        | 2     |
+| Burning Ship | 3     |
+| Tricorn      | 4     |
 
 ### Example to use
-Para ejecutar el programa con el fractal de ***Mandelbrot*** por ejemplo:
+
+Para ejecutar el programa con el fractal de **_Mandelbrot_** por ejemplo:
+
 ```c
 ./fractol 1
 ```
+
 ![fractal previw](./assets/fractal_preview.png)
 
-Para ej fractal de ***Julia*** podemos ejecutar dos parámetros más que serían la posición inicial del fractal:
+Para ej fractal de **_Julia_** podemos ejecutar dos parámetros más que serían la posición inicial del fractal:
+
 ```c
 ./fractol 2 0.285 0.01
 ```
 
 ### Commands
-| Key | Description |
-| --- | ----------- |
-|  h  | despliega/pliega la guia de comandos            |
-|  1  | cambia/resetea al fractal de Mandelbrot         |
-|  2  | cambia/resetea al fractal de Julia              |
-|  3  | cambia/resetea al fractal de Burning ship       |
-|  4  | cambia/resetea al fractal de Tricorn            |
-|  w  | se mueve hacia arriba                           |
-|  s  | se mueve hacia abajo                            |
-|  a  | se mueve hacia la izquierda                     |
-|  d  | se mueve hacia al derecha                       |
-|  j  | incrementa el zoom                              |
-|  k  | decrementa el zoom                              |
-|  i  | aumenta el número de interaciones del fractal   |
-|  o  | disminuye el número de interaciones del fractal |
-|  c  | cambia el color del fractal                     |
-|  v  | habilita/deshabilita el smooth                  |
-|  n  | disminuye la posición inicial del fractal Julia |
-|  m  | aumenta la posición inicial del fractal Julia   |
+
+| Key | Description                                     |
+| --- | ----------------------------------------------- |
+| h   | despliega/pliega la guia de comandos            |
+| 1   | cambia/resetea al fractal de Mandelbrot         |
+| 2   | cambia/resetea al fractal de Julia              |
+| 3   | cambia/resetea al fractal de Burning ship       |
+| 4   | cambia/resetea al fractal de Tricorn            |
+| w   | se mueve hacia arriba                           |
+| s   | se mueve hacia abajo                            |
+| a   | se mueve hacia la izquierda                     |
+| d   | se mueve hacia al derecha                       |
+| j   | incrementa el zoom                              |
+| k   | decrementa el zoom                              |
+| i   | aumenta el número de interaciones del fractal   |
+| o   | disminuye el número de interaciones del fractal |
+| c   | cambia el color del fractal                     |
+| v   | habilita/deshabilita el smooth                  |
+| n   | disminuye la posición inicial del fractal Julia |
+| m   | aumenta la posición inicial del fractal Julia   |
 | Esc | terminar el programa                            |
+
 > Puedes hacer zoom in/out con el SCROLL del mouse también.
->
+
 ## Mandatory
+
 <table>
   <tr>
     <th>Nombre del programa</th>
@@ -127,11 +142,13 @@ Para ej fractal de ***Julia*** podemos ejecutar dos parámetros más que serían
 </table>
 
 ### Reglas
+
 - Tienes que utilizar la miniLibX, ya sea la versión disponible en los ordenadores del campus o la que instales usando sus fuentes originales.
 - Tendrás que entregar un Makefile que compilará tus archivos fuente. No debe hacer relink.
 - Las variables globales están prohibidas.
 
 #### Renderizado
+
 - Tu programa debe ofrecer los conjuntos de **Julia** y **Mandelbrot**.
 - La rueda del ratón hace zoom in y zoom out y lo hace casi infinitamente (dentrode los límites del ordenador). Ese es el concepto de un fractal.
 - Debes poder crear un conjunto de Julia diferente mediante los parámetros del programa.
@@ -141,6 +158,7 @@ Para ej fractal de ***Julia*** podemos ejecutar dos parámetros más que serían
 - Debes usar al menos unos pocos colores para mostrar la profundidad de cada fractal. Es incluso mejor si te adentras en los efectos psicodélicos.
 
 #### Representación gráfica
+
 - Tu programa tiene que mostrar la imagen en una ventana.
 - El manejo de tu ventana debe ser fluido (cambio a otra ventana, minimización y demás).
 - ESC debe cerrar la ventana y salir del programa de manera limpia.
@@ -148,13 +166,16 @@ Para ej fractal de ***Julia*** podemos ejecutar dos parámetros más que serían
 - El uso de images de la **MLX42** es obligatorio.
 
 ## BONUS
+
 - Un fractal diferente más (hay más de cien referencias a distintos tipos de fractales online).
 - El zoom sigue la posición actual del ratón.
 - Adicionalmente al zoom: moverse con flechas.
 - Haz que el rango de color cambie.
 
 ## Norme
+
 En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con la Norma, que es el estándar de codificación de la escuela.
+
 ```
 - No for, do...while, switch, case, goto, ternary operators and variable-length arrays are allowed
 - Each function must be a maximum of 25 lines, not counting the function's curly brackets
@@ -164,8 +185,9 @@ En 42 School, se espera que casi todos los proyectos se escriban de acuerdo con 
 - You can't declare more than 5 variables per function
 - ...
 ```
+
 [42 NORMA](https://github.com/zafraedu/42/blob/master/public/es_norm.pdf) información sobre las normas de código de 42. `PDF`
 
-
 ## License
+
 Este trabajo se publica bajo los términos de [42 Unlicense](https://github.com/zafraedu/42/blob/master/LICENSE).

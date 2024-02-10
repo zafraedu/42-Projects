@@ -9,7 +9,7 @@
 
 # Guia para NetPractice
 
->[Click aquí](./assets/en.subject.pdf) para ver el `PDF` del proyecto.
+> [Click aquí](./assets/en.subject.pdf) para ver el `PDF` del proyecto.
 
 <div id="top"></div>
 
@@ -635,7 +635,7 @@ En este nivel existen 4 redes diferentes:
 2. _Router R1_ al _Router R2_
 3. _Router R2_ al _Client H4_
 4. _Router R2_ al _Client H3_
-<br>
+   <br>
 
 **1.** Internet debe poder enviar sus paquetes a todos los hosts, por lo que su destino debe cubrir el rango de redes de todos los hosts.
 <br>
@@ -650,7 +650,7 @@ _Interface R11_ y _Interface R13_ ya tienen una dirección IP ingresada. Esta di
 
 1. La dirección IP está cubierta por el destino _internet_.
 2. El rango de direcciones IP de las distintas redes no se superpone.
-<br>
+   <br>
 
 Con las direcciones IP ya ingresadas (atenuadas), examinemos los rangos cubiertos por las distintas redes:
 <br>
