@@ -46,7 +46,7 @@ Account::Account(int initial_deposit)
 	this->_amount = initial_deposit;
 	this->_nbDeposits = 0;
 	this->_nbWithdrawals = 0;
-	this->_totalAmount = initial_deposit;
+	this->_totalAmount += initial_deposit;
 	_displayTimestamp();
 	std::cout << "index:" << this->_accountIndex << ";"
 						<< "amount:" << this->_amount << ";"
