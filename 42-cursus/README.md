@@ -21,7 +21,7 @@ My 42 school curriculum projects.
 | 4 | [**NetPractice**](./circle_4/NetPractice) | **100%** |
 | 4 | [**cub3d**](https://github.com/zafraedu/cub3d) | **103%** |
 | 4 | [**Exam Rank 04**](./circle_4/exam_rank_04) | **100%** |
-| 4 | [**CPP Module 00~05**](./circle_4/CPP_Module[00-05]) | **100%** |
+| 4 | [**CPP Module 00~05**](./circle_4/CPP_Module_0-5) | **100%** |
 
 ---
 

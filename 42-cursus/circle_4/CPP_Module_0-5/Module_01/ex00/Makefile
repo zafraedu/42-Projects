@@ -1,10 +1,10 @@
-NAME = account
+NAME = zombie
 
 CC = c++
-FLAGS = -Wall -Wextra -Werror -std=c++98
+FLAGS = -Wall -Wextra -Werror -fsanitize=address -fno-omit-frame-pointer -std=c++98
 RM = rm -rf
 
-SRCS = Account.cpp tests.cpp
+SRCS = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 #########################  directorios(rutas)  #################################
 OBJ_DIR = obj
@@ -36,7 +36,7 @@ re: fclean all
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(OBJ_DIR)
 	@$(CC) $(FLAGS) -c $< -o $@
-	@echo "$(BLUE)M_0-ex00 Compiling:$(END) $(notdir $<)"
+	@echo "$(BLUE)M_1-ex00 Compiling:$(END) $(notdir $<)"
 
 $(NAME): $(OBJS)
 	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
