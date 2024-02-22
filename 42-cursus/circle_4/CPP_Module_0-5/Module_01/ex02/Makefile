@@ -1,10 +1,10 @@
-NAME = zombie
+NAME = reference
 
 CC = c++
 FLAGS = -Wall -Wextra -Werror -fsanitize=address -fno-omit-frame-pointer -std=c++98
 RM = rm -rf
 
-SRCS = main.cpp Zombie.cpp zombieHorde.cpp
+SRCS = main.cpp
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 #########################  directorios(rutas)  #################################
 OBJ_DIR = obj
@@ -36,7 +36,7 @@ re: fclean all
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(OBJ_DIR)
 	@$(CC) $(FLAGS) -c $< -o $@
-	@echo "$(BLUE)M_1-ex01 Compiling:$(END) $(notdir $<)"
+	@echo "$(BLUE)M_1-ex02 Compiling:$(END) $(notdir $<)"
 
 $(NAME): $(OBJS)
 	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
