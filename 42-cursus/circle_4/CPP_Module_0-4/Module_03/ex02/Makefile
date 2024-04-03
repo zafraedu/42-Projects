@@ -1,14 +1,17 @@
-NAME = claptrap
-EXERCISE = M_3 ex00
+NAME = fragtrap
+EXERCISE = M_3 ex02
 
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
+INC = -I$(INC_DIR)
 RM = rm -rf
 
-SRCS = main.cpp ClapTrap.cpp
-OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
+SRCS = main.cpp $(SRC_DIR)/ClapTrap.cpp $(SRC_DIR)/ScavTrap.cpp $(SRC_DIR)/FragTrap.cpp
+OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 #########################  directorios(rutas)  #################################
 OBJ_DIR = obj
+INC_DIR = inc
+SRC_DIR = src
 #############################  Colores  ########################################
 GREEN		=	\033[92;5;118m
 YELLOW	=	\033[93;5;226m
@@ -34,13 +37,13 @@ fclean: clean
 
 re: fclean all
 ###########################  Normas  ###########################################
-$(OBJ_DIR)/%.o: %.cpp
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp $(INC_DIR)/*.hpp
 	@mkdir -p $(OBJ_DIR)
-	@$(CC) $(FLAGS) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@ $(INC)
 	@echo "$(BLUE)$(EXERCISE) Compiling:$(END) $(notdir $<)"
 
 $(NAME): $(OBJS)
-	@$(CC) $(FLAGS) $(OBJS) -o $(NAME)
-	@echo "\n$(GREEN)[Compiled$(CIAN) $@ $(GREEN)successfully]$(END)"
+	@$(CC) $(FLAGS) $(INC) $(OBJS) -o $(NAME)
+	@echo "$(GREEN)\n[Compiled$(CIAN) $@ $(GREEN)successfully]$(END)"
 
 .PHONY: all show clean fclean re

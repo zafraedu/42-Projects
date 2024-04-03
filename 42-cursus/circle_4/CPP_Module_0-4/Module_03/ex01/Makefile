@@ -1,8 +1,8 @@
-NAME = claptrap
+NAME = scavtrap
 EXERCISE = M_3 ex01
 
 CC = c++
-FLAGS = -Wall -Wextra -Werror -fsanitize=address -fno-omit-frame-pointer -std=c++98
+FLAGS = -Wall -Wextra -Werror -std=c++98
 INC = -I$(INC_DIR)
 RM = rm -rf
 
