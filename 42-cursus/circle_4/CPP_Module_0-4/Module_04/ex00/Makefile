@@ -10,6 +10,8 @@ SRCS = main.cpp\
 	$(SRC_DIR)/Animal.cpp\
 	$(SRC_DIR)/Dog.cpp\
 	$(SRC_DIR)/Cat.cpp\
+	$(SRC_DIR)/WrongAnimal.cpp\
+	$(SRC_DIR)/WrongCat.cpp\
 
 OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 #########################  directorios(rutas)  #################################
