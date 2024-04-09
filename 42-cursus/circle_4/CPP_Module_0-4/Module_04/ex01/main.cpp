@@ -1,25 +1,45 @@
-#include "inc/Dog.hpp"
-#include "inc/Cat.hpp"
-#include "inc/WrongCat.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
 
 int main(void)
 {
-    const Animal *j = new Dog();
-    const Animal *i = new Cat();
+	std::cout << "---------------------HEAP---------------------" << std::endl;
 
-    delete j; // should not create a leak
-    delete i;
+	const Animal*	cat = new Cat();
+	const Animal*	dog = new Dog();
+	const Animal*	animal = new Animal();
 
-    Dog basic;
-    {
-        Dog tmp = basic;
-    }
+	delete	cat;
+	delete	dog;
+	delete	animal;
 
-    const Animal *animals[4] = {new Dog(), new Dog(), new Cat(), new Cat()};
-    for (int i = 0; i < 4; i++)
-    {
-        delete animals[i];
-    }
+	std::cout << "--------------------STACK---------------------" << std::endl;
 
-    return 0;
+	Cat	stack_cat;
+	Cat	operator_cat = stack_cat;
+	Cat	copy_cat(stack_cat);
+
+	Dog	stack_dog;
+	Dog	oeprator_dog = stack_dog;
+	Dog	copy_dog(stack_dog);
+
+	std::cout << "---------------------ARRAY--------------------" << std::endl;
+
+	int		len = 10;
+	int		k = 0;
+	Animal	*tab[len];
+
+	while (k < (len / 2))
+	{
+		tab[k] = new Dog();
+		k++;
+	}
+	while (k < len)
+	{
+		tab[k] = new Cat();
+		k++;
+	}
+	while (--k >= 0)
+		delete tab[k];
+	return (0);
 }
