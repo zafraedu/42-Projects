@@ -2,7 +2,7 @@
 
 Cure::Cure(void) : AMateria("cure") {}
 
-Cure::Cure(const Cure &cpy)
+Cure::Cure(const Cure &cpy) : AMateria("cure")
 {
 	*this = cpy;
 }

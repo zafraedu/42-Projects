@@ -2,7 +2,7 @@
 
 Ice::Ice(void) : AMateria("ice") {}
 
-Ice::Ice(const Ice &cpy)
+Ice::Ice(const Ice &cpy) : AMateria("ice")
 {
 	*this = cpy;
 }
