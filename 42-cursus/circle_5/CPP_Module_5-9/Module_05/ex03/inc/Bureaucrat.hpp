@@ -20,7 +20,7 @@ private:
 public:
 	Bureaucrat(const std::string &name, int grade);
 	Bureaucrat(const Bureaucrat &cpy);
-	~Bureaucrat();
+	virtual ~Bureaucrat();
 
 	Bureaucrat &operator=(const Bureaucrat &obj);
 

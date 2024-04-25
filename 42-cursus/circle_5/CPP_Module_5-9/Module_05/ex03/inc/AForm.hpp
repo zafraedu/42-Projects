@@ -18,7 +18,7 @@ private:
 public:
     AForm(const std::string &name, int gradeToSign, int gradeToExecute);
     AForm(const AForm &src);
-    ~AForm();
+    virtual ~AForm();
 
     AForm &operator=(const AForm &obj);
 

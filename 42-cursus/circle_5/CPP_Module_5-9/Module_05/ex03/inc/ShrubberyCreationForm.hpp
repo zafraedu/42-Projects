@@ -14,7 +14,7 @@ private:
 public:
 	ShrubberyCreationForm(const std::string &target);
 	ShrubberyCreationForm(const ShrubberyCreationForm &src);
-	~ShrubberyCreationForm();
+	virtual ~ShrubberyCreationForm();
 
 	ShrubberyCreationForm &operator=(ShrubberyCreationForm &obj);
 

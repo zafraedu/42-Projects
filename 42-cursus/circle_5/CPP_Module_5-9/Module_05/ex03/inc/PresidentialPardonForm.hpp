@@ -12,7 +12,7 @@ private:
 public:
 	PresidentialPardonForm(const std::string &target);
 	PresidentialPardonForm(const PresidentialPardonForm &copy);
-	~PresidentialPardonForm(void);
+	virtual ~PresidentialPardonForm(void);
 
 	PresidentialPardonForm &operator=(const PresidentialPardonForm &obj);
 
