@@ -2,79 +2,53 @@
 #define SCALARCONVERTER_HPP
 
 #include <iostream>
-#include <fstream>
-#include <limits>
+#include <limits.h>
+#include <cmath>
+#include <string>
+#include <sstream>
+#include <stdlib.h>
 
-enum e_type
+enum e_dataType
 {
-	NONE,
+	CHAR,
 	INT,
 	FLOAT,
-	CHAR,
 	DOUBLE,
-	LITERALS
+	PSF,
+	PSD,
+	INVALID
 };
 
 class ScalarConverter
 {
+	//! quitar los comentarios a la hora de subir
+	/* Al declarar el constructor privado evitamos que la clase pueda ser instanciada
+	fuera de la clase. Esto es util con ciertos patrones de diseño, como el patron Singleton,
+	donde solo quieres permitir una unica instancia de la clase.
+	Ademas, tambien se utiliza para prevenir la creacion de objetos si la clase solo
+	contiene metodos estaticos. El metodo estatico convert() se podrá usar sin instanciar la clase.*/
 private:
-	char _c;
-	int _n;
-	float _f;
-	double _d;
+	ScalarConverter();
+	ScalarConverter(const ScalarConverter &rhs);
+	~ScalarConverter();
 
-	bool _impossible;
-
-	std::string _str;
-	e_type _type;
+	ScalarConverter &operator=(const ScalarConverter &rhs);
 
 public:
-	ScalarConverter();
-	ScalarConverter(const ScalarConverter &cpy);
-	virtual ~ScalarConverter();
-
-	ScalarConverter &operator=(const ScalarConverter &obj);
-
-	char getC(void) const;
-	void setC(char c);
-
-	int getI(void) const;
-	void setI(int n);
-
-	float getF(void) const;
-	void setF(float f);
-
-	double getD(void) const;
-	void setD(double d);
-
-	void convert(void);
-
-	void setStr(std::string str);
-	std::string getStr(void) const;
-
-	e_type getType(void) const;
-	void setType(void);
-
-	bool isChar(void) const;
-	bool isInt(void) const;
-	bool isFloat(void) const;
-	bool isDouble(void) const;
-
-	bool isImpossible(void);
-
-	void printChar(void) const;
-	void printInt(void) const;
-	void printFloat(void) const;
-	void printDouble(void) const;
-
-	bool isLiterals(void) const;
-
-	class ConverterException : public std::exception
-	{
-		virtual const char *what() const throw() { return "Unknown type"; }
-	};
+	static void convert(const std::string str);
 };
 
-std::ostream &operator<<(std::ostream &os, const ScalarConverter &obj);
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define END "\033[0m"
 
 #endif
+//! quitar los comentarios a la hora de subir
+/*
+		-> -inff y -inf: representan el "menos infinito". Se utliza cuando un numero es
+		demasiado pequeño para ser representado en el sistema de punto flotante del pc.
+		-> +inff y +inf: representan el "más infinito". Se utliza cuando un numero es
+		demasiado grande para ser representado en el sistema de punto flotante del pc.
+		-> nan: representa "Not a Number". Se utiliza para representar resultados de
+		operaciones matematicas indefinidas, como la division por cero.
+*/
