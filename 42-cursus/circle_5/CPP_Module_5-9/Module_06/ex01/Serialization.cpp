@@ -25,7 +25,6 @@ Serialization &Serialization::operator=(const Serialization &rhs)
 	(void)rhs;
 	return *this;
 }
-//! borrar comentario al subir
 /*
 		reinterpret_cast es un operador de c++ que convierte un tipo de puntero a otro tipo de puntero
 		o un tipo integral a otro tipo integral. Esencialmente, te permite tratar una secuencia de bits
@@ -36,7 +35,11 @@ Serialization &Serialization::operator=(const Serialization &rhs)
 		Esto puede ser peligroso si no se utiliza correctamente, ya que puede resultar en punteros no
 		validos o en comportamientos indefinidos.
 */
-//! borrar comentario al subir
+
+uintptr_t Serialization::serialize(data_t *ptr)
+{
+	return reinterpret_cast<uintptr_t>(ptr);
+}
 /*
 		serialize: toma un puntero a Data y lo convierte a uintptr_t, que es un tipo entero sin signo
 		lo suficientemente grande como para contener el valor de cualquier puntero. Esto es lo que se
@@ -44,18 +47,12 @@ Serialization &Serialization::operator=(const Serialization &rhs)
 		un numero que representa la direccion de memoria del puntero.
 */
 
-uintptr_t Serialization::serialize(data_t *ptr)
+data_t *Serialization::deserialize(uintptr_t raw)
 {
-	return reinterpret_cast<uintptr_t>(ptr);
+	return reinterpret_cast<data_t *>(raw);
 }
-//! borrar comentario al subir
 /*
 		deserializer: toma un uintptr_t y l convierte de nuevo a un puntero a Data. Esto es lo que hace
 		cuando usamos el reinterpret_cast del uintptr_t a puntero a Data. El resultado es un puntero que
 		apunta a la misma direccion de memoria que el uintptr_t original.
 */
-
-data_t *Serialization::deserialize(uintptr_t raw)
-{
-	return reinterpret_cast<data_t *>(raw);
-}

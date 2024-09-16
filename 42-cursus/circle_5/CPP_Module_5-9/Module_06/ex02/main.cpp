@@ -10,9 +10,9 @@ Base *generate(void);
 void identify(Base *p);
 void identify(Base &p);
 
-/* class Unknown : public Base {
+// class Unknown : public Base {
 
-}; */
+// };
 
 int main()
 {
@@ -21,9 +21,9 @@ int main()
 	identify(obj);
 	identify(*obj);
 
-	/*     Unknown u;
-			identify(&u);
-			identify(u); */
+	// Unknown u;
+	// 	identify(&u);
+	// 	identify(u);
 
 	delete obj;
 

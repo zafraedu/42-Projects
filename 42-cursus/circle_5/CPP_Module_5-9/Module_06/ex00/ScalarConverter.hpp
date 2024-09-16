@@ -21,11 +21,8 @@ enum e_dataType
 
 class ScalarConverter
 {
-	//! quitar los comentarios a la hora de subir
 	/* Al declarar el constructor privado evitamos que la clase pueda ser instanciada
-	fuera de la clase. Esto es util con ciertos patrones de diseño, como el patron Singleton,
-	donde solo quieres permitir una unica instancia de la clase.
-	Ademas, tambien se utiliza para prevenir la creacion de objetos si la clase solo
+	fuera de la clase. Tambien se utiliza para prevenir la creacion de objetos si la clase solo
 	contiene metodos estaticos. El metodo estatico convert() se podrá usar sin instanciar la clase.*/
 private:
 	ScalarConverter();
@@ -43,7 +40,6 @@ public:
 #define END "\033[0m"
 
 #endif
-//! quitar los comentarios a la hora de subir
 /*
 		-> -inff y -inf: representan el "menos infinito". Se utliza cuando un numero es
 		demasiado pequeño para ser representado en el sistema de punto flotante del pc.
