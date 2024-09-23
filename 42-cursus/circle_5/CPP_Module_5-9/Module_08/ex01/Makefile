@@ -5,7 +5,7 @@ CC = g++
 FLAGS = -Wall -Wextra -Werror -std=c++98
 RM = rm -rf
 
-SRCS = main.cpp
+SRCS = main.cpp Span.cpp
 OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 #########################  directorios(rutas)  #################################
 OBJ_DIR = obj
