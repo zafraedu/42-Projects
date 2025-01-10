@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 			throw static_cast<std::string>("too many args");
 		BitcoinExchange bitcoin;
 		bitcoin.handleInputFile(argv[1]);
-		bitcoin.printMap();
+		// bitcoin.printMap();
 	}
 	catch (std::string error)
 	{
