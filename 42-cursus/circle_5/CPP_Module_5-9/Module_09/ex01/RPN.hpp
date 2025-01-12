@@ -12,7 +12,7 @@ private:
 	struct
 	{
 		double first;
-		double secend;
+		double second;
 	} operand;
 	double result;
 	std::stack<double> Stack;

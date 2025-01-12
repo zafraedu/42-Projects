@@ -75,7 +75,6 @@ void BitcoinExchange::handleInputFile(std::string fileName)
 	std::ifstream file(fileName.c_str());
 	if (!file.is_open())
 		throw(std::string) "cannot open file";
-	// std::cout << line << std::endl;
 	getline(file, line);
 	if (line != "date | value")
 		throw(std::string) "Invalid first line in data file. Expected 'date | value'.";
@@ -134,7 +133,6 @@ void BitcoinExchange::checkValues(float value)
 }
 int BitcoinExchange::isLeapYear(int year)
 {
-	// todo : how?
 	bool ReturnValue = ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) ? true : false;
 	return (ReturnValue);
 }
@@ -152,10 +150,6 @@ void BitcoinExchange::checkDate(int year, int month, int day)
 	{
 		throw(std::string) "min year : (2009-01-02)";
 	}
-	// if (year > 2022 || (year == 2022 && month == 3 && day > 29))
-	// {
-	// 	throw(std::string) "max year (2022-03-29)";
-	// }
 }
 
 void BitcoinExchange::findDateAndCalculate()

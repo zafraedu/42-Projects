@@ -51,15 +51,15 @@ RPN::RPN(std::string rpn) : result(0)
 			Stack.push(rpn[index] - 48);
 		else if (Stack.size() >= 2 && operatorIsValid(rpn[index]) == true)
 		{
-			operand.secend = Stack.top();
+			operand.second = Stack.top();
 			Stack.pop();
 			operand.first = Stack.top();
 			Stack.pop();
-			if (rpn[index] == '/' && operand.secend == 0)
+			if (rpn[index] == '/' && operand.second == 0)
 				throw " : division by zero";
-			result = (rpn[index] == '+') ? (operand.first + operand.secend) : (rpn[index] == '-') ? (operand.first - operand.secend)
-																																		 : (rpn[index] == '*')	 ? (operand.first * operand.secend)
-																																														 : (operand.first / operand.secend);
+			result = (rpn[index] == '+') ? (operand.first + operand.second) : (rpn[index] == '-') ? (operand.first - operand.second)
+																																		 : (rpn[index] == '*')	 ? (operand.first * operand.second)
+																																														 : (operand.first / operand.second);
 			Stack.push(result);
 		}
 	}
