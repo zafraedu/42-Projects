@@ -13,7 +13,7 @@ ifeq ($(UNAME), Darwin)
 	LFLAGS += -lglfw -L "/Users/$(USER)/.brew/opt/glfw/lib/"
 else ifeq ($(UNAME), Linux)
 # Linux
-	LFLAGS += -ldl -lglfw -pthread -lm
+	LFLAGS += -ldl -lglfw -pthread -lm -no-pie
 else
 	@echo "$(R)[The program is only available for Linux and MacOS]\n$(END)"
 endif
