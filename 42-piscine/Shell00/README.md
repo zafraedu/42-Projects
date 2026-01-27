@@ -3,20 +3,28 @@ No te preocupes, es normal. Primero vamos a empezar con una pequeña introducci�
 Si quieres saltar la introducción y empezar con el ***ex00***, [haz clic aquí]().
 
 # Introducción
+
 Antes de empezar, es esencial aprender a moverse por la terminal, crear directorios (carpetas), crear archivos y más...
 
 ## Donde estamos ? - `pwd` (Print Working Directory)
+
 ### Comando
+
 Con el comando `pwd` obtenemos la [***ruta***](https://sanchezcorbalan.es/rutas-relativas-vs-rutas-absolutas/) en la que nos encontramos
+
 ```bash
 $ pwd
 /home/usuario/Desktop
 ```
+
 como podemos ver en el ejemplo arriba, nos encontramos en la ruta absoluta `/home/usuario/Desktop`
-> haz [click aquí](https://sanchezcorbalan.es/rutas-relativas-vs-rutas-absolutas/) para saber más sobre las **rutas**
+
+---
 
 ## Moverse por la terminal - `cd` (Change Directory)
+
 ### Comando
+
 ```bash
 $ cd <nombre del directorio>
 ```
