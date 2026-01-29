@@ -18,5 +18,3 @@
 <p align="center">
 	<a href="#" onclick="return false;"><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/zafraedu/42?color=blue&cacheSeconds=https%3A%2F%2Fgithub.com%2Fzafraedu%2F42%2Farchive%2Frefs%2Fheads%2Fmaster.zip"></a>
 </p>
-
-Profile intra: [ezafra-r](https://profile.intra.42.fr/users/ezafra-r)
