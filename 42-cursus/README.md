@@ -3,7 +3,7 @@
 My 42 school curriculum projects.
 | Circle | Project | Status |
 |:------:|:-------:|:------:|
-| 0 | [**libft**](./circle_0/42-libft) | **125%** |
+| 0 | [**libft**](https://github.com/zafraedu/42-libft) | **125%** |
 |||
 | 1 | [**ft_printf**](./circle_1/42-ft_printf) | **125%** |
 | 1 | [**get_next_line**](./circle_1/42-get_next_line) | **125%** |
