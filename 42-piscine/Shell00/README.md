@@ -93,7 +93,8 @@ $ touch archivo1.txt archivo2.txt archivo3.txt
 
 El comando `rm` se utiliza para eliminar archivos y directorios desde la terminal.
 
-> [!CAUTION] Lo que elimines con `rm` no va a la papelera, se borra de forma permanente.
+> [!WARNING]
+> Lo que elimines con `rm` no va a la papelera, se borra de forma permanente.
 
 ### Sintaxis básica
 
