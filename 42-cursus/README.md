@@ -3,19 +3,19 @@
 My 42 school curriculum projects.
 | Circle | Project | Status |
 |:------:|:-------:|:------:|
-| 0 | [**libft**](./circle_0/libft) | **125%** |
+| 0 | [**libft**](./circle_0/42-libft) | **125%** |
 |||
-| 1 | [**ft_printf**](./circle_1/ft_printf) | **125%** |
-| 1 | [**get_next_line**](./circle_1/get_next_line) | **125%** |
-| 1 | [**born2beroot**](./circle_1/Born2beroot) | **125%** |
+| 1 | [**ft_printf**](./circle_1/42-ft_printf) | **125%** |
+| 1 | [**get_next_line**](./circle_1/42-get_next_line) | **125%** |
+| 1 | [**born2beroot**](./circle_1/42-Born2beroot) | **125%** |
 |||
-| 2 | [**pipex**](./circle_2/pipex) | **125%** |
-| 2 | [**fract-ol**](./circle_2/fract-ol) | **125%** |
-| 2 | [**push_swap**](./circle_2/push_swap) | **125%** |
+| 2 | [**pipex**](./circle_2/42-pipex) | **125%** |
+| 2 | [**fract-ol**](./circle_2/42-fractol) | **125%** |
+| 2 | [**push_swap**](./circle_2/42-push_swap) | **125%** |
 | 2 | [**Exam Rank 02**](./circle_2/exam_rank_02) | **100%** |
 |||
-| 3 | [**philosophers**](./circle_3/philosophers) | **125%** |
-| 3 | [**minishell**](https://github.com/zafraedu/minishell) | **100%** |
+| 3 | [**philosophers**](./circle_3/42-philosophers) | **125%** |
+| 3 | [**minishell**](https://github.com/zafraedu/42-minishell) | **100%** |
 | 3 | [**Exam Rank 03**](./circle_3/exam_rank_03) | **100%** |
 |||
 | 4 | [**NetPractice**](./circle_4/NetPractice) | **100%** |
