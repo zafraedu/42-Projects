@@ -10,7 +10,7 @@ My 42 school curriculum projects.
 | 1 | [**born2beroot**](./circle_1/42-Born2beroot) | **125%** |
 |||
 | 2 | [**pipex**](./circle_2/42-pipex) | **125%** |
-| 2 | [**fract-ol**](./circle_2/42-fractol) | **125%** |
+| 2 | [**fract-ol**](https://github.com/zafraedu/42-fractol) | **125%** |
 | 2 | [**push_swap**](./circle_2/42-push_swap) | **125%** |
 | 2 | [**Exam Rank 02**](./circle_2/exam_rank_02) | **100%** |
 |||
@@ -18,7 +18,7 @@ My 42 school curriculum projects.
 | 3 | [**minishell**](https://github.com/zafraedu/42-minishell) | **100%** |
 | 3 | [**Exam Rank 03**](./circle_3/exam_rank_03) | **100%** |
 |||
-| 4 | [**NetPractice**](./circle_4/NetPractice) | **100%** |
+| 4 | [**NetPractice**](https://github.com/lpaube/NetPractice/blob/main/README.es.md) | **100%** |
 | 4 | [**cub3d**](https://github.com/zafraedu/42-cub3d) | **103%** |
 | 4 | [**Exam Rank 04**](./circle_4/exam_rank_04) | **100%** |
 | 4 | [**CPP Module 00~04**](./circle_4/CPP_Module_0-4) | **100%** |
